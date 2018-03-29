@@ -1,0 +1,28 @@
+建立结构体
+typedef struct//qs808 接收缓冲区结构体原型
+{
+	enum Trans_state_enum {reset,set} Trans_state;	//发送flag，向qs808发送数据后，这个set
+	enum Rec_state_enum {idle,busy} Rec_state;		//接收flag，开始接收回包后这个busy 
+	uint8_t Rec_point;		//缓冲区指针
+	uint8_t Rec_Buf[30];	//缓冲区
+}QS808_Rec_Buf_type;
+
+Trans_state_enum	表示发送flag 向qs808发送数据后，这个置为set 防止反复发送
+Rec_state_enum		表示接收状态指示，接收到qs808回包的包头（0xaa）后，这个置为busy，用于查询是否可以读取回包
+Rec_point 			为缓冲区指针，每次处理完一个回包，要将指针归0
+Rec_Buf 			缓冲区数组
+
+
+
+void QS808_Rec_Buf_refresh(void)
+{
+	QS808_Rec_Buf.Rec_state = idle;
+	QS808_Rec_Buf.Rec_point = 0x00;
+	QS808_Rec_Buf.Trans_state = reset;
+}
+缓冲区刷新函数，将缓冲区的三个指示成员刷新，任意时刻，当qs808收包出现问题，都可以用这个刷新，然后重发。每次发送之前也最好刷新一下。
+
+
+
+解包函数，1.5s收不到数据，则返回0xff。若收到合理的数据，则解包通过结构体指针传回。
+uint8_t QS808_Unpack(QS808_Pack_struct * qs808_rec_bag)

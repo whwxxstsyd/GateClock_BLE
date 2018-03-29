@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "lock_ctrl.h": "c"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.errorSquiggles": "Disabled"
+}
