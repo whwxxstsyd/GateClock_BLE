@@ -31,27 +31,20 @@
 
 
 
-
-
-
-
-
 // BLE 与 手机通信数据包
 typedef struct{
-	uint16_t m_magicCode;	// 0xFECF
-	uint16_t m_version;		// 0x0001
-	uint16_t m_totalLength; // 12
-	uint16_t m_cmdId;		// 单片机主要就看这个信息,来判断这条指令需要单片机做什么
-	uint16_t m_seq;         // None
-	uint16_t m_errorCode;
-	// uint16_t m_address;
-}BleDataHead;	// 12Byte  14Byte
+	u16 m_magicCode;	// 0xFECF
+	u16 m_version;		// 0x0001
+	u16 m_totalLength;	// 12
+	u16 m_cmdId;		// 单片机主要就看这个信息,来判断这条指令需要单片机做什么
+	u16 m_seq;			// None
+	u16 m_errorCode;
+}BleDataHead;
 
 
 #define magicCode					0xFECF
 #define version						0x0001
 #define cmdId_IC					0x0302
-
 
 
 #define cmdId_DataToServ			0x0001
@@ -68,7 +61,7 @@ typedef struct{
 
 
 #define errorCode0   0x0000   // success
-#define errorCode1   0x0001   // 解析数据包失败 
+#define errorCode1   0x0001   // 解析数据包失败
 #define errorCode2   0x0002   // 进入录入   模式失败
 #define errorCode3   0x0003   // 录入模式下超时，cmdId_pushToServ(0x2001)使用
 #define errorCode4   0x0004   // 录入模式下两枚指纹不匹配，cmdId_pushToServ(0x2001)使用

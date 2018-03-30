@@ -1,13 +1,16 @@
 #include "my_board.h"
 #include "./UT588C/ut588c.h"
+
 void UT588C_init(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
-	RCC_APB2PeriphClockCmd(	RCC_APB2Periph_GPIOB, ENABLE );	
 	
-	RCC_APB2PeriphClockCmd(OLED_SCL_GPIO_CLK|OLED_SDA_GPIO_CLK, ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	
+	
+	// RCC_APB2PeriphClockCmd(OLED_SCL_GPIO_CLK|OLED_SDA_GPIO_CLK, ENABLE);
 	
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);   
+	
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable,ENABLE);
 	
 	GPIO_InitStructure.GPIO_Pin = TG1_PIN;

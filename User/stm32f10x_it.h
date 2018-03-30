@@ -32,6 +32,9 @@
 #define INT_FLAG_SET  0x01
 #define INT_FLAG_RESET 0X00
 
+
+
+
 void QS808_INT_EXT_IRQHandler(void);
 void TSM12_INT_EXT_IRQHandler(void);
 

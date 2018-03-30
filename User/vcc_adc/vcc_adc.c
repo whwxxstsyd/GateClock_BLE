@@ -91,4 +91,3 @@ float Get_Battery(void)
 
 	return charge;
 }
-

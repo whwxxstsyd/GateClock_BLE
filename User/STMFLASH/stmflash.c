@@ -1,57 +1,35 @@
 #include "./STMFLASH/stmflash.h"
 
-
-//读取指定地址的半字(16位数据)
-//faddr:读地址(此地址必须为2的倍数!!)
-//返回值:对应数据.
-u16 STMFLASH_ReadHalfWord(u32 faddr)
-{
-	return *(vu16*)faddr;
-}
-#if STM32_FLASH_WREN	//如果使能了写
-//不检查的写入
-//WriteAddr:起始地址
-//pBuffer:数据指针
-//NumToWrite:半字(16位)数
-void STMFLASH_Write_NoCheck(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite)
-{
-	u16 i;
-	for(i=0;i<NumToWrite;i++)
-	{
-		FLASH_ProgramHalfWord(WriteAddr,pBuffer[i]);
-	    WriteAddr+=2;//地址增加2.
-	}
-}
-
-
-//从指定地址开始写入指定长度的数据
-//WriteAddr:起始地址(此地址必须为2的倍数!!)
-//pBuffer:数据指针
-//NumToWrite:半字(16位)数(就是要写入的16位数据的个数.)
 #if STM32_FLASH_SIZE<256
 #define STM_SECTOR_SIZE 1024 //字节
 #else
 #define STM_SECTOR_SIZE	2048
 #endif
 
-u16 STMFLASH_BUF[STM_SECTOR_SIZE/2];//最多是2K字节
+u16 STMFLASH_BUF[STM_SECTOR_SIZE/2];	// 最多是2K字节
 
-void STMFLASH_Write(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite)
-{
+
+// 从指定地址开始【写入】指定长度的数据
+// WriteAddr:	起始地址(此地址必须为2的倍数!!)
+// pBuffer:		数据指针
+// NumToWrite:	半字(16位)数(就是要写入的16位数据的个数)
+void STMFLASH_Write(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite){
 	u32 secpos;	   //扇区地址
 	u16 secoff;	   //扇区内偏移地址(16位字计算)
 	u16 secremain; //扇区内剩余地址(16位字计算)
  	u16 i;
 	u32 offaddr;   //去掉0X08000000后的地址
+
 	if(WriteAddr<STM32_FLASH_BASE||(WriteAddr>=(STM32_FLASH_BASE+1024*STM32_FLASH_SIZE)))return;//非法地址
-	FLASH_Unlock();						//解锁
+	FLASH_Unlock();							//解锁
+
+
 	offaddr=WriteAddr-STM32_FLASH_BASE;		//实际偏移地址
 	secpos=offaddr/STM_SECTOR_SIZE;			//扇区地址  0~127 for STM32F103RBT6
 	secoff=(offaddr%STM_SECTOR_SIZE)/2;		//在扇区内的偏移(2个字节为基本单位.)
 	secremain=STM_SECTOR_SIZE/2-secoff;		//扇区剩余空间大小
 	if(NumToWrite<=secremain)secremain=NumToWrite;//不大于该扇区范围
-	while(1)
-	{
+	while(1){
 		STMFLASH_Read(secpos*STM_SECTOR_SIZE+STM32_FLASH_BASE,STMFLASH_BUF,STM_SECTOR_SIZE/2);//读出整个扇区的内容
 		for(i=0;i<secremain;i++)//校验数据
 		{
@@ -77,15 +55,16 @@ void STMFLASH_Write(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite)
 			if(NumToWrite>(STM_SECTOR_SIZE/2))secremain=STM_SECTOR_SIZE/2;//下一个扇区还是写不完
 			else secremain=NumToWrite;//下一个扇区可以写完了
 		}
-	};
+	}
+
+
 	FLASH_Lock();//上锁
 }
-#endif
 
-// 从指定地址开始读出指定长度的数据
+// 从指定地址开始【读出】指定长度的数据
 // ReadAddr:	起始地址
 // pBuffer:		数据指针
-// NumToWrite:	半字(16位)数
+// NumToWrite:	半字(16位)数(就是要写入的16位数据的个数)
 void STMFLASH_Read(u32 ReadAddr, u16 *pBuffer, u16 NumToRead){
 	u16 i;
 	for(i=0;i<NumToRead;i++){
@@ -94,21 +73,22 @@ void STMFLASH_Read(u32 ReadAddr, u16 *pBuffer, u16 NumToRead){
 	}
 }
 
-
-// WriteAddr:起始地址
-// WriteData:要写入的数据
-void Test_Write(u32 WriteAddr,u16 WriteData)
-{
-	// 写入一个字
-	STMFLASH_Write(WriteAddr,&WriteData,1);
+// 【读取】指定地址的半字(16位数据)
+// faddr:读地址(此地址必须为2的倍数!!)
+// 返回值:对应数据.
+u16 STMFLASH_ReadHalfWord(u32 faddr){
+	return *(vu16*)faddr;
 }
 
-// 将指定 flash 指定位置处任意长度的内容拷贝到目标地址处
-// SourceAddr:	原始数据存储的地址
-// DstAddr:		目标地址
-// length:		需要拷贝的数据2字节数（精度就是16bits）
-void STMFLASH_Move(u32 ReadAddr, u32 WriteAddr, u16 length){
-	for (u16 i=0; i<length; i++){
-		Test_Write(WriteAddr+i*2, *(u16*)(ReadAddr+i*2));	
-	}	
+// 不检查的写入
+// WriteAddr:	起始地址
+// pBuffer:		数据指针
+// NumToWrite:	半字(16位)数
+void STMFLASH_Write_NoCheck(u32 WriteAddr,u16 *pBuffer,u16 NumToWrite) {
+	u16 i;
+	for(i=0;i<NumToWrite;i++)
+	{
+		FLASH_ProgramHalfWord(WriteAddr,pBuffer[i]);
+	    WriteAddr+=2;//地址增加2.
+	}
 }

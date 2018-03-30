@@ -1,0 +1,69 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "${workspaceRoot}/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 3
+}

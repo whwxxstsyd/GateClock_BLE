@@ -604,21 +604,6 @@
               <FilePath>..\User\STMFLASH\stmflash.c</FilePath>
             </File>
             <File>
-              <FileName>lock_ctrl.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\lock_ctrl\lock_ctrl.c</FilePath>
-            </File>
-            <File>
-              <FileName>oled.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\oled\oled.c</FilePath>
-            </File>
-            <File>
-              <FileName>FONT_TAB.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\oled\FONT_TAB.h</FilePath>
-            </File>
-            <File>
               <FileName>rc522_function.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\RC522\rc522_function.c</FilePath>
@@ -644,19 +629,9 @@
               <FilePath>..\User\DAC\dac.c</FilePath>
             </File>
             <File>
-              <FileName>gatelock.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\locklock\gatelock.c</FilePath>
-            </File>
-            <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\led\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>nydebug.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\mydebug\nydebug.c</FilePath>
             </File>
             <File>
               <FileName>ut588c.c</FileName>
@@ -677,6 +652,11 @@
               <FileName>BLE.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\BLE\BLE.c</FilePath>
+            </File>
+            <File>
+              <FileName>rfcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\RFCard\rfcard.c</FilePath>
             </File>
           </Files>
         </Group>

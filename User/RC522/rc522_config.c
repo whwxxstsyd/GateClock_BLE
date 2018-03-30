@@ -91,7 +91,7 @@ void RC522_USART_Init(uint32_t BaudRate)
 
 static void RC522_SPI_Config ( void )
 {
-GPIO_InitTypeDef GPIO_InitStructure;
+	GPIO_InitTypeDef GPIO_InitStructure;
 
 	/*!< Configure uart_io pins: RST */
 	RCC_APB2PeriphClockCmd (RC522_RST_GPIO_CLK, ENABLE);

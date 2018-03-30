@@ -5,6 +5,7 @@
 uint8_t BLE_FRAME_REC_FLAG=0;
 char BLE_FRAME[100];
 int BLE_FRAME_INDEX=0;
+
 void BLE_init(void){
 
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -12,7 +13,7 @@ void BLE_init(void){
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
-	// 下面两行代码将会导致蜂鸣器不响
+	
 	GPIO_InitStructure.GPIO_Pin = BLE_NRST_PIN;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -33,7 +34,6 @@ void BLE_init(void){
 
 	EXTI_InitTypeDef EXTI_InitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
-
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO,ENABLE);
  	GPIO_EXTILineConfig(BLE_INT_PIN_SOURCE_PORT,BLE_INT_PIN_SOURCE_PIN);
 
@@ -48,26 +48,15 @@ void BLE_init(void){
 	NVIC_InitStructure.NVIC_IRQChannel = BLE_INT_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x02;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x05;
-
-	// NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
-	// NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
-
-	
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 	
-	// 蓝牙复位，这一行一定要紧跟上面的初始化
+	// 蓝牙复位
 	BLE_RST_OFF();
 
 	// 关闭 AT 命令
 	AT_MODE_OFF();
 
-
-	// BLE_USART_CMD("STARTEN1");
-	// delay_ms(1000);delay_ms(1000);delay_ms(1000);
-	// BLE_USART_CMD("RST");
-	// delay_ms(1000);delay_ms(1000);delay_ms(1000);
-	// AT_MODE_OFF();
 }
 
 void BLE_USART_SendStr(char* str){

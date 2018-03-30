@@ -1,8 +1,8 @@
 Dependencies for Project 'stm32f100', Target 'flash': (DO NOT MODIFY !)
-F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s)(0x5AAC81AD)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_MD SETA 1"--list ..\listing\startup_stm32f10x_md.lst --xref -o ..\output\startup_stm32f10x_md.o --depend ..\output\startup_stm32f10x_md.d)
-F (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\core_cm3.o --omf_browse ..\output\core_cm3.crf --depend ..\output\core_cm3.d)
+F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s)(0x5AAC81AD)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_MD SETA 1"--list ..\listing\startup_stm32f10x_md.lst --xref -o ..\output\startup_stm32f10x_md.o --depend ..\output\startup_stm32f10x_md.d)
+F (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\core_cm3.o --omf_browse ..\output\core_cm3.crf --depend ..\output\core_cm3.d)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\system_stm32f10x.o --omf_browse ..\output\system_stm32f10x.crf --depend ..\output\system_stm32f10x.d)
+F (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\system_stm32f10x.o --omf_browse ..\output\system_stm32f10x.crf --depend ..\output\system_stm32f10x.d)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -15,7 +15,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\misc.o --omf_browse ..\output\misc.crf --depend ..\output\misc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\misc.o --omf_browse ..\output\misc.crf --depend ..\output\misc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -28,7 +28,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_adc.o --omf_browse ..\output\stm32f10x_adc.crf --depend ..\output\stm32f10x_adc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_adc.o --omf_browse ..\output\stm32f10x_adc.crf --depend ..\output\stm32f10x_adc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -42,7 +42,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_bkp.o --omf_browse ..\output\stm32f10x_bkp.crf --depend ..\output\stm32f10x_bkp.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_bkp.o --omf_browse ..\output\stm32f10x_bkp.crf --depend ..\output\stm32f10x_bkp.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -56,7 +56,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_can.o --omf_browse ..\output\stm32f10x_can.crf --depend ..\output\stm32f10x_can.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_can.o --omf_browse ..\output\stm32f10x_can.crf --depend ..\output\stm32f10x_can.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -70,7 +70,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_cec.o --omf_browse ..\output\stm32f10x_cec.crf --depend ..\output\stm32f10x_cec.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_cec.o --omf_browse ..\output\stm32f10x_cec.crf --depend ..\output\stm32f10x_cec.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -84,7 +84,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_crc.o --omf_browse ..\output\stm32f10x_crc.crf --depend ..\output\stm32f10x_crc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_crc.o --omf_browse ..\output\stm32f10x_crc.crf --depend ..\output\stm32f10x_crc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -98,7 +98,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_dac.o --omf_browse ..\output\stm32f10x_dac.crf --depend ..\output\stm32f10x_dac.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_dac.o --omf_browse ..\output\stm32f10x_dac.crf --depend ..\output\stm32f10x_dac.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -112,7 +112,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_dbgmcu.o --omf_browse ..\output\stm32f10x_dbgmcu.crf --depend ..\output\stm32f10x_dbgmcu.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_dbgmcu.o --omf_browse ..\output\stm32f10x_dbgmcu.crf --depend ..\output\stm32f10x_dbgmcu.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -126,7 +126,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_dma.o --omf_browse ..\output\stm32f10x_dma.crf --depend ..\output\stm32f10x_dma.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_dma.o --omf_browse ..\output\stm32f10x_dma.crf --depend ..\output\stm32f10x_dma.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -140,7 +140,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_exti.o --omf_browse ..\output\stm32f10x_exti.crf --depend ..\output\stm32f10x_exti.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_exti.o --omf_browse ..\output\stm32f10x_exti.crf --depend ..\output\stm32f10x_exti.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -153,7 +153,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_flash.o --omf_browse ..\output\stm32f10x_flash.crf --depend ..\output\stm32f10x_flash.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x5ABE1206)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_flash.o --omf_browse ..\output\stm32f10x_flash.crf --depend ..\output\stm32f10x_flash.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -167,7 +167,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_fsmc.o --omf_browse ..\output\stm32f10x_fsmc.crf --depend ..\output\stm32f10x_fsmc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_fsmc.o --omf_browse ..\output\stm32f10x_fsmc.crf --depend ..\output\stm32f10x_fsmc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -180,7 +180,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_gpio.o --omf_browse ..\output\stm32f10x_gpio.crf --depend ..\output\stm32f10x_gpio.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_gpio.o --omf_browse ..\output\stm32f10x_gpio.crf --depend ..\output\stm32f10x_gpio.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -193,7 +193,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_i2c.o --omf_browse ..\output\stm32f10x_i2c.crf --depend ..\output\stm32f10x_i2c.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_i2c.o --omf_browse ..\output\stm32f10x_i2c.crf --depend ..\output\stm32f10x_i2c.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -207,7 +207,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_iwdg.o --omf_browse ..\output\stm32f10x_iwdg.crf --depend ..\output\stm32f10x_iwdg.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_iwdg.o --omf_browse ..\output\stm32f10x_iwdg.crf --depend ..\output\stm32f10x_iwdg.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -221,7 +221,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_pwr.o --omf_browse ..\output\stm32f10x_pwr.crf --depend ..\output\stm32f10x_pwr.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_pwr.o --omf_browse ..\output\stm32f10x_pwr.crf --depend ..\output\stm32f10x_pwr.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -235,7 +235,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_rcc.o --omf_browse ..\output\stm32f10x_rcc.crf --depend ..\output\stm32f10x_rcc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_rcc.o --omf_browse ..\output\stm32f10x_rcc.crf --depend ..\output\stm32f10x_rcc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -248,7 +248,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_rtc.o --omf_browse ..\output\stm32f10x_rtc.crf --depend ..\output\stm32f10x_rtc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_rtc.o --omf_browse ..\output\stm32f10x_rtc.crf --depend ..\output\stm32f10x_rtc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -262,7 +262,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_sdio.o --omf_browse ..\output\stm32f10x_sdio.crf --depend ..\output\stm32f10x_sdio.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_sdio.o --omf_browse ..\output\stm32f10x_sdio.crf --depend ..\output\stm32f10x_sdio.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -276,7 +276,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_spi.o --omf_browse ..\output\stm32f10x_spi.crf --depend ..\output\stm32f10x_spi.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_spi.o --omf_browse ..\output\stm32f10x_spi.crf --depend ..\output\stm32f10x_spi.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -289,7 +289,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_tim.o --omf_browse ..\output\stm32f10x_tim.crf --depend ..\output\stm32f10x_tim.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_tim.o --omf_browse ..\output\stm32f10x_tim.crf --depend ..\output\stm32f10x_tim.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -303,7 +303,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c)(0x5ABA3074)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_usart.o --omf_browse ..\output\stm32f10x_usart.crf --depend ..\output\stm32f10x_usart.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c)(0x5ABCF931)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_usart.o --omf_browse ..\output\stm32f10x_usart.crf --depend ..\output\stm32f10x_usart.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -316,7 +316,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_wwdg.o --omf_browse ..\output\stm32f10x_wwdg.crf --depend ..\output\stm32f10x_wwdg.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c)(0x5A97F632)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_wwdg.o --omf_browse ..\output\stm32f10x_wwdg.crf --depend ..\output\stm32f10x_wwdg.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -330,8 +330,92 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\User\main.c)(0x5ABB8DFA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
-I (..\User\my_board.h)(0x5A97F633)
+F (..\User\main.c)(0x5ABE52C2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+I (..\User\./my_board.h)(0x5ABE4A33)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
+I (..\User\stm32f10x_conf.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\././BLE/BLE.h)(0x5ABE114B)
+I (..\User\././data/data_def.h)(0x5ABE1041)
+I (..\User\././Delay/delay.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\User\././led/led.h)(0x5A97F633)
+I (..\User\././RC522/rc522_function.h)(0x5A97F633)
+I (..\User\././RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\././RFCard/rfcard.h)(0x5ABE51FD)
+I (..\User\././rtc/rtc.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
+I (..\User\././STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
+I (..\User\././TIMER/timer.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
+I (..\User\././TSM12/TSM12.h)(0x5A97F633)
+I (..\User\././TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\././usart/debug_usart.h)(0x5ABE5041)
+I (..\User\././UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\././vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\././qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\././power/power_ctrl.h)(0x5A97F633)
+F (..\User\stm32f10x_it.c)(0x5ABE4EFE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
+I (..\User\stm32f10x_it.h)(0x5ABDE550)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
+I (..\User\stm32f10x_conf.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./Delay/delay.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
+I (..\User\./rtc/rtc.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
+I (..\User\./TIMER/timer.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
+I (..\User\./TSM12/TSM12.h)(0x5A97F633)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\usart\debug_usart.c)(0x5ABE51CA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\debug_usart.o --omf_browse ..\output\debug_usart.crf --depend ..\output\debug_usart.d)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -345,128 +429,33 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-I (..\User\./lock_ctrl/lock_ctrl.h)(0x5AB0A6A6)
-I (..\User\./dac/dac.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x5A97F632)
-F (..\User\stm32f10x_it.c)(0x5ABA3833)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
-I (..\User\stm32f10x_it.h)(0x5ABA3CF5)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
 I (..\User\sys.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
 I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\usart\debug_usart.c)(0x5ABAF54A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\debug_usart.o --omf_browse ..\output\debug_usart.crf --depend ..\output\debug_usart.d)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
 I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
 I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\qs808\qs808_usart.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\qs808_usart.o --omf_browse ..\output\qs808_usart.crf --depend ..\output\qs808_usart.d)
+F (..\User\qs808\qs808_usart.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\qs808_usart.o --omf_browse ..\output\qs808_usart.crf --depend ..\output\qs808_usart.d)
 I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
 I (..\User\stm32f10x_conf.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
@@ -481,36 +470,33 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\Delay\delay.c)(0x5ABA1589)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\delay.o --omf_browse ..\output\delay.crf --depend ..\output\delay.d)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\Delay\delay.c)(0x5ABA1589)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\delay.o --omf_browse ..\output\delay.crf --depend ..\output\delay.d)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -524,38 +510,35 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\qs808\qs808_drive.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\qs808_drive.o --omf_browse ..\output\qs808_drive.crf --depend ..\output\qs808_drive.d)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\qs808\qs808_drive.c)(0x5ABE12F1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\qs808_drive.o --omf_browse ..\output\qs808_drive.crf --depend ..\output\qs808_drive.d)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -570,35 +553,32 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-F (..\User\power\power_ctrl.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\power_ctrl.o --omf_browse ..\output\power_ctrl.crf --depend ..\output\power_ctrl.d)
+F (..\User\power\power_ctrl.c)(0x5ABDE557)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\power_ctrl.o --omf_browse ..\output\power_ctrl.crf --depend ..\output\power_ctrl.d)
 I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
@@ -612,38 +592,35 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\data\data_def.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\data_def.o --omf_browse ..\output\data_def.crf --depend ..\output\data_def.d)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+F (..\User\data\data_def.c)(0x5ABE11B9)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\data_def.o --omf_browse ..\output\data_def.crf --depend ..\output\data_def.d)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -656,7 +633,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\User\RTC\rtc.c)(0x5AA11AA7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rtc.o --omf_browse ..\output\rtc.crf --depend ..\output\rtc.d)
+F (..\User\RTC\rtc.c)(0x5ABE4B88)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rtc.o --omf_browse ..\output\rtc.crf --depend ..\output\rtc.d)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -673,35 +650,32 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
 I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-F (..\User\STMFLASH\stmflash.c)(0x5AADC842)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stmflash.o --omf_browse ..\output\stmflash.crf --depend ..\output\stmflash.d)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
+F (..\User\STMFLASH\stmflash.c)(0x5ABE4B4D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\stmflash.o --omf_browse ..\output\stmflash.crf --depend ..\output\stmflash.d)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -715,128 +689,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\lock_ctrl\lock_ctrl.c)(0x5ABB8776)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\lock_ctrl.o --omf_browse ..\output\lock_ctrl.crf --depend ..\output\lock_ctrl.d)
-I (..\User\./lock_ctrl/lock_ctrl.h)(0x5AB0A6A6)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-I (E:\Keil\ARM\ARMCC\include\math.h)(0x5475F2FE)
-F (..\User\oled\oled.c)(0x5ABA2D85)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\oled.o --omf_browse ..\output\oled.crf --depend ..\output\oled.d)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\User\./OLED/FONT_TAB.h)(0x5A9B7377)
-F (..\User\oled\FONT_TAB.h)(0x5A9B7377)()
-F (..\User\RC522\rc522_function.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rc522_function.o --omf_browse ..\output\rc522_function.crf --depend ..\output\rc522_function.d)
+F (..\User\RC522\rc522_function.c)(0x5ABE4B46)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rc522_function.o --omf_browse ..\output\rc522_function.crf --depend ..\output\rc522_function.d)
 I (..\User\./RC522/rc522_function.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -851,36 +704,33 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\RC522\rc522_config.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rc522_config.o --omf_browse ..\output\rc522_config.crf --depend ..\output\rc522_config.d)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\RC522\rc522_config.c)(0x5ABE4428)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rc522_config.o --omf_browse ..\output\rc522_config.crf --depend ..\output\rc522_config.d)
 I (..\User\./rc522/rc522_config.h)(0x5AB31B9A)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -895,38 +745,36 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\TIMER\timer.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\timer.o --omf_browse ..\output\timer.crf --depend ..\output\timer.d)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\TIMER\timer.c)(0x5ABDE675)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\timer.o --omf_browse ..\output\timer.crf --depend ..\output\timer.d)
 I (..\User\TIMER\timer.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -939,38 +787,35 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-F (..\User\vcc_adc\vcc_adc.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\vcc_adc.o --omf_browse ..\output\vcc_adc.crf --depend ..\output\vcc_adc.d)
-I (..\User\my_board.h)(0x5A97F633)
+F (..\User\vcc_adc\vcc_adc.c)(0x5ABE1A98)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\vcc_adc.o --omf_browse ..\output\vcc_adc.crf --depend ..\output\vcc_adc.d)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -983,37 +828,33 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\DAC\dac.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\dac.o --omf_browse ..\output\dac.crf --depend ..\output\dac.d)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\DAC\dac.c)(0x5ABDDFA5)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\dac.o --omf_browse ..\output\dac.crf --depend ..\output\dac.d)
 I (..\User\DAC\dac.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x5A97F632)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
@@ -1028,8 +869,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-F (..\User\locklock\gatelock.c)(0x5AACC9E3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\gatelock.o --omf_browse ..\output\gatelock.crf --depend ..\output\gatelock.d)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
+F (..\User\led\led.c)(0x5ABDBEA3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\led.o --omf_browse ..\output\led.crf --depend ..\output\led.d)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -1042,139 +882,49 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+F (..\User\UT588C\ut588c.c)(0x5ABDE59F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\ut588c.o --omf_browse ..\output\ut588c.crf --depend ..\output\ut588c.d)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
+I (..\User\stm32f10x_conf.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./Delay/delay.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\led\led.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\led.o --omf_browse ..\output\led.crf --depend ..\output\led.d)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-F (..\User\mydebug\nydebug.c)(0x5AA094D0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\nydebug.o --omf_browse ..\output\nydebug.crf --depend ..\output\nydebug.d)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
 I (..\User\sys.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
 I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\UT588C\ut588c.c)(0x5A97F633)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\ut588c.o --omf_browse ..\output\ut588c.crf --depend ..\output\ut588c.d)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
-I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
-I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
-I (..\User\stm32f10x_conf.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
 I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
 I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
-I (..\User\./rtc/rtc.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
-I (..\User\./TIMER/timer.h)(0x5A97F633)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\TSM12\TSM12.c)(0x5AB49331)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\tsm12.o --omf_browse ..\output\tsm12.crf --depend ..\output\tsm12.d)
+F (..\User\TSM12\TSM12.c)(0x5AB49331)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\tsm12.o --omf_browse ..\output\tsm12.crf --depend ..\output\tsm12.d)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
@@ -1190,35 +940,32 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\my_board.h)(0x5A97F633)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
 I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-F (..\User\TSM12\keyboard.c)(0x5AB5CBE3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\keyboard.o --omf_browse ..\output\keyboard.crf --depend ..\output\keyboard.d)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\TSM12\keyboard.c)(0x5ABDE34D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\keyboard.o --omf_browse ..\output\keyboard.crf --depend ..\output\keyboard.d)
 I (..\User\./Delay/delay.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
@@ -1232,39 +979,35 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
-I (..\User\./lock_ctrl/lock_ctrl.h)(0x5AB0A6A6)
-F (..\User\BLE\BLE.c)(0x5ABA2175)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø\GateClock\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\ble.o --omf_browse ..\output\ble.crf --depend ..\output\ble.d)
-I (..\User\./BLE/BLE.h)(0x5ABAEC01)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
+F (..\User\BLE\BLE.c)(0x5ABE51E3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\ble.o --omf_browse ..\output\ble.crf --depend ..\output\ble.d)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
 I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -1277,34 +1020,72 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
-I (..\User\./usart/debug_usart.h)(0x5ABAF549)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
 I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\User\my_board.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./data/data_def.h)(0x5ABE1041)
 I (..\User\./Delay/delay.h)(0x5A97F633)
-I (..\User\./qs808/qs808_drive.h)(0x5A97F633)
-I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
-I (..\User\./OLED/oled.h)(0x5ABA3839)
-I (E:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
-I (..\User\./power/power_ctrl.h)(0x5A97F633)
-I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
-I (..\User\sys.h)(0x5A97F633)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
 I (..\User\./rtc/rtc.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
-I (..\User\./data/data_def.h)(0x5ABAF8AB)
-I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
-I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
 I (..\User\./TIMER/timer.h)(0x5A97F633)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
-I (..\User\./led/led.h)(0x5A97F633)
-I (..\User\./locklock/gatelock.h)(0x5A97F633)
-I (..\User\./STMFLASH/stmflash.h)(0x5AB36725)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
-I (..\User\./mydebug/mydebug.h)(0x5A97F633)
-I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
-I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
 I (..\User\./TSM12/TSM12.h)(0x5A97F633)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)
 I (E:\Keil\ARM\ARMCC\include\string.h)(0x5475F300)
+F (..\User\RFCard\rfcard.c)(0x5ABE520E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CM3\CoreSupport -I..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\User -I..\User\locklock-I D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0-I E:\Keil\ARM\CMSIS\Include-I E:\Keil\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\output\rfcard.o --omf_browse ..\output\rfcard.crf --depend ..\output\rfcard.d)
+I (..\User\./RFCard/rfcard.h)(0x5ABE51FD)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h)(0x5A97F633)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A97F633)
+I (E:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h)(0x5A97F633)
+I (..\User\stm32f10x_conf.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x5AB9E7C9)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A97F632)
+I (..\User\./RC522/rc522_function.h)(0x5A97F633)
+I (..\User\./Delay/delay.h)(0x5A97F633)
+I (..\User\my_board.h)(0x5ABE4A33)
+I (E:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x5A97F632)
+I (..\User\./BLE/BLE.h)(0x5ABE114B)
+I (..\User\./data/data_def.h)(0x5ABE1041)
+I (..\User\./led/led.h)(0x5A97F633)
+I (..\User\./RC522/rc522_config.h)(0x5AB31B9A)
+I (..\User\./rtc/rtc.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x5A97F632)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x5A97F632)
+I (..\User\./STMFLASH/stmflash.h)(0x5ABE1270)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x5A97F632)
+I (..\User\./TIMER/timer.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x5A97F632)
+I (..\User\./TSM12/TSM12.h)(0x5A97F633)
+I (..\User\./TSM12/keyboard.h)(0x5AADC7C6)
+I (..\User\sys.h)(0x5A97F633)
+I (..\User\./usart/debug_usart.h)(0x5ABE5041)
+I (..\User\./UT588C/ut588c.h)(0x5AB9EC99)
+I (..\User\./vcc_adc/vcc_adc.h)(0x5A97F633)
+I (..\User\./qs808/qs808_drive.h)(0x5ABDE16C)
+I (..\User\./qs808/qs808_usart.h)(0x5A97F633)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x5A97F632)
+I (..\User\./power/power_ctrl.h)(0x5A97F633)

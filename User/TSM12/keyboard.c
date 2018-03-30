@@ -3,12 +3,13 @@
 #include "./TSM12/TSM12.h"
 #include "./Delay/delay.h"
 #include "./usart/debug_usart.h"
-#include "./lock_ctrl/lock_ctrl.h"
+//#include "./lock_ctrl/lock_ctrl.h"
 #include <stdio.h>
 
 uint8_t Key_Buffer[30];
 extern float 	Battery_quantity;
 
+#if 0
 
 uint8_t IsKey(void)
 //返回按键 （按键为 0 1 2 3 ~ 9  星号 0x0a 井号 0x0b）
@@ -21,13 +22,14 @@ uint8_t IsKey(void)
 		return NO_KEY;
 	else{
 		// 这里说明按下了按键，喇叭响一声，这里设置为按下就响，而不是松手再响
-		SPEAK_DUDUDU();
+		// SPEAK_DUDUDU();
+		
 		// 等待松手
 		while (TMS12_ReadOnKey()!=KEY_NULL){
 			timeout_cnt++;
 			if(timeout_cnt==0x5000)
 			{
-				Disp_sentence(0,0,"keyboard error",1);
+//				Disp_sentence(0,0,"keyboard error",1);
 				delay_ms(1000);
 				break;
 			}
@@ -517,3 +519,8 @@ uint8_t Wait_Key(void)
 	}while(key == NO_KEY && cnt < (WAIT_TIME_MS/WAIT_SCAN_MS));
 	return key;
 }
+
+
+
+
+#endif

@@ -5,12 +5,14 @@
 #include "stm32f10x_conf.h"
 #include <stdio.h>
 #include "my_board.h"
-#define UART_WAIT_TIME								0xfffff//串口等待时间
-//引脚定义
-/*******************************************************/
+
+// 串口等待时间
+#define UART_WAIT_TIME                     0xfffff
+
+/********************************************** 引脚定义 *************************************************/
 #define UART_1                             USART1
 #define UART_1_CLK                         RCC_APB2Periph_USART1
-#define UART_1_BAUDRATE                    115200  //串口波特率
+#define UART_1_BAUDRATE                    115200
 
 #define UART_1_RX_GPIO_PORT                GPIOA
 #define UART_1_RX_GPIO_CLK                 RCC_APB2Periph_GPIOA
@@ -25,11 +27,34 @@
 #define UART_1_TX_SOURCE                   GPIO_PinSource9
 
 
+
+
+
+
+/********************************************** 用户函数 *************************************************/
+void Usart_SendUserId(USART_TypeDef* pUSARTx, u16 user_id);
+void Usart_SendIC_Success(USART_TypeDef* pUSARTx, u16 user_id);
+void Usart_SendIC_Error(USART_TypeDef* pUSARTx);
+u16 Usart_RecvOrder(USART_TypeDef* pUSARTx);
+
+
+
+
+
+
+
+
+
+
+
+/********************************************** 底层函数 *************************************************/
 void debug_usart_init(void);
 uint16_t Usart_SendByte( USART_TypeDef* pUSARTx, u8 ch );
-void pUsart_SendByte( USART_TypeDef * pUSARTx, u8* ch );
-void pUsart_SentMessage( USART_TypeDef* pUSARTx, u16* message);
 uint16_t Usart_RecvByte( USART_TypeDef* pUSARTx);
 uint16_t uart_error(void);
 void QS808_INT_EXT_IRQHandler(void);
+
+void pUsart_SendByte( USART_TypeDef* pUSARTx, u8* ch );
+void pUsart_SentMessage( USART_TypeDef* pUSARTx, u16* message);
+
 #endif

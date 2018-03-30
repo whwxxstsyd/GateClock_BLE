@@ -1,4 +1,8 @@
 #include  "./qs808/qs808_drive.h"
+
+#if 0
+
+
 extern unsigned char HZ16x16[];
 extern unsigned char F8X16[];
 //注意：打开了Duplication Check ，当注册已有指纹时，会返回错误码ERR_DUPLICATION_ID，从而不能注册
@@ -751,3 +755,4 @@ uint8_t QS808_Detect_Finger_Unpack(void)//解析寻找手指结果，主界面用
 	return QS808_UNKNOW_ERR;
 
 }
+#endif

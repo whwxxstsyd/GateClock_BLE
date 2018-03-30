@@ -1,0 +1,21 @@
+{
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "lock_ctrl.h": "c",
+        "debug_usart.h": "c",
+        "data_def.h": "c",
+        "stm32f10x_it.h": "c",
+        "tsm12.h": "c",
+        "stm32f10x.h": "c",
+        "led.h": "c",
+        "stmflash.h": "c",
+        "my_board.h": "c",
+        "stm32f10x_rcc.h": "c",
+        "stm32f10x_adc.h": "c",
+        "rc522_function.h": "c",
+        "delay.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "rfcard.h": "c"
+    }
+}
