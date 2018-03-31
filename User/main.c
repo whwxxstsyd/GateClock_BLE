@@ -26,7 +26,7 @@ int main(void) {
 	// Gate_Init();			// 【门锁机械控制】初始化
 	// delay_ms(100);
 	// VCC_Adc_Init();			// 【ADC】通道初始化
-	// UT588C_init();			// 【语音芯片】初始化
+	UT588C_init();			// 【语音芯片】初始化
 
 	u16 cmdId,userNumber;
 	
@@ -39,6 +39,7 @@ int main(void) {
 			case CMDID_NONE:
 				break;
 			case CMDID_RFCARD:
+				SPEAK_DUDUDU();
 				if(Add_RFCard(&userNumber) == ERROR_CODE_SUCCESS) {
 					Usart_RFCard_Success(USART1, userNumber);
 				}

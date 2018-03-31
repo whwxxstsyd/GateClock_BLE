@@ -16,6 +16,7 @@
         "rc522_function.h": "c",
         "delay.h": "c",
         "stm32f10x_gpio.h": "c",
-        "rfcard.h": "c"
+        "rfcard.h": "c",
+        "ut588c.h": "c"
     }
 }

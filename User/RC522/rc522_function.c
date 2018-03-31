@@ -998,8 +998,8 @@ uint8_t IC_test ( uint32_t *RFCARD_ID ){
 			break;
 		}
 		counter++;
-		// 给用户差不多5s的放射频卡时间
-		if (counter>200) {
+		// 给用户差不多3s的放射频卡时间
+		if (counter>150) {
 			break;
 		}
 	}

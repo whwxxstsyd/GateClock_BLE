@@ -24,7 +24,7 @@
 // 操作失败提示音
 #define SPEAK_OPT_FAIL() 			UT588C_speak(23)
 // 按键音效
-#define SPEAK_DUDUDU() 				UT588C_speak(2)
+#define SPEAK_DUDUDU() 				UT588C_speak(5)
 // 请按手指
 #define SPEAK_PRESS_FIGER()			UT588C_speak(24)
 // 请按手指，刷卡，或输入密码

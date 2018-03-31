@@ -1,5 +1,4 @@
-#include "my_board.h"
-#include "./UT588C/ut588c.h"
+#include "./my_board.h"
 
 void UT588C_init(void)
 {

@@ -2,6 +2,7 @@
 #include "./RC522/rc522_function.h"
 #include "./data/data_def.h"                    // 为了使用用户结构体
 #include "./STMFLASH/stmflash.h"                // 为了向 flash 中写入射频卡编号
+#include "./UT588C/ut588c.h"
 
 // 添加射频卡
 // result:  添加成功或者失败
