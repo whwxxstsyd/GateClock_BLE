@@ -31,22 +31,6 @@
 
 
 
-// BLE 与 手机通信数据包
-typedef struct{
-	u16 m_magicCode;	// 0xFECF
-	u16 m_version;		// 0x0001
-	u16 m_totalLength;	// 12
-	u16 m_cmdId;		// 单片机主要就看这个信息,来判断这条指令需要单片机做什么
-	u16 m_seq;			// None
-	u16 m_errorCode;
-}BleDataHead;
-
-
-#define magicCode					0xFECF
-#define version						0x0001
-#define cmdId_IC					0x0302
-
-
 #define cmdId_DataToServ			0x0001
 // 0xFECF 0001 000E 0001 0000 0000
 #define cmdId_DataToServAck			0x1001

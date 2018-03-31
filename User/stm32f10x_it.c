@@ -47,9 +47,9 @@
 extern uint8_t WAKEUP_FLAG;
 uint8_t WAKEUP_SOURCE = 0;//0表示指纹唤醒，1表示按键唤醒
 
-u8 USART_RecvBuf[12];
-u8 USART1_RecvBuf_Length=0;
-u8 USART_Recv_Flag=0;
+extern u8 USART_Recv_Flag;
+extern u8 USART_RecvBuf[12];
+extern u8 USART1_RecvBuf_Length;
 
 // //qs808中断
 // void QS808_INT_EXT_IRQHandler(void)

@@ -1,6 +1,6 @@
 #include "./BLE/BLE.h"
-#include "./usart/debug_usart.h"
-#include <string.h>
+#include <string.h>					// 为了使用 strcat 函数
+#include <stdio.h>					// 为了使用 printf 函数
 
 uint8_t BLE_FRAME_REC_FLAG=0;
 char BLE_FRAME[100];

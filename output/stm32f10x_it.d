@@ -14,6 +14,7 @@
 ..\output\stm32f10x_it.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\output\stm32f10x_it.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 ..\output\stm32f10x_it.o: ..\User\./usart/debug_usart.h
+..\output\stm32f10x_it.o: ..\User\./qs808/qs808_usart.h
 ..\output\stm32f10x_it.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 ..\output\stm32f10x_it.o: ..\User\my_board.h
 ..\output\stm32f10x_it.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -36,7 +37,6 @@
 ..\output\stm32f10x_it.o: ..\User\./TSM12/TSM12.h
 ..\output\stm32f10x_it.o: ..\User\./TSM12/keyboard.h
 ..\output\stm32f10x_it.o: ..\User\sys.h
-..\output\stm32f10x_it.o: ..\User\./usart/debug_usart.h
 ..\output\stm32f10x_it.o: ..\User\./UT588C/ut588c.h
 ..\output\stm32f10x_it.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\stm32f10x_it.o: ..\User\./qs808/qs808_drive.h

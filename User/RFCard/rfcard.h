@@ -4,7 +4,7 @@
 
 
 
-u16 Add_RFCard(void);
+u16 Add_RFCard(u16* user_number);
 
 
 

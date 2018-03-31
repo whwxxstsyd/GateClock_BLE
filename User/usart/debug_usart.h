@@ -1,10 +1,6 @@
 #ifndef __DEBUG_USART_H
 #define	__DEBUG_USART_H
 #include "stm32f10x.h"
-//#include "stm32f10x_usart.h"
-#include "stm32f10x_conf.h"
-#include <stdio.h>
-#include "my_board.h"
 
 // 串口等待时间
 #define UART_WAIT_TIME                     0xfffff
@@ -30,11 +26,10 @@
 
 
 
-
 /********************************************** 用户函数 *************************************************/
 void Usart_SendUserId(USART_TypeDef* pUSARTx, u16 user_id);
-void Usart_SendIC_Success(USART_TypeDef* pUSARTx, u16 user_id);
-void Usart_SendIC_Error(USART_TypeDef* pUSARTx);
+void Usart_RFCard_Success(USART_TypeDef* pUSARTx, u16 user_id);
+void Usart_RFCard_Error(USART_TypeDef* pUSARTx);
 u16 Usart_RecvOrder(USART_TypeDef* pUSARTx);
 
 
@@ -48,13 +43,11 @@ u16 Usart_RecvOrder(USART_TypeDef* pUSARTx);
 
 
 /********************************************** 底层函数 *************************************************/
-void debug_usart_init(void);
-uint16_t Usart_SendByte( USART_TypeDef* pUSARTx, u8 ch );
-uint16_t Usart_RecvByte( USART_TypeDef* pUSARTx);
-uint16_t uart_error(void);
-void QS808_INT_EXT_IRQHandler(void);
-
 void pUsart_SendByte( USART_TypeDef* pUSARTx, u8* ch );
 void pUsart_SentMessage( USART_TypeDef* pUSARTx, u16* message);
+uint16_t Usart_SendByte( USART_TypeDef* pUSARTx, u8 ch );
+uint16_t Usart_RecvByte( USART_TypeDef* pUSARTx);
+void debug_usart_init(void);
+
 
 #endif

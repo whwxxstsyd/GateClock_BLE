@@ -27,21 +27,17 @@ Project File Date:  03/30/2018
 <h2>Output:</h2>
 Build target 'flash'
 compiling main.c...
-..\User\main.c(38): warning:  #177-D: variable "a" was declared but never referenced
-        u16 a,b,c,d;
-..\User\main.c(38): warning:  #177-D: variable "b" was declared but never referenced
-        u16 a,b,c,d;
-..\User\main.c(38): warning:  #177-D: variable "c" was declared but never referenced
-        u16 a,b,c,d;
-..\User\main.c(38): warning:  #177-D: variable "d" was declared but never referenced
-        u16 a,b,c,d;
-..\User\main.c(39): warning:  #177-D: variable "RFCARD_ID" was declared but never referenced
-        u32 RFCARD_ID;
-..\User\main.c: 5 warnings, 0 errors
+compiling rc522_function.c...
+compiling rfcard.c...
+..\User\RFCard\rfcard.c(10): warning:  #177-D: variable "buf_user_number" was declared but never referenced
+        u16 buf_user_number,buf_user_type;
+..\User\RFCard\rfcard.c(10): warning:  #177-D: variable "buf_user_type" was declared but never referenced
+        u16 buf_user_number,buf_user_type;
+..\User\RFCard\rfcard.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=7010 RO-data=294 RW-data=68 ZI-data=1052  
+Program Size: Code=8012 RO-data=292 RW-data=64 ZI-data=2072  
 FromELF: creating hex file...
-"..\output\stm32f100.axf" - 0 Error(s), 5 Warning(s).
+"..\output\stm32f100.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE

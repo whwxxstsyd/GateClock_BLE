@@ -54,23 +54,31 @@
 
 
 
-
-
 // 用户的数据结构
-typedef struct
-{
+typedef struct{
 	u16 m_USER_Number;	// 编号，【000~999】
-	u8  m_USER_Type;	// 类型，【0x00.没有记录】【0x01.指纹】【0x02.射频卡】【0x03.密码】
+	u16 m_USER_Type;	// 类型，【0x0001.指纹】【0x0002.射频卡】【0x0003.密码】
 	u32 m_USER_Data;	// 数据，【将m_USER_Type的数据存储在这里】
 }MY_USER;
 
-
+// BLE 与 手机通信数据包
+typedef struct{
+	u16 m_magicCode;	// 0xFECF
+	u16 m_version;		// 0x0001
+	u16 m_totalLength;	// 12+
+	u16 m_cmdId;		// 单片机主要就看这个信息,来判断这条指令需要单片机做什么
+	u16 m_seq;			// None
+	u16 m_errorCode;
+}BleDataHead;
 
 
 
 /********************************************** 用户参数 *************************************************/
 #define MY_USER_LENGTH			8			// 一个用户数据结构的大小，通过 sizeof 得到长度位8个字节
 #define MY_USER_MAX_NUM			1000		// 最多可以存储120个用户结构体
+#define MY_USER_FINGER			0x0001		// 表示这个数据是指纹
+#define MY_USER_RFCARD			0x0002		// 表示这个数据是射频卡
+#define MY_USER_PASSWARD		0x0003		// 表示这个数据是密码
 
 
 /******************************************** 蓝牙通信参数 ************************************************/
@@ -78,17 +86,16 @@ typedef struct
 #define ERROR_CODE_TIMEOUT		0x0500   	// 采集超时
 
 
-/********************************************* 历史记录参数 **********************************************/
-#define UNLOCK_NOTES_ADDR		0x800fd04	// 用户开锁记录存储首地址
-#define UNLOCK_NOTES_USED_FLAG  0x6666		// 【已经占用】flag，如果开头的16位数据为 UNLOCK_NOTES_USED_FLAG，那么就表明接下来的数据已经被占用了
-#define UNLOCK_NOTES_MSG_LENGTH 5			// 一条信息的总2字节数量，一条信息一共需要写入 USED_FLAG year month_date hour_minute user_number  一共 5*16=80bit 10字节数据，因为每次写都是16bit一写，所以就是5个16bit，5个2字节
-#define UNLOCK_NOTES_SIZE		12			// 能够存储的历史信息的总数量
+/******************************************** 数据包头参数 ************************************************/
+#define MAGICCODE				0xFECF
+#define VERSION					0x0001
+#define CMDID_NONE				0x0000
+#define CMDID_RFCARD			0x0302
 
 
 /********************************************** 存储地址 *************************************************/
 #define MY_USER_ADDR_START		0x0800E0BE	// 用户结构体存储首地址
 #define MY_USER_ADDR_END		0x0800FFFF	// STM32 Flash 末地址
-
 
 
 
@@ -115,3 +122,10 @@ u16 Ascii2Userid(u8* userid_ascii);
 
 
 #endif
+
+
+// /********************************************* 历史记录参数 **********************************************/
+// #define UNLOCK_NOTES_ADDR		0x800fd04	// 用户开锁记录存储首地址
+// #define UNLOCK_NOTES_USED_FLAG  0x6666		// 【已经占用】flag，如果开头的16位数据为 UNLOCK_NOTES_USED_FLAG，那么就表明接下来的数据已经被占用了
+// #define UNLOCK_NOTES_MSG_LENGTH 5			// 一条信息的总2字节数量，一条信息一共需要写入 USED_FLAG year month_date hour_minute user_number  一共 5*16=80bit 10字节数据，因为每次写都是16bit一写，所以就是5个16bit，5个2字节
+// #define UNLOCK_NOTES_SIZE		12			// 能够存储的历史信息的总数量
