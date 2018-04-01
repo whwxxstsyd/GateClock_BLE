@@ -6,7 +6,7 @@
 // extern uint32_t ms10_cnt;
 
 extern u8 USART_Recv_Flag;
-extern u8 USART_RecvBuf[12];
+extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
 
 // float Battery_quantity;
@@ -28,30 +28,43 @@ int main(void) {
 	// VCC_Adc_Init();			// 【ADC】通道初始化
 	UT588C_init();			// 【语音芯片】初始化
 
-	u16 cmdId,userNumber;
-	
+	u16 temp_cmdid,temp_userid;
+
 	while(1) {
-		
-		// 接收串口数据
-		cmdId = Usart_RecvOrder(USART1);
-		
-		switch(cmdId) {
-			case CMDID_NONE:
-				break;
-			case CMDID_RFCARD:
-				SPEAK_DUDUDU();
-				if(Add_RFCard(&userNumber) == ERROR_CODE_SUCCESS) {
-					Usart_RFCard_Success(USART1, userNumber);
-				}
-				else {
-					Usart_RFCard_Error(USART1);
-				}
-				break;
-			default:
-				break;
-		}		
+		// 如果接收到了数据传入
+		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER  ) {
+			// 根据 temp_cmdid 来进行分支判断
+			temp_cmdid = RecvBuf2Cmdid();
+			switch( temp_cmdid ) {
+				// 接收到【添加射频卡】指令
+				case CMDID_ADD_RFCARD:
+					SPEAK_DUDUDU();
+					if(Add_RFCard(&temp_userid) == ERROR_CODE_SUCCESS)
+						Usart_SendRFCard_ADD_Success(USART1, temp_userid);
+					else
+						Usart_SendRFCard_ADD_Error(USART1);
+					break;
+				
+				// 接收到【删除射频卡】命令
+				case CMDID_DEL_RFCARD:
+					SPEAK_DUDUDU();
+					temp_userid = RecvBuf2Userid();
+					if (Delete_RFCard(temp_userid) == ERROR_CODE_SUCCESS)
+						Usart_SendRFCard_DEL_Success(USART1);
+					else 
+						Usart_SendRFCard_DEL_Error(USART1);
+					break;
+				
+				default:
+					break;
+			}
+		}
 	}
 }
+
+
+
+
 
 // if(USART_Recv_Flag==1) {
 // 	USART_Recv_Flag = 0;
@@ -59,7 +72,7 @@ int main(void) {
 // 	while(USART1_RecvBuf_Length--) {
 // 		// 发送数据
 // 		USART_SendData(USART1, USART_RecvBuf[i++]);
-		
+
 // 		// 等待发送结束
 // 		while(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
 // 	}

@@ -48,7 +48,7 @@ extern uint8_t WAKEUP_FLAG;
 uint8_t WAKEUP_SOURCE = 0;//0表示指纹唤醒，1表示按键唤醒
 
 extern u8 USART_Recv_Flag;
-extern u8 USART_RecvBuf[12];
+extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
 
 // //qs808中断
@@ -205,19 +205,17 @@ void USART1_IRQHandler(void){
 	u8 clear = clear;
 
 	// 如果接收到了一字节数据
-	if(USART_GetITStatus(USART1,USART_IT_RXNE) != RESET) {
+	if (USART_GetITStatus(USART1,USART_IT_RXNE) != RESET) {
 		// 存储一字节数据
 		USART_RecvBuf[USART1_RecvBuf_Length++] = USART1->DR;
 	}
 
 	// 如果接收到了一帧数据
-	else if(USART_GetITStatus(USART1,USART_IT_IDLE) != RESET) {
+	else if (USART_GetITStatus(USART1,USART_IT_IDLE) != RESET) {
 		// 先读取接受数据寄存器 DR
-		clear=USART1->DR;
-
+		clear = USART1->DR;
 		// 再读取发送数据寄存器 SR，这么做就可以清除帧中断标志位
-		clear=USART1->SR;
-
+		clear = USART1->SR;
 		// 标记接收到了一帧数据
 		USART_Recv_Flag = 1;
 	}

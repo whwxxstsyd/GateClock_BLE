@@ -82,15 +82,20 @@ typedef struct{
 
 
 /******************************************** 蓝牙通信参数 ************************************************/
+#define USART_RECVBUF_LENGTH	15			// 串口缓存池大小
 #define ERROR_CODE_SUCCESS		0x0000   	// 执行成功
 #define ERROR_CODE_TIMEOUT		0x0500   	// 采集超时
+#define ERROR_CODE_ERROR		0x0800   	// 异常
 
 
 /******************************************** 数据包头参数 ************************************************/
+#define SYS_NO_ORDER			0x3333		// 表示没有接收到有效的包头
+#define SYS_RECV_ORDER			0x6666		// 表示接收到了有效的包头
 #define MAGICCODE				0xFECF
 #define VERSION					0x0001
-#define CMDID_NONE				0x0000
-#define CMDID_RFCARD			0x0302
+#define CMDID_ADD_RFCARD		0x0302
+#define CMDID_DEL_RFCARD		0x0803
+
 
 
 /********************************************** 存储地址 *************************************************/
@@ -119,7 +124,8 @@ typedef struct{
 
 void Userid2Ascii(u16 userid, u8* userid_ascii);
 u16 Ascii2Userid(u8* userid_ascii);
-
+u16 RecvBuf2Cmdid(void);
+u16 RecvBuf2Userid(void);
 
 #endif
 

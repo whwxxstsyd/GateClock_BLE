@@ -4,31 +4,32 @@
 
 
 static volatile uint32_t  UARTTimeout = UART_WAIT_TIME;	// 串口接收等待时长
-u8 USART_RecvBuf[12];			// 串口接收数据缓存池
-u8 USART1_RecvBuf_Length=0;		// 串口接收数据的总长度
-u8 USART_Recv_Flag=0;			// 串口接收到数据标志位
+u8 USART_RecvBuf[USART_RECVBUF_LENGTH];	// 串口接收数据缓存池
+u8 USART1_RecvBuf_Length=0;				// 串口接收数据的总长度
+u8 USART_Recv_Flag=0;					// 串口接收到数据标志位
 
 
 /********************************************** 用户函数 *************************************************/
 
 // 接收手机端命令
-// result:	手机端cmdID
+// result:	是否收到了有效的包头命令
 u16 Usart_RecvOrder(USART_TypeDef* pUSARTx) {
-	u16 result=0x0000;
 	// 如果串口接收到数据
 	if(USART_Recv_Flag==1) {
 		// 清空标志位
 		USART_Recv_Flag = 0;
 
-		// 生成16位cmdID
-		result = USART_RecvBuf[6];
-		result = result<<8;
-		result = result | USART_RecvBuf[7];
+		// // 生成16位cmdID
+		// result = USART_RecvBuf[6];
+		// result = result<<8;
+		// result = result | USART_RecvBuf[7];
 
 		// 清空RecBuf内容长度
 		USART1_RecvBuf_Length = 0;
+		
+		return SYS_RECV_ORDER;
 	}
-	return result;
+	return SYS_NO_ORDER;
 }
 
 // 发送【用户ID】
@@ -46,14 +47,14 @@ void Usart_SendUserId(USART_TypeDef* pUSARTx, u16 user_id) {
 
 // 发送【射频卡】录入成功数据包
 // pUSARTx:		串口号
-// user_id:		用户id
-void Usart_RFCard_Success(USART_TypeDef* pUSARTx, u16 user_id) {
+// user_id:		十进制用户id
+void Usart_SendRFCard_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id) {
 	// 定义包头数据
 	BleDataHead temp;
 	temp.m_magicCode = MAGICCODE;
 	temp.m_version = VERSION;
 	temp.m_totalLength = 15;
-	temp.m_cmdId = CMDID_RFCARD;
+	temp.m_cmdId = CMDID_ADD_RFCARD;
 	temp.m_seq = 0x0000;
 	temp.m_errorCode = ERROR_CODE_SUCCESS;
 
@@ -68,13 +69,13 @@ void Usart_RFCard_Success(USART_TypeDef* pUSARTx, u16 user_id) {
 
 // 发送【射频卡】录入失败数据包
 // pUSARTx:		串口号
-void Usart_RFCard_Error(USART_TypeDef* pUSARTx) {
+void Usart_SendRFCard_ADD_Error(USART_TypeDef* pUSARTx) {
 	// 定义包头数据
 	BleDataHead temp;
 	temp.m_magicCode = MAGICCODE;
 	temp.m_version = VERSION;
 	temp.m_totalLength = 12;
-	temp.m_cmdId = CMDID_RFCARD;
+	temp.m_cmdId = CMDID_ADD_RFCARD;
 	temp.m_seq = 0x0000;
 	temp.m_errorCode = ERROR_CODE_TIMEOUT;
 
@@ -84,6 +85,41 @@ void Usart_RFCard_Error(USART_TypeDef* pUSARTx) {
 	}
 }
 
+// 发送【射频卡】删除成功数据包
+// pUSARTx:		串口号
+void Usart_SendRFCard_DEL_Success(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_RFCARD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【射频卡】删除成功数据包
+// pUSARTx:		串口号
+void Usart_SendRFCard_DEL_Error(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_RFCARD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_ERROR;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
 
 
 

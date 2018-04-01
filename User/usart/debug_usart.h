@@ -27,11 +27,12 @@
 
 
 /********************************************** ÓÃ»§º¯Êý *************************************************/
-void Usart_SendUserId(USART_TypeDef* pUSARTx, u16 user_id);
-void Usart_RFCard_Success(USART_TypeDef* pUSARTx, u16 user_id);
-void Usart_RFCard_Error(USART_TypeDef* pUSARTx);
 u16 Usart_RecvOrder(USART_TypeDef* pUSARTx);
-
+void Usart_SendUserId(USART_TypeDef* pUSARTx, u16 user_id);
+void Usart_SendRFCard_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id);
+void Usart_SendRFCard_ADD_Error(USART_TypeDef* pUSARTx);
+void Usart_SendRFCard_DEL_Success(USART_TypeDef* pUSARTx);
+void Usart_SendRFCard_DEL_Error(USART_TypeDef* pUSARTx);
 
 
 
