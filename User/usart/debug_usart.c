@@ -19,14 +19,9 @@ u16 Usart_RecvOrder(USART_TypeDef* pUSARTx) {
 		// 清空标志位
 		USART_Recv_Flag = 0;
 
-		// // 生成16位cmdID
-		// result = USART_RecvBuf[6];
-		// result = result<<8;
-		// result = result | USART_RecvBuf[7];
-
 		// 清空RecBuf内容长度
 		USART1_RecvBuf_Length = 0;
-		
+
 		return SYS_RECV_ORDER;
 	}
 	return SYS_NO_ORDER;
@@ -59,7 +54,7 @@ void Usart_SendRFCard_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id) {
 	temp.m_errorCode = ERROR_CODE_SUCCESS;
 
 	// 发送包头数据
-	for (u8 i=0; i<6; i++){
+	for (u8 i=0; i<6; i++) {
 		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
 	}
 
@@ -103,7 +98,7 @@ void Usart_SendRFCard_DEL_Success(USART_TypeDef* pUSARTx) {
 	}
 }
 
-// 发送【射频卡】删除成功数据包
+// 发送【射频卡】删除失败数据包
 // pUSARTx:		串口号
 void Usart_SendRFCard_DEL_Error(USART_TypeDef* pUSARTx) {
 	// 定义包头数据
@@ -120,6 +115,95 @@ void Usart_SendRFCard_DEL_Error(USART_TypeDef* pUSARTx) {
 		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
 	}
 }
+
+// 发送【指纹】添加成功数据包
+// pUSARTx:		串口号
+// seq:			第几次采集成功
+void Usart_SendFinger_ADD_Success(USART_TypeDef* pUSARTx, u16 seq, u16 user_id) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	if (seq<3)
+		temp.m_totalLength = 12;
+	else
+		temp.m_totalLength = 15;
+	temp.m_cmdId = CMDID_ADD_FINGER;
+	temp.m_seq = seq;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+
+	// 发送用户ID
+	if (seq==3) 
+		Usart_SendUserId(pUSARTx, user_id);
+}
+
+// 发送【指纹】添加失败数据包
+// pUSARTx:		串口号
+// seq:			第几次采集失败
+// errorcode:	错误原因
+void Usart_SendFinger_ADD_Error(USART_TypeDef* pUSARTx, u16 seq, u16 errorcode) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_ADD_FINGER;
+	temp.m_seq = seq;
+	temp.m_errorCode = errorcode;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+
+// 发送【指纹】删除成功数据包
+// pUSARTx:		串口号
+void Usart_SendFinger_DEL_Success(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_FINGER;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【指纹】删除失败数据包
+// pUSARTx:		串口号
+void Usart_SendFinger_DEL_Error(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_FINGER;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_ERROR;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+
+
+
+
+
 
 
 

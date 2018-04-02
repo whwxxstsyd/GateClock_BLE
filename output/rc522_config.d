@@ -42,3 +42,4 @@
 ..\output\rc522_config.o: ..\User\./qs808/qs808_usart.h
 ..\output\rc522_config.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\rc522_config.o: ..\User\./power/power_ctrl.h
+..\output\rc522_config.o: ..\User\./finger/finger.h

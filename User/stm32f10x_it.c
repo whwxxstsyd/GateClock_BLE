@@ -45,30 +45,28 @@
 #include "stm32f10x_it.h"
 
 extern uint8_t WAKEUP_FLAG;
-uint8_t WAKEUP_SOURCE = 0;//0表示指纹唤醒，1表示按键唤醒
+uint8_t WAKEUP_SOURCE = 0;	// 0表示指纹唤醒，1表示按键唤醒
 
 extern u8 USART_Recv_Flag;
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
 
-// //qs808中断
-// void QS808_INT_EXT_IRQHandler(void)
-// {
-// 	if(WAKEUP_FLAG)//休眠时唤醒，需要唤醒其他外设
-// 	{
-// 		SystemInit();
-// 		WAKEUP_FLAG=0;
-// 		WAKEUP_SOURCE = 0;
-// 		VCC_Adc_Init();
-// 		OLED_ON();
-// 		Power_ctrl_on();
-// 		Uart_RC522_SendByte( 0x55 );
-// 		RC522_Init();
-// 		TSM12_Wakeup();
-
-// 	}
-// 	EXTI_ClearITPendingBit(QS808_INT_EXT_LINE);
-// }
+// qs808中断
+void QS808_INT_EXT_IRQHandler(void) {
+	// 休眠时唤醒，需要唤醒其他外设
+	if(WAKEUP_FLAG){
+		SystemInit();
+		WAKEUP_FLAG=0;
+		WAKEUP_SOURCE = 0;
+		VCC_Adc_Init();
+		// OLED_ON();
+		Power_ctrl_on();
+		Uart_RC522_SendByte( 0x55 );
+		RC522_Init();
+		TSM12_Wakeup();
+	}
+	EXTI_ClearITPendingBit(QS808_INT_EXT_LINE);
+}
 
 // //按键中断
 // void TSM12_INT_EXT_IRQHandler(void)
@@ -221,31 +219,27 @@ void USART1_IRQHandler(void){
 	}
 }
 
-
-
-
-// extern QS808_Rec_Buf_type QS808_Rec_Buf;
-// uint8_t cnt=0;
-// void QS808_USART_RX_ISR(void)
-// {
-// 	uint8_t ucTemp;
-// 	cnt++;
-// 	if(USART_GetITStatus(QS808_USART,USART_IT_RXNE)!=RESET)
-// 	{
-// 		ucTemp = USART_ReceiveData( QS808_USART );
-// 		if(QS808_Rec_Buf.Rec_state == idle)//收包空闲时收到包头进入处理
-// 		{
-// 			if(ucTemp == 0xaa)//收到了包头
-// 			{
-// 				QS808_Rec_Buf.Rec_state = busy;
-// 				QS808_Rec_Buf.Rec_Buf[QS808_Rec_Buf.Rec_point]=ucTemp;
-// 				QS808_Rec_Buf.Rec_point++;
-// 			}
-// 		}
-// 		else//收包busy时 收别的数据包
-// 		{
-// 			QS808_Rec_Buf.Rec_Buf[QS808_Rec_Buf.Rec_point]=ucTemp;
-// 			QS808_Rec_Buf.Rec_point++;
-// 		}
-// 	}
-// }
+extern QS808_Rec_Buf_type QS808_Rec_Buf;
+uint8_t cnt=0;
+void QS808_USART_RX_ISR(void) {
+	uint8_t ucTemp;
+	cnt++;
+	if (USART_GetITStatus(QS808_USART,USART_IT_RXNE)!=RESET) {
+		ucTemp = USART_ReceiveData( QS808_USART );
+		
+		// 收包空闲时收到包头进入处理
+		if(QS808_Rec_Buf.Rec_state == idle){
+			// 收到了包头
+			if(ucTemp == 0xaa){
+				QS808_Rec_Buf.Rec_state = busy;
+				QS808_Rec_Buf.Rec_Buf[QS808_Rec_Buf.Rec_point]=ucTemp;
+				QS808_Rec_Buf.Rec_point++;
+			}
+		}
+		// 收包busy时 收别的数据包
+		else{
+			QS808_Rec_Buf.Rec_Buf[QS808_Rec_Buf.Rec_point]=ucTemp;
+			QS808_Rec_Buf.Rec_point++;
+		}
+	}
+}

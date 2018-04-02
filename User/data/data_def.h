@@ -86,15 +86,20 @@ typedef struct{
 #define ERROR_CODE_SUCCESS		0x0000   	// 执行成功
 #define ERROR_CODE_TIMEOUT		0x0500   	// 采集超时
 #define ERROR_CODE_ERROR		0x0800   	// 异常
+#define ERROR_CODE_FINGERBAD	0x0300   	// 指纹质量差
 
 
 /******************************************** 数据包头参数 ************************************************/
-#define SYS_NO_ORDER			0x3333		// 表示没有接收到有效的包头
-#define SYS_RECV_ORDER			0x6666		// 表示接收到了有效的包头
 #define MAGICCODE				0xFECF
 #define VERSION					0x0001
-#define CMDID_ADD_RFCARD		0x0302
-#define CMDID_DEL_RFCARD		0x0803
+
+/*********************************************** cmdID ***************************************************/
+#define SYS_NO_ORDER			0x3333		// 表示没有接收到有效的包头
+#define SYS_RECV_ORDER			0x6666		// 表示接收到了有效的包头
+#define CMDID_ADD_RFCARD		0x0302		// 添加射频卡命令
+#define CMDID_DEL_RFCARD		0x0803		// 删除射频卡命令
+#define CMDID_ADD_FINGER		0x0301		// 添加指纹命令
+#define CMDID_DEL_FINGER		0x0802		// 添加指纹命令
 
 
 

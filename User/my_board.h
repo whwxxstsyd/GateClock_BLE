@@ -24,6 +24,7 @@
 #include "./vcc_adc/vcc_adc.h"
 #include "./qs808/qs808_drive.h"
 #include "./power/power_ctrl.h"
+#include "./finger/finger.h"
 
 
 // #include "./mydebug/mydebug.h"

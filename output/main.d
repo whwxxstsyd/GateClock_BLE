@@ -41,3 +41,4 @@
 ..\output\main.o: ..\User\./qs808/qs808_usart.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\main.o: ..\User\././power/power_ctrl.h
+..\output\main.o: ..\User\././finger/finger.h

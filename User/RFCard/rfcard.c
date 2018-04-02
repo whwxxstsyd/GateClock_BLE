@@ -4,6 +4,7 @@
 #include "./STMFLASH/stmflash.h"                // 为了向 flash 中写入射频卡编号
 #include "./UT588C/ut588c.h"
 
+
 // 添加射频卡
 // user_number:	存储分配好的十进制用户number
 // return:  	添加成功或者失败
@@ -73,5 +74,4 @@ u16 Delete_RFCard(u16 user_number) {
 	else {
 		return ERROR_CODE_ERROR;
 	}
-
 }

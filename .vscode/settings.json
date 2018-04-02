@@ -17,6 +17,9 @@
         "delay.h": "c",
         "stm32f10x_gpio.h": "c",
         "rfcard.h": "c",
-        "ut588c.h": "c"
+        "ut588c.h": "c",
+        "password.h": "c",
+        "finger.h": "c",
+        "qs808_drive.h": "c"
     }
 }

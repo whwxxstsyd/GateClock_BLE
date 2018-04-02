@@ -41,4 +41,5 @@
 ..\output\qs808_drive.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\qs808_drive.o: ..\User\./qs808/qs808_drive.h
 ..\output\qs808_drive.o: ..\User\./power/power_ctrl.h
+..\output\qs808_drive.o: ..\User\./finger/finger.h
 ..\output\qs808_drive.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
