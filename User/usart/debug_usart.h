@@ -42,8 +42,8 @@ void Usart_SendFinger_DEL_Error(USART_TypeDef* pUSARTx);
 
 void Usart_SendPassword_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id);
 void Usart_SendPassword_ADD_Error(USART_TypeDef* pUSARTx, u16 errorcode);
-
-
+void Usart_SendPassword_DEL_Success(USART_TypeDef* pUSARTx);
+void Usart_SendPassword_DEL_Error(USART_TypeDef* pUSARTx);
 
 
 

@@ -30,11 +30,11 @@ u16 Add_Password(u16* password_id) {
 	password = password + (u32)(USART_RecvBuf[17]-0x30);
 
 	
-
 	// 仅仅知道添加密码是不够的,我们还需要知道需要添加什么样子的准入时间
 	if (length==18)			temp_password_type = MY_PASSWARD_FREE;		// 12字节包头+6字节密码
 	else if (length==42)	temp_password_type = MY_PASSWARD_SECTION;	// 12字节包头+6字节密码+2*12字节年月日小时分钟
 	else 					temp_password_type = MY_PASSWARD_NURSE;		// 12字节包头+6字节密码+2*4字节小时分钟
+
 
 	// 如果扫描到空的区域，就直接写入，因为密码不需要考虑“重复”这个问题
 	for (u16 i=0; i<1000; i++) {
@@ -87,4 +87,22 @@ u16 Add_Password(u16* password_id) {
 	}
 	// 如果能跑到这里，说明密码的数量已经超过了1000条，flash没有空间了，return ERROR_CODE_ERROR
 	return ERROR_CODE_ERROR;
+}
+
+// 删除密码
+// user_number:	需要删除的十进制用户编号
+// return:  	添加成功或者失败
+u16 Delete_Password(u16 user_number) {
+	u16 no_user = 0xFFFF;
+	
+	// 判断用户编号合法性， 如果编号合法，删除用户，return ERROR_CODE_SUCCESS
+	if (user_number<=999) {
+		// 将原有的用户编号置为 0xFFFF，就相当于删除了这个编号下的所有数据
+		STMFLASH_Write(PASSWARD_ADDR_START +user_number*MY_PASSWARD_LENGTH, &no_user, 1);
+		return ERROR_CODE_SUCCESS;
+	}
+	// 如果编号非法，return ERROR_CODE_ERROR
+	else {
+		return ERROR_CODE_ERROR;
+	}
 }

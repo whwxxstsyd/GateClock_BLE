@@ -164,7 +164,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ST-LINKIII-KEIL_SWO</Key>
-          <Name>-U303030303030303030303031 -I0 -O8398 -S1 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(1BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO31 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128.FLM -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM)</Name>
+          <Name>-U51FF70064884525726070287 -I0 -O8398 -S1 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(1BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO31 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128.FLM -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -176,120 +176,115 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>72</LineNumber>
+          <LineNumber>25</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134230336</Address>
+          <Address>134218804</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\main.c</Filename>
+          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\password\password.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>126</LineNumber>
+          <LineNumber>26</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219354</Address>
+          <Address>134218818</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\finger\finger.c</Filename>
+          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\password\password.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>132</LineNumber>
+          <LineNumber>27</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219378</Address>
+          <Address>134218834</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\finger\finger.c</Filename>
+          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\password\password.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
-          <LineNumber>44</LineNumber>
+          <LineNumber>28</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134230190</Address>
+          <Address>134218852</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\main.c</Filename>
+          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\password\password.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
-          <LineNumber>42</LineNumber>
+          <LineNumber>29</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134230188</Address>
+          <Address>134218870</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\main.c</Filename>
+          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\password\password.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\stm32f100\../User/main.c\42</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>5</Number>
           <Type>0</Type>
-          <LineNumber>42</LineNumber>
+          <LineNumber>30</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134230408</Address>
+          <Address>134218884</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\main.c</Filename>
+          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\password\password.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\stm32f100\../User/main.c\42</Expression>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>user_number</ItemText>
+          <ItemText>temp_time,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>user</ItemText>
+          <ItemText>USART_RecvBuf,0x10</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>i</ItemText>
-        </Ww>
-        <Ww>
-          <count>3</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>hhh</ItemText>
+          <ItemText>password,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -301,14 +296,59 @@
         <Ww>
           <count>1</count>
           <WinNumber>2</WinNumber>
-          <ItemText>GPIOA</ItemText>
+          <ItemText>temp,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>num,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[0]</ItemText>
+        </Ww>
+        <Ww>
+          <count>5</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[1]</ItemText>
+        </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[2]</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[3]</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[4]</ItemText>
+        </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[5]</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>result[6]</ItemText>
         </Ww>
       </WatchWindow2>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>hhh</ItemText>
+          <ItemText>PASSWARD_ADDR_START</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
@@ -326,7 +366,7 @@
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
-        <aLwin>1</aLwin>
+        <aLwin>0</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
@@ -1011,6 +1051,19 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\User\finger\finger.c</PathWithFileName>
       <FilenameWithoutPath>finger.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>4</GroupNumber>
+      <FileNumber>49</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\User\password\password.c</PathWithFileName>
+      <FilenameWithoutPath>password.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

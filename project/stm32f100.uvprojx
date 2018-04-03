@@ -663,6 +663,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\finger\finger.c</FilePath>
             </File>
+            <File>
+              <FileName>password.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\password\password.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

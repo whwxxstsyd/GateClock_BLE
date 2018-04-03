@@ -239,6 +239,41 @@ void Usart_SendPassword_ADD_Error(USART_TypeDef* pUSARTx, u16 errorcode) {
 	}
 }
 
+// 发送【射频卡】删除成功数据包
+// pUSARTx:		串口号
+void Usart_SendPassword_DEL_Success(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_PASSWORD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【射频卡】删除失败数据包
+// pUSARTx:		串口号
+void Usart_SendPassword_DEL_Error(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_PASSWORD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_ERROR;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
 
 
 

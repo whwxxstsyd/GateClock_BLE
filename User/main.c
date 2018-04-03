@@ -93,6 +93,17 @@ int main(void) {
 					break;
 
 
+				/************************* 接收到【删除密码】指令 *************************/
+				case CMDID_DEL_PASSWORD:
+					SPEAK_DUDUDU();
+					temp_userid = RecvBuf2Userid();
+					if (Delete_Password(temp_userid) == ERROR_CODE_SUCCESS)
+						Usart_SendPassword_DEL_Success(USART1);
+					else
+						Usart_SendPassword_DEL_Error(USART1);
+					break;
+
+					
 				/************************************************************************/
 				default:
 					break;
