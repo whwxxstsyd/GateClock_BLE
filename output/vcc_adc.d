@@ -42,3 +42,4 @@
 ..\output\vcc_adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\vcc_adc.o: ..\User\./power/power_ctrl.h
 ..\output\vcc_adc.o: ..\User\./finger/finger.h
+..\output\vcc_adc.o: ..\User\./password/password.h

@@ -42,3 +42,4 @@
 ..\output\ut588c.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\ut588c.o: ..\User\././power/power_ctrl.h
 ..\output\ut588c.o: ..\User\././finger/finger.h
+..\output\ut588c.o: ..\User\././password/password.h

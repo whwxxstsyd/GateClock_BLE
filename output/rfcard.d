@@ -44,3 +44,4 @@
 ..\output\rfcard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\rfcard.o: ..\User\./power/power_ctrl.h
 ..\output\rfcard.o: ..\User\./finger/finger.h
+..\output\rfcard.o: ..\User\./password/password.h

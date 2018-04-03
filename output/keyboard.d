@@ -43,3 +43,4 @@
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\keyboard.o: ..\User\./power/power_ctrl.h
 ..\output\keyboard.o: ..\User\./finger/finger.h
+..\output\keyboard.o: ..\User\./password/password.h

@@ -40,82 +40,6 @@ void Usart_SendUserId(USART_TypeDef* pUSARTx, u16 user_id) {
 	}
 }
 
-// 发送【射频卡】录入成功数据包
-// pUSARTx:		串口号
-// user_id:		十进制用户id
-void Usart_SendRFCard_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id) {
-	// 定义包头数据
-	BleDataHead temp;
-	temp.m_magicCode = MAGICCODE;
-	temp.m_version = VERSION;
-	temp.m_totalLength = 15;
-	temp.m_cmdId = CMDID_ADD_RFCARD;
-	temp.m_seq = 0x0000;
-	temp.m_errorCode = ERROR_CODE_SUCCESS;
-
-	// 发送包头数据
-	for (u8 i=0; i<6; i++) {
-		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
-	}
-
-	// 发送用户 ID
-	Usart_SendUserId(pUSARTx, user_id);
-}
-
-// 发送【射频卡】录入失败数据包
-// pUSARTx:		串口号
-void Usart_SendRFCard_ADD_Error(USART_TypeDef* pUSARTx) {
-	// 定义包头数据
-	BleDataHead temp;
-	temp.m_magicCode = MAGICCODE;
-	temp.m_version = VERSION;
-	temp.m_totalLength = 12;
-	temp.m_cmdId = CMDID_ADD_RFCARD;
-	temp.m_seq = 0x0000;
-	temp.m_errorCode = ERROR_CODE_TIMEOUT;
-
-	// 发送包头数据
-	for (u8 i=0; i<6; i++){
-		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
-	}
-}
-
-// 发送【射频卡】删除成功数据包
-// pUSARTx:		串口号
-void Usart_SendRFCard_DEL_Success(USART_TypeDef* pUSARTx) {
-	// 定义包头数据
-	BleDataHead temp;
-	temp.m_magicCode = MAGICCODE;
-	temp.m_version = VERSION;
-	temp.m_totalLength = 12;
-	temp.m_cmdId = CMDID_DEL_RFCARD;
-	temp.m_seq = 0x0000;
-	temp.m_errorCode = ERROR_CODE_SUCCESS;
-
-	// 发送包头数据
-	for (u8 i=0; i<6; i++){
-		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
-	}
-}
-
-// 发送【射频卡】删除失败数据包
-// pUSARTx:		串口号
-void Usart_SendRFCard_DEL_Error(USART_TypeDef* pUSARTx) {
-	// 定义包头数据
-	BleDataHead temp;
-	temp.m_magicCode = MAGICCODE;
-	temp.m_version = VERSION;
-	temp.m_totalLength = 12;
-	temp.m_cmdId = CMDID_DEL_RFCARD;
-	temp.m_seq = 0x0000;
-	temp.m_errorCode = ERROR_CODE_ERROR;
-
-	// 发送包头数据
-	for (u8 i=0; i<6; i++){
-		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
-	}
-}
-
 // 发送【指纹】添加成功数据包
 // pUSARTx:		串口号
 // seq:			第几次采集成功
@@ -192,6 +116,122 @@ void Usart_SendFinger_DEL_Error(USART_TypeDef* pUSARTx) {
 	temp.m_cmdId = CMDID_DEL_FINGER;
 	temp.m_seq = 0x0000;
 	temp.m_errorCode = ERROR_CODE_ERROR;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【射频卡】录入成功数据包
+// pUSARTx:		串口号
+// user_id:		十进制用户id
+void Usart_SendRFCard_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 15;
+	temp.m_cmdId = CMDID_ADD_RFCARD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++) {
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+
+	// 发送用户 ID
+	Usart_SendUserId(pUSARTx, user_id);
+}
+
+// 发送【射频卡】录入失败数据包
+// pUSARTx:		串口号
+void Usart_SendRFCard_ADD_Error(USART_TypeDef* pUSARTx, u16 errorcode) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_ADD_RFCARD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = errorcode;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【射频卡】删除成功数据包
+// pUSARTx:		串口号
+void Usart_SendRFCard_DEL_Success(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_RFCARD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【射频卡】删除失败数据包
+// pUSARTx:		串口号
+void Usart_SendRFCard_DEL_Error(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_DEL_RFCARD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_ERROR;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
+
+// 发送【密码】录入成功数据包
+// pUSARTx:		串口号
+// user_id:		十进制用户id
+void Usart_SendPassword_ADD_Success(USART_TypeDef* pUSARTx, u16 user_id) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 15;
+	temp.m_cmdId = CMDID_ADD_PASSWORD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
+
+	// 发送包头数据
+	for (u8 i=0; i<6; i++) {
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+
+	// 发送用户 ID
+	Usart_SendUserId(pUSARTx, user_id);
+}
+
+// 发送【密码】录入失败数据包
+// pUSARTx:		串口号
+void Usart_SendPassword_ADD_Error(USART_TypeDef* pUSARTx, u16 errorcode) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_ADD_PASSWORD;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = errorcode;
 
 	// 发送包头数据
 	for (u8 i=0; i<6; i++){

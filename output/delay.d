@@ -43,3 +43,4 @@
 ..\output\delay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\delay.o: ..\User\./power/power_ctrl.h
 ..\output\delay.o: ..\User\./finger/finger.h
+..\output\delay.o: ..\User\./password/password.h

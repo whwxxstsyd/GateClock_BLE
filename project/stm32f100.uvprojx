@@ -658,6 +658,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\RFCard\rfcard.c</FilePath>
             </File>
+            <File>
+              <FileName>finger.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\finger\finger.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

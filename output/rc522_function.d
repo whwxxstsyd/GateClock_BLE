@@ -44,3 +44,4 @@
 ..\output\rc522_function.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\rc522_function.o: ..\User\./power/power_ctrl.h
 ..\output\rc522_function.o: ..\User\./finger/finger.h
+..\output\rc522_function.o: ..\User\./password/password.h

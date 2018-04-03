@@ -30,34 +30,17 @@ int main(void) {
 	QS808_CMD_DEL_ALL();	// 删除全部指纹
 
 
-	u16 temp_cmdid,temp_userid;
+
+
+
+
+	u16 temp_cmdid,temp_userid,temp_return;
 	while(1) {
 		// 如果接收到了数据传入
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER  ) {
 			// 根据 temp_cmdid 来进行分支判断
 			temp_cmdid = RecvBuf2Cmdid();
 			switch( temp_cmdid ) {
-				/************************ 接收到【添加射频卡】指令 ************************/
-				case CMDID_ADD_RFCARD:
-					SPEAK_DUDUDU();
-					if(Add_RFCard(&temp_userid) == ERROR_CODE_SUCCESS)
-						Usart_SendRFCard_ADD_Success(USART1, temp_userid);
-					else
-						Usart_SendRFCard_ADD_Error(USART1);
-					break;
-
-
-				/************************ 接收到【删除射频卡】指令 ************************/
-				case CMDID_DEL_RFCARD:
-					SPEAK_DUDUDU();
-					temp_userid = RecvBuf2Userid();
-					if (Delete_RFCard(temp_userid) == ERROR_CODE_SUCCESS)
-						Usart_SendRFCard_DEL_Success(USART1);
-					else
-						Usart_SendRFCard_DEL_Error(USART1);
-					break;
-
-
 				/************************* 接收到【添加指纹】指令 *************************/
 				case CMDID_ADD_FINGER:
 					SPEAK_DUDUDU();
@@ -75,6 +58,40 @@ int main(void) {
 					else
 						Usart_SendFinger_DEL_Error(USART1);
 					break;
+
+
+				/************************ 接收到【添加射频卡】指令 ************************/
+				case CMDID_ADD_RFCARD:
+					SPEAK_DUDUDU();
+					temp_return = Add_RFCard(&temp_userid);
+					if(temp_return== ERROR_CODE_SUCCESS)
+						Usart_SendRFCard_ADD_Success(USART1, temp_userid);
+					else
+						Usart_SendRFCard_ADD_Error(USART1, temp_return);
+					break;
+
+
+				/************************ 接收到【删除射频卡】指令 ************************/
+				case CMDID_DEL_RFCARD:
+					SPEAK_DUDUDU();
+					temp_userid = RecvBuf2Userid();
+					if (Delete_RFCard(temp_userid) == ERROR_CODE_SUCCESS)
+						Usart_SendRFCard_DEL_Success(USART1);
+					else
+						Usart_SendRFCard_DEL_Error(USART1);
+					break;
+
+
+				/************************* 接收到【添加密码】指令 *************************/
+				case CMDID_ADD_PASSWORD:
+					SPEAK_DUDUDU();
+					temp_return = Add_Password(&temp_userid);
+					if(temp_return== ERROR_CODE_SUCCESS)
+						Usart_SendPassword_ADD_Success(USART1, temp_userid);
+					else
+						Usart_SendPassword_ADD_Error(USART1, temp_return);
+					break;
+
 
 				/************************************************************************/
 				default:

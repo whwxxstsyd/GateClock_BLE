@@ -47,6 +47,7 @@
 "..\output\ble.o"
 "..\output\rfcard.o"
 "..\output\finger.o"
+"..\output\password.o"
 --library_type=microlib --strict --scatter "..\output\stm32f100.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

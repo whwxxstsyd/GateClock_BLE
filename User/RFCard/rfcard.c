@@ -24,8 +24,8 @@ u16 Add_RFCard(u16* user_number) {
 			addr_now = MY_USER_ADDR_START +i*MY_USER_LENGTH;
 			STMFLASH_Read(addr_now, (u16*)&user, MY_USER_LENGTH/2);
 			if (user.m_USER_Number!=0xFFFF &&user.m_USER_Type==MY_USER_RFCARD &&user.m_USER_Data==RFCARD_ID) {
-				// 表示这张卡已经录入过了，直接 return ERROR_CODE_TIMEOUT
-				return ERROR_CODE_TIMEOUT;
+				// 表示这张卡已经录入过了，直接 return ERROR_CODE_DUPLICATION
+				return ERROR_CODE_DUPLICATION;
 			} 
 		}
 
