@@ -16,21 +16,21 @@
 #define	TG2 PBout(4)
 
 // 开门提示音效
-#define SPEAK_OPEN_THE_DOOR()		UT588C_speak(4)
+#define SPEAK_OPEN_THE_DOOR()		UT588C_speak(1)
 // 开门失败提示音效
-#define SPEAK_OPEN_THE_DOOR_FAIL()	UT588C_speak(11)
+#define SPEAK_OPEN_THE_DOOR_FAIL()	UT588C_speak(2)
 // 操作成功提示音
-#define SPEAK_OPT_SUCCESS() 		UT588C_speak(22)
+#define SPEAK_OPT_SUCCESS() 		UT588C_speak(3)
 // 操作失败提示音
-#define SPEAK_OPT_FAIL() 			UT588C_speak(23)
+#define SPEAK_OPT_FAIL() 			UT588C_speak(4)
 // 按键音效
 #define SPEAK_DUDUDU() 				UT588C_speak(5)
 // 请按手指
-#define SPEAK_PRESS_FIGER()			UT588C_speak(24)
+#define SPEAK_PRESS_FIGER()			UT588C_speak(6)
 // 请按手指，刷卡，或输入密码
-#define SPEAK_CARD_FIGER_OR_PW()	UT588C_speak(25)
+#define SPEAK_CARD_FIGER_OR_PW()	UT588C_speak(7)
 // 请先录入一个管理员
-#define SPEAK_NO_ADMIN_NOW() 		UT588C_speak(28)
+#define SPEAK_NO_ADMIN_NOW() 		UT588C_speak(8)
 
 
 // 不知名函数

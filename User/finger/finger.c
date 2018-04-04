@@ -113,7 +113,6 @@ u16 Add_Finger(u16* user_id) {
 	return ERROR_CODE_TIMEOUT;
 }
 
-
 // 删除指纹
 // user_number:	需要删除的十进制用户编号
 // return:  	添加成功或者失败
@@ -141,4 +140,30 @@ u16 Delete_Finger(u16 user_number) {
 	else {
 		return ERROR_CODE_ERROR;
 	}
+}
+
+// 指纹验证，判断现在按下的这个指纹有没有被事先存过
+// return:  解锁失败或者成功
+u16 Confirm_Finger(void) {
+    u8 fingerID;
+    u32 addr_now;
+    MY_USER temp_user;
+    
+    // 如果正在按下的这个指纹已经存过了，说明这个用户已经录过了，但是为了防止是因为换了个指纹头就想犯罪，得再板子上再验证一遍
+    if (QS808_SEARCH(&fingerID) == ERR_SUCCESS) {
+        for (u16 i=0; i<999; i++) {
+            addr_now = MY_USER_ADDR_START +i*MY_USER_LENGTH;
+            STMFLASH_Read(addr_now, (u16*)&temp_user, 4);
+            // 如果板子上也有个这个指纹的信息，那就 return ERROR_CODE_SUCCESS
+            if (temp_user.m_USER_Data==(u32)fingerID && temp_user.m_USER_Type==MY_USER_FINGER) {
+                return ERROR_CODE_SUCCESS;
+            }
+        }
+        // 能跑到这里说明这个指纹在板子上没有存储，而在指纹头存储了，就 return ERROR_CODE_ERROR
+        return ERROR_CODE_ERROR;
+    }
+
+    
+    // 能跑到这里说明这个指纹根本就没有录入过，就 return ERROR_CODE_ERROR
+    return ERROR_CODE_ERROR;
 }

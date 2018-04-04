@@ -22,21 +22,19 @@ int main(void) {
 	RC522_Init();			// 【射频卡芯片】初始化
 	TIM3_Int_Init(99,7199);	// 定时器3，测试函数运行时间用,10K频率计数,每10ms一个中断
 	QS808_Init();			// 【指纹采集头】初始化
-	// OLED_Init();			// 【OLED】初始化
 	// Gate_Init();			// 【门锁机械控制】初始化
+	// OLED_Init();			// 【OLED】初始化
 	// delay_ms(100);
 	// VCC_Adc_Init();			// 【ADC】通道初始化
 	UT588C_init();			// 【语音芯片】初始化
 	QS808_CMD_DEL_ALL();	// 删除全部指纹
 
 
-
-
-
-
 	u16 temp_cmdid,temp_userid,temp_return;
+	u32 temp_RFCARD_ID;
 	while(1) {
-		// 如果接收到了数据传入
+		
+		// 如果接收到了数据传入，说明手机端发来了信息，可能要进行信息录入或者一键开锁
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER  ) {
 			// 根据 temp_cmdid 来进行分支判断
 			temp_cmdid = RecvBuf2Cmdid();
@@ -46,6 +44,8 @@ int main(void) {
 					SPEAK_DUDUDU();
 					if(Add_Finger(&temp_userid) == ERROR_CODE_SUCCESS)
 						Usart_SendFinger_ADD_Success(USART1, 3, temp_userid);
+					// 延时一段时间，防止直接进入指纹解锁步骤
+					delay_ms(1000);
 					break;
 
 
@@ -68,6 +68,8 @@ int main(void) {
 						Usart_SendRFCard_ADD_Success(USART1, temp_userid);
 					else
 						Usart_SendRFCard_ADD_Error(USART1, temp_return);
+					// 延时一段时间，防止直接进入射频卡解锁步骤
+					delay_ms(1000);
 					break;
 
 
@@ -109,22 +111,35 @@ int main(void) {
 					break;
 			}
 		}
+
+		// 如果没有接收到手机端发来的信息，那就时刻准备开锁
+		else {
+			// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
+			if (QS808_CMD_FINGER_DETECT()==ERR_FINGER_DETECT) {
+				temp_return = Confirm_Finger();
+				if (temp_return==ERROR_CODE_SUCCESS) {
+					SPEAK_OPEN_THE_DOOR();
+				}
+				else {
+					SPEAK_OPEN_THE_DOOR_FAIL();
+				}
+				// 防止短时间内再次进入指纹检测
+				delay_ms(1000);
+			}
+			
+			// 如果检测到有射频卡靠近，就开始检测射频卡的正确性，准备开门
+			if (IC_test(&temp_RFCARD_ID) == RFCARD_DETECED) {
+				// SPEAK_DUDUDU();
+				temp_return = Confirm_RFCard(temp_RFCARD_ID);
+				if (temp_return==ERROR_CODE_SUCCESS) {
+					SPEAK_OPEN_THE_DOOR();
+				}
+				else {
+					SPEAK_OPEN_THE_DOOR_FAIL();
+				}
+				// 防止短时间内再次进入射频卡检测
+				delay_ms(1000);
+			}
+		}
 	}
 }
-
-
-
-
-
-// if(USART_Recv_Flag==1) {
-// 	USART_Recv_Flag = 0;
-// 	i = 0;
-// 	while(USART1_RecvBuf_Length--) {
-// 		// 发送数据
-// 		USART_SendData(USART1, USART_RecvBuf[i++]);
-
-// 		// 等待发送结束
-// 		while(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
-// 	}
-// 	USART1_RecvBuf_Length = 0;
-// }

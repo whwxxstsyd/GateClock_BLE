@@ -75,3 +75,24 @@ u16 Delete_RFCard(u16 user_number) {
 		return ERROR_CODE_ERROR;
 	}
 }
+
+// 射频卡验证，判断正在接触的这张射频卡有没有被事先存过
+// RFCARD_ID:	正在接触的这张射频卡的物理ID
+// reuturn:		解锁失败或成功
+u16 Confirm_RFCard(u32 RFCARD_ID) {
+	u32 addr_now;
+	MY_USER user;
+	
+	// 开始从首地址开始查找这张卡有没有被录入过
+	for (u16 i=0; i<1000; i++) {
+		addr_now = MY_USER_ADDR_START +i*MY_USER_LENGTH;
+		STMFLASH_Read(addr_now, (u16*)&user, MY_USER_LENGTH/2);
+		if (user.m_USER_Number!=0xFFFF &&user.m_USER_Type==MY_USER_RFCARD &&user.m_USER_Data==RFCARD_ID) {
+			// 表示这张卡已经录入过了，直接 return ERROR_CODE_DUPLICATION
+			return ERROR_CODE_SUCCESS;
+		} 
+	}
+
+	// 能跑到这里，说明这张卡并没有被录过，就直接 return ERROR_CODE_ERROR
+    return ERROR_CODE_ERROR;
+}
