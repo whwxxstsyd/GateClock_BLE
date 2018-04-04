@@ -45,3 +45,4 @@
 ..\output\rc522_function.o: ..\User\./power/power_ctrl.h
 ..\output\rc522_function.o: ..\User\./finger/finger.h
 ..\output\rc522_function.o: ..\User\./password/password.h
+..\output\rc522_function.o: ..\User\./gatelock/gatelock.h

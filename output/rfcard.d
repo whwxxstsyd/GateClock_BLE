@@ -45,3 +45,4 @@
 ..\output\rfcard.o: ..\User\./power/power_ctrl.h
 ..\output\rfcard.o: ..\User\./finger/finger.h
 ..\output\rfcard.o: ..\User\./password/password.h
+..\output\rfcard.o: ..\User\./gatelock/gatelock.h

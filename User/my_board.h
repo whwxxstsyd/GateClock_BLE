@@ -26,6 +26,7 @@
 #include "./power/power_ctrl.h"
 #include "./finger/finger.h"
 #include "./password/password.h"
+#include "./gatelock/gatelock.h"
 
 
 // #include "./mydebug/mydebug.h"

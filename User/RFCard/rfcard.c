@@ -96,3 +96,37 @@ u16 Confirm_RFCard(u32 RFCARD_ID) {
 	// 能跑到这里，说明这张卡并没有被录过，就直接 return ERROR_CODE_ERROR
     return ERROR_CODE_ERROR;
 }
+
+// 检测当前是否有射频卡放置
+// return : RFCARD_DETECED NO_RFCARD
+u8 RFCard_test(uint32_t* RFCARD_ID) {
+	u8 ucArray_ID [4];  // 先后存放IC卡的类型和UID(IC卡序列号)
+	u8 ucStatusReturn;	// 返回状态
+	*RFCARD_ID = 0x00000000;
+	int counter;
+	uint8_t flag = NO_RFCARD;
+	
+	counter = 0;
+	while(1){
+		ucStatusReturn = PcdRequest(PICC_REQALL, ucArray_ID);
+		if (ucStatusReturn==MI_OK) {
+			break;
+		}
+		counter++;
+		if (counter>2) {
+			break;
+		}
+	}
+
+	if (ucStatusReturn == MI_OK) {
+		// 防冲撞（当有多张卡进入读写器操作范围时，防冲突机制会从其中选择一张进行操作）
+		if (PcdAnticoll(ucArray_ID) == MI_OK) {
+			PcdAntennaOff();
+			flag = RFCARD_DETECED;
+			for (u8 i=0;i<4;i++){
+				*RFCARD_ID = (*RFCARD_ID<<8)|ucArray_ID[i];
+			}
+		}
+	}
+	return flag;
+}

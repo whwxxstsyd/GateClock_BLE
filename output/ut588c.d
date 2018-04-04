@@ -43,3 +43,4 @@
 ..\output\ut588c.o: ..\User\././power/power_ctrl.h
 ..\output\ut588c.o: ..\User\././finger/finger.h
 ..\output\ut588c.o: ..\User\././password/password.h
+..\output\ut588c.o: ..\User\././gatelock/gatelock.h

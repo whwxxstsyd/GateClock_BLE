@@ -44,3 +44,4 @@
 ..\output\rc522_config.o: ..\User\./power/power_ctrl.h
 ..\output\rc522_config.o: ..\User\./finger/finger.h
 ..\output\rc522_config.o: ..\User\./password/password.h
+..\output\rc522_config.o: ..\User\./gatelock/gatelock.h

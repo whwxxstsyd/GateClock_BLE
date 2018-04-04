@@ -162,8 +162,6 @@ u16 Confirm_Finger(void) {
         // 能跑到这里说明这个指纹在板子上没有存储，而在指纹头存储了，就 return ERROR_CODE_ERROR
         return ERROR_CODE_ERROR;
     }
-
-    
     // 能跑到这里说明这个指纹根本就没有录入过，就 return ERROR_CODE_ERROR
     return ERROR_CODE_ERROR;
 }

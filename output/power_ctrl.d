@@ -45,3 +45,4 @@
 ..\output\power_ctrl.o: ..\User\./power/power_ctrl.h
 ..\output\power_ctrl.o: ..\User\./finger/finger.h
 ..\output\power_ctrl.o: ..\User\./password/password.h
+..\output\power_ctrl.o: ..\User\./gatelock/gatelock.h

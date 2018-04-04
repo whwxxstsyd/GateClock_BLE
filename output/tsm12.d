@@ -45,3 +45,4 @@
 ..\output\tsm12.o: ..\User\./power/power_ctrl.h
 ..\output\tsm12.o: ..\User\./finger/finger.h
 ..\output\tsm12.o: ..\User\./password/password.h
+..\output\tsm12.o: ..\User\./gatelock/gatelock.h

@@ -43,3 +43,4 @@
 ..\output\main.o: ..\User\././power/power_ctrl.h
 ..\output\main.o: ..\User\././finger/finger.h
 ..\output\main.o: ..\User\././password/password.h
+..\output\main.o: ..\User\././gatelock/gatelock.h

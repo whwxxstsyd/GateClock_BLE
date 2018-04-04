@@ -1,15 +1,10 @@
 #include "./my_board.h"
 
 
-
-// extern _calendar_obj calendar;//时钟结构体
-// extern uint32_t ms10_cnt;
-
 extern u8 USART_Recv_Flag;
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
 
-// float Battery_quantity;
 
 int main(void) {
 	delay_init();			// 【系统时钟】初始化
@@ -22,7 +17,7 @@ int main(void) {
 	RC522_Init();			// 【射频卡芯片】初始化
 	TIM3_Int_Init(99,7199);	// 定时器3，测试函数运行时间用,10K频率计数,每10ms一个中断
 	QS808_Init();			// 【指纹采集头】初始化
-	// Gate_Init();			// 【门锁机械控制】初始化
+	Gate_Init();			// 【门锁机械控制】初始化
 	// OLED_Init();			// 【OLED】初始化
 	// delay_ms(100);
 	// VCC_Adc_Init();			// 【ADC】通道初始化
@@ -117,26 +112,17 @@ int main(void) {
 			// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
 			if (QS808_CMD_FINGER_DETECT()==ERR_FINGER_DETECT) {
 				temp_return = Confirm_Finger();
-				if (temp_return==ERROR_CODE_SUCCESS) {
-					SPEAK_OPEN_THE_DOOR();
-				}
-				else {
-					SPEAK_OPEN_THE_DOOR_FAIL();
-				}
+				if (temp_return==ERROR_CODE_SUCCESS)	SPEAK_OPEN_THE_DOOR();
+				else									SPEAK_DUDUDU();
 				// 防止短时间内再次进入指纹检测
 				delay_ms(1000);
 			}
 			
 			// 如果检测到有射频卡靠近，就开始检测射频卡的正确性，准备开门
-			if (IC_test(&temp_RFCARD_ID) == RFCARD_DETECED) {
-				// SPEAK_DUDUDU();
+			if (RFCard_test(&temp_RFCARD_ID) == RFCARD_DETECED) {
 				temp_return = Confirm_RFCard(temp_RFCARD_ID);
-				if (temp_return==ERROR_CODE_SUCCESS) {
-					SPEAK_OPEN_THE_DOOR();
-				}
-				else {
-					SPEAK_OPEN_THE_DOOR_FAIL();
-				}
+				if (temp_return==ERROR_CODE_SUCCESS)	SPEAK_OPEN_THE_DOOR();
+				else									SPEAK_DUDUDU();
 				// 防止短时间内再次进入射频卡检测
 				delay_ms(1000);
 			}

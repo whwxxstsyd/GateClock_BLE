@@ -45,3 +45,4 @@
 ..\output\stm32f10x_it.o: ..\User\./power/power_ctrl.h
 ..\output\stm32f10x_it.o: ..\User\./finger/finger.h
 ..\output\stm32f10x_it.o: ..\User\./password/password.h
+..\output\stm32f10x_it.o: ..\User\./gatelock/gatelock.h

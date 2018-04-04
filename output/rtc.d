@@ -44,4 +44,5 @@
 ..\output\rtc.o: ..\User\./power/power_ctrl.h
 ..\output\rtc.o: ..\User\./finger/finger.h
 ..\output\rtc.o: ..\User\./password/password.h
+..\output\rtc.o: ..\User\./gatelock/gatelock.h
 ..\output\rtc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h

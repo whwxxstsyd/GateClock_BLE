@@ -44,3 +44,4 @@
 ..\output\delay.o: ..\User\./power/power_ctrl.h
 ..\output\delay.o: ..\User\./finger/finger.h
 ..\output\delay.o: ..\User\./password/password.h
+..\output\delay.o: ..\User\./gatelock/gatelock.h
