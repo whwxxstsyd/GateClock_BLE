@@ -68,7 +68,7 @@ void QS808_INT_EXT_IRQHandler(void) {
 	EXTI_ClearITPendingBit(QS808_INT_EXT_LINE);
 }
 
-//按键中断
+// 按键中断
 void TSM12_INT_EXT_IRQHandler(void)
 {
 	if(WAKEUP_FLAG)
@@ -87,7 +87,7 @@ void TSM12_INT_EXT_IRQHandler(void)
 	EXTI_ClearITPendingBit(TSM12_INT_EXT_LINE);
 }
 
-//蓝牙中断
+// 蓝牙中断
 void BLE_INT_EXT_IRQHandler(void)
 {
 	EXTI_ClearITPendingBit(BLE_INT_EXT_LINE);
@@ -184,17 +184,12 @@ void PendSV_Handler(void)
 
 void SysTick_Handler(void)
 {
-//	TimingDelay_Decrement();
+	// TimingDelay_Decrement();
 }
 
-//extern uint8_t BLE_FRAME_REC_FLAG;
-//extern char BLE_FRAME[100];
-//extern int BLE_FRAME_INDEX;
 
 //uint8_t flag1;
 uint8_t debug_data_read_flag=0;//数据导出flag 当flag为1，将flash中的数据从串口导出
-
-
 
 // 串口1中断函数，将接收到的任意长度的数据存储在 u8 USART_RecvBuf[12] 中
 void USART1_IRQHandler(void){

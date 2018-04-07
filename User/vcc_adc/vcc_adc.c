@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                         #include "my_board.h"
+#include "my_board.h"
 #include "vcc_adc.h"
 void VCC_Adc_Init(void)  //ADC通道初始化
 {

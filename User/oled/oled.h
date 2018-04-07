@@ -40,6 +40,7 @@ void show_time_pot(void);
 void close_time_pot(void);
 int show_time_big(uint8_t xin,uint8_t yin,uint8_t numin);
 void show_clock_open_big(void);
+void show_clock_close_big(void);
 void show_hammer(uint8_t xin,uint8_t yin);
 
 void Interface_Password(u8 length);

@@ -10,8 +10,8 @@ int main(void) {
 	delay_init();			// 【系统时钟】初始化
 	RTC_Init();				// 【RTC时钟】初始化
 	TSM12_Init();			// 【触摸按键芯片】初始化
-	BLE_init();				// 蓝牙初始化
-	debug_usart_init();		// 串口初始化
+	BLE_init();				// 【蓝牙】初始化
+	debug_usart_init();		// 【串口】初始化
 	power_ctrl_init();		// 【电源控制】初始化
 	Power_ctrl_on();		// 打开电源控制
 	RC522_Init();			// 【射频卡芯片】初始化
@@ -27,7 +27,6 @@ int main(void) {
 	u16 temp_cmdid,temp_userid,temp_return;
 	u32 temp_RFCARD_ID;
 	while(1) {
-		// show_clock_close_big();
 		// 如果接收到了数据传入，说明手机端发来了信息，可能要进行信息录入或者一键开锁
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER ) {
 			// 根据 temp_cmdid 来进行分支判断
@@ -124,7 +123,7 @@ int main(void) {
 				delay_ms(1000);
 			}
 
-			// 如果检测到有按键按下，就进入密码解锁界面
+			// 如果检测到有按键按下，就进入密码解锁界面，准备开门
 			if (TMS12_ReadOnKey() != KEY_NULL) {
 				u8 password_buf[LENGTH_KEY_BUF], buf_length=0, last_press, temp;
 				SPEAK_DUDUDU();

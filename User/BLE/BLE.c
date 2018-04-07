@@ -72,3 +72,8 @@ void BLE_USART_CMD(char* cmd){
 	str_pt = strcat(str_pt,enter);
 	BLE_USART_SendStr(str_pt);
 }
+
+// 蓝牙进入休眠模式
+void BLE_Sleep(void) {
+	;
+}

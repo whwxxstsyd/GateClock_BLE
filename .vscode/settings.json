@@ -23,6 +23,7 @@
         "qs808_drive.h": "c",
         "gatelock.h": "c",
         "keyboard.h": "c",
-        "oled.h": "c"
+        "oled.h": "c",
+        "power_ctrl.h": "c"
     }
 }
