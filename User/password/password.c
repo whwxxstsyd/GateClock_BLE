@@ -129,27 +129,31 @@ u16 Confirm_Password_6Bit(u32 password) {
 }
 
 // 密码验证，判断输入的这个密码缓存池中包含的所有可能的密码之前有没有被录入过
-// Buf:			待检验的密码缓存池，u8 Buf[16] 格式
+// buf:			待检验的密码缓存池，u8 Buf[16] 格式
+// length:		密码的长度
 // reuturn:		解锁失败或成功
 // 现在还没有加入时间段检测！！！！！！！！！！！
-u16 Confirm_Password(u8* Buf) {
-
-	// 首先需要将密码缓存池分成多个6位密码分别进行验证
-
-
-	// // 开始从首地址开始查找这个密码有没有被录入过
-	// for (u16 i=0; i<1000; i++) {
-	// 	addr_now = PASSWORD_ADDR_START +i*MY_PASSWORD_LENGTH;
-	// 	STMFLASH_Read(addr_now, (u16*)&temp_password, 10);
-
-	// 	// 如果这个密码已经录入过了，直接 return ERROR_CODE_SUCCESS
-	// 	if (temp_password.m_Password_ID!=0xFFFF &&temp_password.m_Password==password) {
-	// 		return ERROR_CODE_SUCCESS;
-	// 	}
-	// }
-
-	// 能跑到这里，说明这张卡并没有被录过，就直接 return ERROR_CODE_ERROR	
-    return ERROR_CODE_ERROR;
+u16 Confirm_Password(u8* buf, u8 length) {
+	u32 password = 0;
+	u16 temp_return;
+	
+	// 如果密码的长度是6位，那就仅需要转化为u32之后就可以直接进行验证了
+	if (length==6) {
+		password = buf[0]*100000 +buf[1]*10000 +buf[2]*1000 +buf[3]*100 +buf[4]*10 +buf[5];
+		return Confirm_Password_6Bit(password);
+	}
+	// 如果密码的长度大于6位，就需要将密码缓存池分成多个6位密码然后再化为一个u32格式的整体密码，然后再分别进行验证
+	else {
+		for (u8 i=0; i<=length-6; i++) {
+			password = buf[0+i]*100000 +buf[1+i]*10000 +buf[2+i]*1000 +buf[3+i]*100 +buf[4+i]*10 +buf[5+i];
+			temp_return = Confirm_Password_6Bit(password);
+			if (temp_return==ERROR_CODE_SUCCESS) {
+				return temp_return;
+			}
+		}
+		// 如果能跑到这里，说明这个密码没有被事先录入过，就直接 return ERROR_CODE_ERROR
+		return ERROR_CODE_ERROR;
+	}
 }
 
 // 新建一个均为【0XFF】的密码缓冲区

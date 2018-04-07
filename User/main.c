@@ -130,7 +130,6 @@ int main(void) {
 				SPEAK_DUDUDU();
 				Disp_sentence(24,0,"请输入密码",1);
 				Create_NewPasswordBuf(password_buf);
-				delay_ms(500);
 				while(1) {
 					// 更新按键缓冲区
 					temp = Update_KeyBuf(password_buf, &buf_length, &last_press);
@@ -141,13 +140,19 @@ int main(void) {
 					}
 					// 如果密码输入超时或者输入退出，就直接break
 					else if (temp==PASSWORD_CODE_TIMEOUT || temp==PASSWORD_CODE_QUIT) {
-						// SPEAK_DUDUDU();
+						SPEAK_DUDUDU();
 						OLED_CLS();
 						break;
 					}
-					// 如果密码输入完成，就break
+					// 如果密码输入完成，就开始验证密码的准确性
 					else if (temp==PASSWORD_CODE_COMPLETE) {
-						// SPEAK_DUDUDU();
+						SPEAK_DUDUDU();
+						if (Confirm_Password(password_buf, buf_length)==ERROR_CODE_SUCCESS) {
+							show_clock_open_big();
+						}
+						else {
+							show_clock_close_big();
+						}
 						OLED_CLS();
 						break;
 					}
