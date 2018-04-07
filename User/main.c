@@ -27,6 +27,9 @@ int main(void) {
 	u16 temp_cmdid,temp_userid,temp_return;
 	u32 temp_RFCARD_ID;
 	while(1) {
+
+
+
 		// 如果接收到了数据传入，说明手机端发来了信息，可能要进行信息录入或者一键开锁
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER ) {
 			// 根据 temp_cmdid 来进行分支判断
@@ -102,7 +105,6 @@ int main(void) {
 					break;
 			}
 		}
-
 		// 如果没有接收到手机端发来的信息，那就时刻准备开锁
 		else {
 			// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
@@ -162,5 +164,7 @@ int main(void) {
 				}
 			}
 		}
+
+
 	}
 }

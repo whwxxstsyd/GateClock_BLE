@@ -159,7 +159,7 @@ u16 Confirm_Password(u8* buf, u8 length) {
 // 新建一个均为【0XFF】的密码缓冲区
 void Create_NewPasswordBuf(u8* key_buf) {
 	for (u8 i=0; i<LENGTH_KEY_BUF; i++) {
-		key_buf[i] = 0xFF;
+		key_buf[i] = ' ';
 	}
 }
 
@@ -187,7 +187,7 @@ u8 Update_KeyBuf(u8* key_buf, u8* buf_length, u8* last_press) {
 		// 如果缓存区中还有密码，那就向前删除一位密码。return PASSWORD_CODE_INPUTTING
 		else {
 			(*buf_length)--;
-			key_buf[(*buf_length)-1] = 0xFF;
+			key_buf[(*buf_length)-1] = ' ';
 			return PASSWORD_CODE_INPUTTING;
 		}
 	}

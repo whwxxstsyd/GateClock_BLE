@@ -533,12 +533,17 @@ void show_hammer(uint8_t xin,uint8_t yin){
 // length:		密码缓冲区中密码的长度
 void Interface_Password(u8 length) {
 	if (length>16) length = 16;
-	u8 password[length+1];
+	u8 password[LENGTH_KEY_BUF+1];
 
-	for (u8 i=0; i<length; i++) {
-		password[i] = '*';
+	for (u8 i=0; i<LENGTH_KEY_BUF; i++) {
+		if (i<length) {
+			password[i] = '*';
+		}
+		else {
+			password[i] = ' ';
+		}
 	}
-	password[length] = 0x00;
+	password[LENGTH_KEY_BUF] = 0x00;
 
-	Disp_sentence_singleline(0, 2, (char*)password, 1);
+	Disp_sentence_singleline(0, 2, (char*)password, 0);
 }
