@@ -34,7 +34,7 @@
 ..\output\rc522_function.o: ..\User\my_board.h
 ..\output\rc522_function.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\rc522_function.o: ..\User\./TSM12/TSM12.h
-..\output\rc522_function.o: ..\User\./TSM12/keyboard.h
+..\output\rc522_function.o: ..\User\./keyboard/keyboard.h
 ..\output\rc522_function.o: ..\User\sys.h
 ..\output\rc522_function.o: ..\User\./usart/debug_usart.h
 ..\output\rc522_function.o: ..\User\./UT588C/ut588c.h
@@ -46,3 +46,5 @@
 ..\output\rc522_function.o: ..\User\./finger/finger.h
 ..\output\rc522_function.o: ..\User\./password/password.h
 ..\output\rc522_function.o: ..\User\./gatelock/gatelock.h
+..\output\rc522_function.o: ..\User\./OLED/oled.h
+..\output\rc522_function.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

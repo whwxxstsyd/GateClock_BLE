@@ -32,7 +32,7 @@
 ..\output\vcc_adc.o: ..\User\./TIMER/timer.h
 ..\output\vcc_adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\vcc_adc.o: ..\User\./TSM12/TSM12.h
-..\output\vcc_adc.o: ..\User\./TSM12/keyboard.h
+..\output\vcc_adc.o: ..\User\./keyboard/keyboard.h
 ..\output\vcc_adc.o: ..\User\sys.h
 ..\output\vcc_adc.o: ..\User\./usart/debug_usart.h
 ..\output\vcc_adc.o: ..\User\./UT588C/ut588c.h
@@ -44,3 +44,5 @@
 ..\output\vcc_adc.o: ..\User\./finger/finger.h
 ..\output\vcc_adc.o: ..\User\./password/password.h
 ..\output\vcc_adc.o: ..\User\./gatelock/gatelock.h
+..\output\vcc_adc.o: ..\User\./OLED/oled.h
+..\output\vcc_adc.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

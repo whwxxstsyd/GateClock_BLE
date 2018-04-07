@@ -11,17 +11,17 @@
     <View>
       <WinId>38003</WinId>
       <ViewName>Registers</ViewName>
-      <TableColWidths>115 135</TableColWidths>
+      <TableColWidths>115 141</TableColWidths>
     </View>
     <View>
       <WinId>346</WinId>
       <ViewName>Code Coverage</ViewName>
-      <TableColWidths>1330 956</TableColWidths>
+      <TableColWidths>1330 160</TableColWidths>
     </View>
     <View>
       <WinId>204</WinId>
       <ViewName>Performance Analyzer</ViewName>
-      <TableColWidths>1490 223 223 350</TableColWidths>
+      <TableColWidths>1490</TableColWidths>
     </View>
   </SECTreeCtrl>
 
@@ -36,7 +36,7 @@
       <WinId>1936</WinId>
       <ViewName>Watch 1</ViewName>
       <UserString></UserString>
-      <TableColWidths>215 133 133</TableColWidths>
+      <TableColWidths>133 133 133</TableColWidths>
     </View>
     <View>
       <WinId>1937</WinId>
@@ -48,7 +48,7 @@
       <WinId>1935</WinId>
       <ViewName>Call Stack + Locals</ViewName>
       <UserString></UserString>
-      <TableColWidths>133 220 133</TableColWidths>
+      <TableColWidths>133 133 133</TableColWidths>
     </View>
     <View>
       <WinId>2506</WinId>
@@ -75,25 +75,25 @@
       <flags>2</flags>
       <showCmd>3</showCmd>
       <MinPosition>
-        <xPos>-32000</xPos>
-        <yPos>-32000</yPos>
+        <xPos>-1</xPos>
+        <yPos>-1</yPos>
       </MinPosition>
       <MaxPosition>
         <xPos>-1</xPos>
         <yPos>-1</yPos>
       </MaxPosition>
       <NormalPosition>
-        <Top>468</Top>
-        <Left>777</Left>
-        <Right>1854</Right>
-        <Bottom>1238</Bottom>
+        <Top>493</Top>
+        <Left>895</Left>
+        <Right>1972</Right>
+        <Bottom>1263</Bottom>
       </NormalPosition>
     </WindowPosition>
     <MDIClientArea>
       <RegID>0</RegID>
       <MDITabState>
-        <Len>606</Len>
-        <Data>01000000040000000100000001000000010000000100000000000000020000000000000001000000010000000000000028000000280000000100000004000000000000000100000038443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C6D61696E2E6300000000066D61696E2E6300000000BECEA100FFFFFFFF45443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C70617373776F72645C70617373776F72642E63000000000A70617373776F72642E6300000000FFDC7800FFFFFFFF41443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C66696E6765725C66696E6765722E63000000000866696E6765722E6300000000F0A0A100FFFFFFFF7E443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C4C69627261726965735C434D5349535C434D335C446576696365537570706F72745C53545C53544D3332463130785C737461727475705C61726D5C737461727475705F73746D3332663130785F6D642E730000000016737461727475705F73746D3332663130785F6D642E7300000000BCA8E100FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD5000100000000000000020000000E01000066000000000A0000E1030000</Data>
+        <Len>543</Len>
+        <Data>01000000040000000100000001000000010000000100000000000000020000000000000001000000010000000000000028000000280000000100000004000000000000000100000038443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C6D61696E2E6300000000066D61696E2E6300000000A5C2D700FFFFFFFF45443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C70617373776F72645C70617373776F72642E63000000000A70617373776F72642E6300000000FFDC7800FFFFFFFF45443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C6B6579626F6172645C6B6579626F6172642E63000000000A6B6579626F6172642E6300000000BECEA100FFFFFFFF45443A5C436F64655C4769744875625CD6B8CEC6CBF85FC0B6D1C0B0E6B1BE5C47617465436C6F636B5F424C455C557365725C6B6579626F6172645C6B6579626F6172642E68000000000A6B6579626F6172642E6800000000F0A0A100FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD5000100000000000000020000000E01000066000000000A0000E1030000</Data>
       </MDITabState>
     </MDIClientArea>
     <ViewEx>
@@ -2588,9 +2588,9 @@
       <ActiveTab>0</ActiveTab>
       <Doc>
         <Name>..\User\main.c</Name>
-        <ColumnNumber>40</ColumnNumber>
-        <TopLine>46</TopLine>
-        <CurrentLine>83</CurrentLine>
+        <ColumnNumber>0</ColumnNumber>
+        <TopLine>11</TopLine>
+        <CurrentLine>31</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -2598,26 +2598,26 @@
       <Doc>
         <Name>..\User\password\password.c</Name>
         <ColumnNumber>0</ColumnNumber>
-        <TopLine>18</TopLine>
-        <CurrentLine>30</CurrentLine>
+        <TopLine>115</TopLine>
+        <CurrentLine>163</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\User\finger\finger.c</Name>
-        <ColumnNumber>47</ColumnNumber>
-        <TopLine>94</TopLine>
-        <CurrentLine>104</CurrentLine>
+        <Name>..\User\keyboard\keyboard.c</Name>
+        <ColumnNumber>19</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>1</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s</Name>
-        <ColumnNumber>0</ColumnNumber>
-        <TopLine>116</TopLine>
-        <CurrentLine>133</CurrentLine>
+        <Name>..\User\././keyboard/keyboard.h</Name>
+        <ColumnNumber>18</ColumnNumber>
+        <TopLine>1</TopLine>
+        <CurrentLine>33</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

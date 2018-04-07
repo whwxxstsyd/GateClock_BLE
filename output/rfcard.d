@@ -34,7 +34,7 @@
 ..\output\rfcard.o: ..\User\my_board.h
 ..\output\rfcard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\rfcard.o: ..\User\./TSM12/TSM12.h
-..\output\rfcard.o: ..\User\./TSM12/keyboard.h
+..\output\rfcard.o: ..\User\./keyboard/keyboard.h
 ..\output\rfcard.o: ..\User\sys.h
 ..\output\rfcard.o: ..\User\./usart/debug_usart.h
 ..\output\rfcard.o: ..\User\./UT588C/ut588c.h
@@ -46,3 +46,5 @@
 ..\output\rfcard.o: ..\User\./finger/finger.h
 ..\output\rfcard.o: ..\User\./password/password.h
 ..\output\rfcard.o: ..\User\./gatelock/gatelock.h
+..\output\rfcard.o: ..\User\./OLED/oled.h
+..\output\rfcard.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

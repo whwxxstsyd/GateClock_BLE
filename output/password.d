@@ -13,6 +13,8 @@
 ..\output\password.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h
 ..\output\password.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\output\password.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+..\output\password.o: ..\User\./keyboard/keyboard.h
+..\output\password.o: ..\User\sys.h
 ..\output\password.o: ..\User\./data/data_def.h
 ..\output\password.o: ..\User\./STMFLASH/stmflash.h
 ..\output\password.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h

@@ -644,11 +644,6 @@
               <FilePath>..\User\TSM12\TSM12.c</FilePath>
             </File>
             <File>
-              <FileName>keyboard.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\TSM12\keyboard.c</FilePath>
-            </File>
-            <File>
               <FileName>BLE.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\BLE\BLE.c</FilePath>
@@ -667,6 +662,21 @@
               <FileName>password.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\password\password.c</FilePath>
+            </File>
+            <File>
+              <FileName>gatelock.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\gatelock\gatelock.c</FilePath>
+            </File>
+            <File>
+              <FileName>keyboard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\keyboard\keyboard.c</FilePath>
+            </File>
+            <File>
+              <FileName>oled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\oled\oled.c</FilePath>
             </File>
           </Files>
         </Group>

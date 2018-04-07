@@ -1,5 +1,5 @@
-..\output\keyboard.o: ..\User\TSM12\keyboard.c
-..\output\keyboard.o: ..\User\./Delay/delay.h
+..\output\keyboard.o: ..\User\keyboard\keyboard.c
+..\output\keyboard.o: ..\User\./keyboard/keyboard.h
 ..\output\keyboard.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 ..\output\keyboard.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
 ..\output\keyboard.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
@@ -13,6 +13,9 @@
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+..\output\keyboard.o: ..\User\sys.h
+..\output\keyboard.o: ..\User\./TSM12/TSM12.h
+..\output\keyboard.o: ..\User\./Delay/delay.h
 ..\output\keyboard.o: ..\User\my_board.h
 ..\output\keyboard.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -33,8 +36,6 @@
 ..\output\keyboard.o: ..\User\my_board.h
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\keyboard.o: ..\User\./TSM12/TSM12.h
-..\output\keyboard.o: ..\User\./TSM12/keyboard.h
-..\output\keyboard.o: ..\User\sys.h
 ..\output\keyboard.o: ..\User\./usart/debug_usart.h
 ..\output\keyboard.o: ..\User\./UT588C/ut588c.h
 ..\output\keyboard.o: ..\User\./vcc_adc/vcc_adc.h
@@ -45,3 +46,5 @@
 ..\output\keyboard.o: ..\User\./finger/finger.h
 ..\output\keyboard.o: ..\User\./password/password.h
 ..\output\keyboard.o: ..\User\./gatelock/gatelock.h
+..\output\keyboard.o: ..\User\./OLED/oled.h
+..\output\keyboard.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

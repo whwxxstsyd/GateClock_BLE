@@ -35,7 +35,7 @@
 ..\output\finger.o: ..\User\./TIMER/timer.h
 ..\output\finger.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\finger.o: ..\User\./TSM12/TSM12.h
-..\output\finger.o: ..\User\./TSM12/keyboard.h
+..\output\finger.o: ..\User\./keyboard/keyboard.h
 ..\output\finger.o: ..\User\sys.h
 ..\output\finger.o: ..\User\./usart/debug_usart.h
 ..\output\finger.o: ..\User\./UT588C/ut588c.h
@@ -44,4 +44,6 @@
 ..\output\finger.o: ..\User\./power/power_ctrl.h
 ..\output\finger.o: ..\User\./password/password.h
 ..\output\finger.o: ..\User\./gatelock/gatelock.h
+..\output\finger.o: ..\User\./OLED/oled.h
+..\output\finger.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\finger.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h

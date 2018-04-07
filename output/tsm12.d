@@ -34,7 +34,7 @@
 ..\output\tsm12.o: ..\User\my_board.h
 ..\output\tsm12.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\tsm12.o: ..\User\./TSM12/TSM12.h
-..\output\tsm12.o: ..\User\./TSM12/keyboard.h
+..\output\tsm12.o: ..\User\./keyboard/keyboard.h
 ..\output\tsm12.o: ..\User\sys.h
 ..\output\tsm12.o: ..\User\./usart/debug_usart.h
 ..\output\tsm12.o: ..\User\./UT588C/ut588c.h
@@ -46,3 +46,5 @@
 ..\output\tsm12.o: ..\User\./finger/finger.h
 ..\output\tsm12.o: ..\User\./password/password.h
 ..\output\tsm12.o: ..\User\./gatelock/gatelock.h
+..\output\tsm12.o: ..\User\./OLED/oled.h
+..\output\tsm12.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

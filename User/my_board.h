@@ -18,7 +18,7 @@
 #include "./STMFLASH/stmflash.h"
 #include "./TIMER/timer.h"
 #include "./TSM12/TSM12.h"
-#include "./TSM12/keyboard.h"
+#include "./keyboard/keyboard.h"
 #include "./usart/debug_usart.h"
 #include "./UT588C/ut588c.h"
 #include "./vcc_adc/vcc_adc.h"
@@ -27,6 +27,7 @@
 #include "./finger/finger.h"
 #include "./password/password.h"
 #include "./gatelock/gatelock.h"
+#include "./OLED/oled.h"
 
 
 // #include "./mydebug/mydebug.h"

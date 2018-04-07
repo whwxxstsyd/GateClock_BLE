@@ -33,7 +33,7 @@
 ..\output\qs808_usart.o: ..\User\./TIMER/timer.h
 ..\output\qs808_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\qs808_usart.o: ..\User\./TSM12/TSM12.h
-..\output\qs808_usart.o: ..\User\./TSM12/keyboard.h
+..\output\qs808_usart.o: ..\User\./keyboard/keyboard.h
 ..\output\qs808_usart.o: ..\User\sys.h
 ..\output\qs808_usart.o: ..\User\./usart/debug_usart.h
 ..\output\qs808_usart.o: ..\User\./UT588C/ut588c.h
@@ -45,3 +45,5 @@
 ..\output\qs808_usart.o: ..\User\./finger/finger.h
 ..\output\qs808_usart.o: ..\User\./password/password.h
 ..\output\qs808_usart.o: ..\User\./gatelock/gatelock.h
+..\output\qs808_usart.o: ..\User\./OLED/oled.h
+..\output\qs808_usart.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

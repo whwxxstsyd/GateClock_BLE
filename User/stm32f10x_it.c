@@ -68,25 +68,24 @@ void QS808_INT_EXT_IRQHandler(void) {
 	EXTI_ClearITPendingBit(QS808_INT_EXT_LINE);
 }
 
-// //按键中断
-// void TSM12_INT_EXT_IRQHandler(void)
-// {
-// 	if(WAKEUP_FLAG)
-// 	{
-// 		SystemInit();
-// 		WAKEUP_FLAG=0;
-// 		WAKEUP_SOURCE = 1;
-// 		VCC_Adc_Init();
-// 		QS808_Reset();
-// 		OLED_ON();
-// 		Power_ctrl_on();
-// 		Uart_RC522_SendByte( 0x55 );
-// 		RC522_Init();
-// 		TSM12_Wakeup();
-
-// 	}
-// 	EXTI_ClearITPendingBit(TSM12_INT_EXT_LINE);
-// }
+//按键中断
+void TSM12_INT_EXT_IRQHandler(void)
+{
+	if(WAKEUP_FLAG)
+	{
+		SystemInit();
+		WAKEUP_FLAG=0;
+		WAKEUP_SOURCE = 1;
+		VCC_Adc_Init();
+		QS808_Reset();
+		// OLED_ON();
+		Power_ctrl_on();
+		Uart_RC522_SendByte( 0x55 );
+		RC522_Init();
+		TSM12_Wakeup();
+	}
+	EXTI_ClearITPendingBit(TSM12_INT_EXT_LINE);
+}
 
 //蓝牙中断
 void BLE_INT_EXT_IRQHandler(void)
