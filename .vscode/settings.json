@@ -24,6 +24,7 @@
         "gatelock.h": "c",
         "keyboard.h": "c",
         "oled.h": "c",
-        "power_ctrl.h": "c"
+        "power_ctrl.h": "c",
+        "ble.h": "c"
     }
 }

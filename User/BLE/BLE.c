@@ -13,12 +13,12 @@ void BLE_init(void){
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
-	
+
 	GPIO_InitStructure.GPIO_Pin = BLE_NRST_PIN;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(BLE_NRST_PORT, &GPIO_InitStructure);
-	
+
 
 	GPIO_InitStructure.GPIO_Pin = BLE_PWRC_PIN;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
@@ -30,7 +30,7 @@ void BLE_init(void){
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(BLE_INT_PORT, &GPIO_InitStructure);
 
-	
+
 
 	EXTI_InitTypeDef EXTI_InitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
@@ -50,7 +50,11 @@ void BLE_init(void){
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x05;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
-	
+
+	// AT_MODE_ON();
+	// BLE_RST_OFF();
+	// printf("AT+STARTEN0\r\n");
+
 	// 蓝牙复位
 	BLE_RST_OFF();
 
@@ -75,5 +79,28 @@ void BLE_USART_CMD(char* cmd){
 
 // 蓝牙进入休眠模式
 void BLE_Sleep(void) {
-	;
+	// AT_MODE_ON();
+	// BLE_RST_OFF();
+	// delay_ms(2000);
+	// printf("AT+RST\n");
+	// delay_ms(2000);
+	// printf("AT+STARTEN\n");
+	// delay_ms(2000);
+	printf("AT+DISC\r\n");
+	delay_ms(2000);
+	printf("AT+SLEEP2\r\n");
+}
+
+// 蓝牙进入工作模式
+void BLE_WakeUp(void) {
+	// 下降沿唤醒
+	AT_MODE_OFF();
+	AT_MODE_ON();
+
+	// 关闭AT_MODE
+	delay_ms(100);
+	AT_MODE_OFF();
+
+	// 蓝牙复位
+	BLE_RST_OFF();
 }

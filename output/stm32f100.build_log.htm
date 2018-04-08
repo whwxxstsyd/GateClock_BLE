@@ -26,12 +26,16 @@ Project File Date:  04/06/2018
 
 <h2>Output:</h2>
 Build target 'flash'
-compiling password.c...
-compiling oled.c...
+compiling BLE.c...
+..\User\BLE\BLE.c(90): warning:  #223-D: function "delay_ms" declared implicitly
+        delay_ms(2000);
+..\User\BLE\BLE.c(101): warning:  #223-D: function "delay_ms" declared implicitly
+        delay_ms(100);
+..\User\BLE\BLE.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=17424 RO-data=9392 RW-data=72 ZI-data=2136  
+Program Size: Code=18144 RO-data=9392 RW-data=72 ZI-data=2136  
 FromELF: creating hex file...
-"..\output\stm32f100.axf" - 0 Error(s), 0 Warning(s).
+"..\output\stm32f100.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\Code\GitHub\Ö¸ÎÆËø_À¶ÑÀ°æ±¾\GateClock_BLE\project\RTE

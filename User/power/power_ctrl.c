@@ -19,7 +19,7 @@ void power_ctrl_init(void)
 }
 
 // 进入待机模式
-void  PWR_Standby_Mode(void) {
+void PWR_Standby_Mode(void) {
 	uint8_t cnt = 0;
 	
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -28,6 +28,7 @@ void  PWR_Standby_Mode(void) {
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 	delay_ms(1000);		// 防止其他通信进行时进入休眠
+	BLE_Sleep();		// 【蓝牙】休眠
 	VCC_Adc_Sleep();	// 【ADC】休眠
 	RC522_SLEEP();		// 【射频卡】休眠
 	TSM12_SLEEP();		// 【键盘】休眠

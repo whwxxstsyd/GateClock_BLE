@@ -39,10 +39,10 @@
 ..\output\vcc_adc.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\vcc_adc.o: ..\User\./qs808/qs808_drive.h
 ..\output\vcc_adc.o: ..\User\./qs808/qs808_usart.h
+..\output\vcc_adc.o: ..\User\./OLED/oled.h
+..\output\vcc_adc.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\vcc_adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\vcc_adc.o: ..\User\./power/power_ctrl.h
 ..\output\vcc_adc.o: ..\User\./finger/finger.h
 ..\output\vcc_adc.o: ..\User\./password/password.h
 ..\output\vcc_adc.o: ..\User\./gatelock/gatelock.h
-..\output\vcc_adc.o: ..\User\./OLED/oled.h
-..\output\vcc_adc.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

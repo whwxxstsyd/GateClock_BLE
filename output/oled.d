@@ -41,11 +41,11 @@
 ..\output\oled.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\oled.o: ..\User\./qs808/qs808_drive.h
 ..\output\oled.o: ..\User\./qs808/qs808_usart.h
+..\output\oled.o: ..\User\./OLED/oled.h
 ..\output\oled.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\oled.o: ..\User\./power/power_ctrl.h
 ..\output\oled.o: ..\User\./finger/finger.h
 ..\output\oled.o: ..\User\./password/password.h
 ..\output\oled.o: ..\User\./gatelock/gatelock.h
-..\output\oled.o: ..\User\./OLED/oled.h
 ..\output\oled.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\oled.o: ..\User\./OLED/FONT_TAB.h

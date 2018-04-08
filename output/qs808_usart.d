@@ -40,10 +40,10 @@
 ..\output\qs808_usart.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\qs808_usart.o: ..\User\./qs808/qs808_drive.h
 ..\output\qs808_usart.o: ..\User\./qs808/qs808_usart.h
+..\output\qs808_usart.o: ..\User\./OLED/oled.h
+..\output\qs808_usart.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\qs808_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\qs808_usart.o: ..\User\./power/power_ctrl.h
 ..\output\qs808_usart.o: ..\User\./finger/finger.h
 ..\output\qs808_usart.o: ..\User\./password/password.h
 ..\output\qs808_usart.o: ..\User\./gatelock/gatelock.h
-..\output\qs808_usart.o: ..\User\./OLED/oled.h
-..\output\qs808_usart.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

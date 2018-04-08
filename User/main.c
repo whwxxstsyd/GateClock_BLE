@@ -5,6 +5,8 @@ extern u8 USART_Recv_Flag;
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
 
+extern u8 WAKEUP_SOURCE;
+extern QS808_Rec_Buf_type QS808_Rec_Buf;
 
 int main(void) {
 	delay_init();			// 【系统时钟】初始化
@@ -19,16 +21,33 @@ int main(void) {
 	QS808_Init();			// 【指纹采集头】初始化
 	Gate_Init();			// 【门锁机械控制】初始化
 	OLED_Init();			// 【OLED】初始化
-	// delay_ms(100);
-	// VCC_Adc_Init();			// 【ADC】通道初始化
+	delay_ms(100);
+	VCC_Adc_Init();			// 【ADC】通道初始化
 	UT588C_init();			// 【语音芯片】初始化
 	QS808_CMD_DEL_ALL();	// 删除全部指纹
 
-	u16 temp_cmdid,temp_userid,temp_return;
+	u16 temp_cmdid,temp_userid,temp_return,sleep_count;
 	u32 temp_RFCARD_ID;
+	
+	sleep_count = 0;
 	while(1) {
+		OLED_Show_Power(4);
 
+		// 睡眠计数++
+		sleep_count++;
 
+		// 判断是否该进入睡眠模式
+		if (sleep_count>=40 && QS808_Rec_Buf.Trans_state==reset) {
+			sleep_count = 0;
+			QS808_Rec_Buf_refresh();
+			Disp_sentence(48,2,"休眠",1);
+			delay_ms(500);
+			PWR_Standby_Mode();
+
+			if(!WAKEUP_SOURCE) {
+				OLED_Show_Power(4);
+			}
+		}
 
 		// 如果接收到了数据传入，说明手机端发来了信息，可能要进行信息录入或者一键开锁
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER ) {
@@ -48,7 +67,7 @@ int main(void) {
 				/************************* 接收到【删除指纹】指令 *************************/
 				case CMDID_DEL_FINGER:
 					SPEAK_DUDUDU();
-					temp_userid = RecvBuf2Userid(); 
+					temp_userid = RecvBuf2Userid();
 					if (Delete_Finger(temp_userid) == ERROR_CODE_SUCCESS)
 						Usart_SendFinger_DEL_Success(USART1);
 					else
@@ -115,7 +134,7 @@ int main(void) {
 				// 防止短时间内再次进入指纹检测
 				delay_ms(1000);
 			}
-			
+
 			// 如果检测到有射频卡靠近，就开始检测射频卡的正确性，准备开门
 			if (RFCard_test(&temp_RFCARD_ID) == RFCARD_DETECED) {
 				temp_return = Confirm_RFCard(temp_RFCARD_ID);
@@ -167,4 +186,35 @@ int main(void) {
 
 
 	}
+}
+
+// 两数相加
+int* twoSum(int* nums, int numsSize, int target) {
+    int min = 2147483647;
+    int i = 0;
+    for (i = 0; i < numsSize; i++) {
+        if (nums[i] < min)
+            min = nums[i];
+    }
+    int max = target - min;
+    int len = max - min + 1;   // 确定hash长度
+    int *table = (int*)malloc(len*sizeof(int));
+    int *indice = (int*)malloc(2*sizeof(int));
+
+
+    for (i = 0; i < len; i++) {
+        table[i] = -1;         // hash初值，取一个不可能出现的数值，也就是小于0就行
+    }
+    for (i = 0; i < numsSize; i++) {
+        if (nums[i]-min < len) {
+            if (table[target-nums[i]-min] != -1) {        //满足相加为target
+                indice[0] = table[target-nums[i] - min];
+                indice[1] = i;
+                return indice;
+            }
+            table[nums[i]-min] = i;
+        }
+    }
+    free(table);
+    return indice;
 }

@@ -41,10 +41,10 @@
 ..\output\keyboard.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\keyboard.o: ..\User\./qs808/qs808_drive.h
 ..\output\keyboard.o: ..\User\./qs808/qs808_usart.h
+..\output\keyboard.o: ..\User\./OLED/oled.h
+..\output\keyboard.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\keyboard.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\keyboard.o: ..\User\./power/power_ctrl.h
 ..\output\keyboard.o: ..\User\./finger/finger.h
 ..\output\keyboard.o: ..\User\./password/password.h
 ..\output\keyboard.o: ..\User\./gatelock/gatelock.h
-..\output\keyboard.o: ..\User\./OLED/oled.h
-..\output\keyboard.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

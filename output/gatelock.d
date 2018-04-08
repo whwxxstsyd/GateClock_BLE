@@ -41,10 +41,10 @@
 ..\output\gatelock.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\gatelock.o: ..\User\./qs808/qs808_drive.h
 ..\output\gatelock.o: ..\User\./qs808/qs808_usart.h
+..\output\gatelock.o: ..\User\./OLED/oled.h
+..\output\gatelock.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\gatelock.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\gatelock.o: ..\User\./power/power_ctrl.h
 ..\output\gatelock.o: ..\User\./finger/finger.h
 ..\output\gatelock.o: ..\User\./password/password.h
 ..\output\gatelock.o: ..\User\./gatelock/gatelock.h
-..\output\gatelock.o: ..\User\./OLED/oled.h
-..\output\gatelock.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

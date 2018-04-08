@@ -54,35 +54,35 @@ extern u8 USART1_RecvBuf_Length;
 // qs808中断
 void QS808_INT_EXT_IRQHandler(void) {
 	// 休眠时唤醒，需要唤醒其他外设
-	if(WAKEUP_FLAG){
+	if(WAKEUP_FLAG) {
 		SystemInit();
 		WAKEUP_FLAG=0;
 		WAKEUP_SOURCE = 0;
 		VCC_Adc_Init();
-		// OLED_ON();
+		OLED_ON();
 		Power_ctrl_on();
 		Uart_RC522_SendByte( 0x55 );
 		RC522_Init();
 		TSM12_Wakeup();
+		BLE_WakeUp();
 	}
 	EXTI_ClearITPendingBit(QS808_INT_EXT_LINE);
 }
 
 // 按键中断
-void TSM12_INT_EXT_IRQHandler(void)
-{
-	if(WAKEUP_FLAG)
-	{
+void TSM12_INT_EXT_IRQHandler(void) {
+	if(WAKEUP_FLAG) {
 		SystemInit();
 		WAKEUP_FLAG=0;
 		WAKEUP_SOURCE = 1;
 		VCC_Adc_Init();
 		QS808_Reset();
-		// OLED_ON();
+		OLED_ON();
 		Power_ctrl_on();
 		Uart_RC522_SendByte( 0x55 );
 		RC522_Init();
 		TSM12_Wakeup();
+		BLE_WakeUp();
 	}
 	EXTI_ClearITPendingBit(TSM12_INT_EXT_LINE);
 }
@@ -187,9 +187,8 @@ void SysTick_Handler(void)
 	// TimingDelay_Decrement();
 }
 
-
-//uint8_t flag1;
-uint8_t debug_data_read_flag=0;//数据导出flag 当flag为1，将flash中的数据从串口导出
+// 数据导出flag 当flag为1，将flash中的数据从串口导出
+uint8_t debug_data_read_flag = 0;
 
 // 串口1中断函数，将接收到的任意长度的数据存储在 u8 USART_RecvBuf[12] 中
 void USART1_IRQHandler(void){
@@ -220,7 +219,7 @@ void QS808_USART_RX_ISR(void) {
 	cnt++;
 	if (USART_GetITStatus(QS808_USART,USART_IT_RXNE)!=RESET) {
 		ucTemp = USART_ReceiveData( QS808_USART );
-		
+
 		// 收包空闲时收到包头进入处理
 		if(QS808_Rec_Buf.Rec_state == idle){
 			// 收到了包头

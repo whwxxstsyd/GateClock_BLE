@@ -40,11 +40,11 @@
 ..\output\rtc.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\rtc.o: ..\User\./qs808/qs808_drive.h
 ..\output\rtc.o: ..\User\./qs808/qs808_usart.h
+..\output\rtc.o: ..\User\./OLED/oled.h
+..\output\rtc.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\rtc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\rtc.o: ..\User\./power/power_ctrl.h
 ..\output\rtc.o: ..\User\./finger/finger.h
 ..\output\rtc.o: ..\User\./password/password.h
 ..\output\rtc.o: ..\User\./gatelock/gatelock.h
-..\output\rtc.o: ..\User\./OLED/oled.h
-..\output\rtc.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\rtc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h

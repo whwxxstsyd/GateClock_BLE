@@ -41,10 +41,10 @@
 ..\output\rc522_function.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\rc522_function.o: ..\User\./qs808/qs808_drive.h
 ..\output\rc522_function.o: ..\User\./qs808/qs808_usart.h
+..\output\rc522_function.o: ..\User\./OLED/oled.h
+..\output\rc522_function.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\rc522_function.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\rc522_function.o: ..\User\./power/power_ctrl.h
 ..\output\rc522_function.o: ..\User\./finger/finger.h
 ..\output\rc522_function.o: ..\User\./password/password.h
 ..\output\rc522_function.o: ..\User\./gatelock/gatelock.h
-..\output\rc522_function.o: ..\User\./OLED/oled.h
-..\output\rc522_function.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -41,10 +41,10 @@
 ..\output\tsm12.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\tsm12.o: ..\User\./qs808/qs808_drive.h
 ..\output\tsm12.o: ..\User\./qs808/qs808_usart.h
+..\output\tsm12.o: ..\User\./OLED/oled.h
+..\output\tsm12.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\tsm12.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\tsm12.o: ..\User\./power/power_ctrl.h
 ..\output\tsm12.o: ..\User\./finger/finger.h
 ..\output\tsm12.o: ..\User\./password/password.h
 ..\output\tsm12.o: ..\User\./gatelock/gatelock.h
-..\output\tsm12.o: ..\User\./OLED/oled.h
-..\output\tsm12.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
