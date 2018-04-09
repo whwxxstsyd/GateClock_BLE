@@ -79,13 +79,6 @@ void BLE_USART_CMD(char* cmd){
 
 // 蓝牙进入休眠模式
 void BLE_Sleep(void) {
-	// AT_MODE_ON();
-	// BLE_RST_OFF();
-	// delay_ms(2000);
-	// printf("AT+RST\n");
-	// delay_ms(2000);
-	// printf("AT+STARTEN\n");
-	// delay_ms(2000);
 	printf("AT+DISC\r\n");
 	delay_ms(2000);
 	printf("AT+SLEEP2\r\n");

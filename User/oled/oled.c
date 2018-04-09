@@ -545,5 +545,5 @@ void Interface_Password(u8 length) {
 	}
 	password[LENGTH_KEY_BUF] = 0x00;
 
-	Disp_sentence_singleline(0, 2, (char*)password, 0);
+	Disp_sentence_singleline(0, 4, (char*)password, 0);
 }
