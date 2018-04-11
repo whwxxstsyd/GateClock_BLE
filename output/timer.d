@@ -32,13 +32,15 @@
 ..\output\timer.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
 ..\output\timer.o: ..\User\./TIMER/timer.h
 ..\output\timer.o: ..\User\./TSM12/TSM12.h
-..\output\timer.o: ..\User\./TSM12/keyboard.h
+..\output\timer.o: ..\User\./keyboard/keyboard.h
 ..\output\timer.o: ..\User\sys.h
 ..\output\timer.o: ..\User\./usart/debug_usart.h
 ..\output\timer.o: ..\User\./UT588C/ut588c.h
 ..\output\timer.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\timer.o: ..\User\./qs808/qs808_drive.h
 ..\output\timer.o: ..\User\./qs808/qs808_usart.h
+..\output\timer.o: ..\User\./OLED/oled.h
+..\output\timer.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\timer.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\timer.o: ..\User\./power/power_ctrl.h
 ..\output\timer.o: ..\User\./finger/finger.h

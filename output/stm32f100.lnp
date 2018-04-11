@@ -43,12 +43,13 @@
 "..\output\led.o"
 "..\output\ut588c.o"
 "..\output\tsm12.o"
-"..\output\keyboard.o"
 "..\output\ble.o"
 "..\output\rfcard.o"
 "..\output\finger.o"
 "..\output\password.o"
 "..\output\gatelock.o"
+"..\output\keyboard.o"
+"..\output\oled.o"
 --library_type=microlib --strict --scatter "..\output\stm32f100.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

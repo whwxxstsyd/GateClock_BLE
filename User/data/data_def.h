@@ -91,10 +91,10 @@ typedef struct{
 #define MY_USER_MAX_NUM			1000		// 最多可以存储120个用户结构体
 #define MY_USER_FINGER			0x0001		// 表示这个数据是指纹
 #define MY_USER_RFCARD			0x0002		// 表示这个数据是射频卡
-#define MY_PASSWARD_LENGTH		20			// 一个密码数据结构的大小
-#define MY_PASSWARD_FREE		0x0001		// 表示这个密码没有时间限制
-#define MY_PASSWARD_SECTION		0x0002		// 表示这个密码的时间限制为【时间段】
-#define MY_PASSWARD_NURSE		0x0003		// 表示这个密码的时间限制位【保姆】
+#define MY_PASSWORD_LENGTH		20			// 一个密码数据结构的大小
+#define MY_PASSWORD_FREE		0x0001		// 表示这个密码没有时间限制
+#define MY_PASSWORD_SECTION		0x0002		// 表示这个密码的时间限制为【时间段】
+#define MY_PASSWORD_NURSE		0x0003		// 表示这个密码的时间限制位【保姆】
 
 
 /******************************************** 蓝牙通信参数 ************************************************/
@@ -123,7 +123,7 @@ typedef struct{
 
 
 /********************************************** 存储地址 *************************************************/
-#define PASSWARD_ADDR_START		0x080092BE	// 存储手机端发来的密码的编号的首地址
+#define PASSWORD_ADDR_START		0x080092BE	// 存储手机端发来的密码的编号的首地址
 #define MY_USER_ADDR_START		0x0800E0BE	// 用户结构体存储首地址
 #define MY_USER_ADDR_END		0x0800FFFF	// STM32 Flash 末地址
 

@@ -63,5 +63,7 @@
 void BLE_init(void);
 void BLE_USART_SendStr(char* str);
 void BLE_USART_CMD(char* cmd);
+void BLE_Sleep(void);
+void BLE_WakeUp(void);
 
 #endif

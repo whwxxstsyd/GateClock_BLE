@@ -32,13 +32,15 @@
 ..\output\main.o: ..\User\././TIMER/timer.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\main.o: ..\User\././TSM12/TSM12.h
-..\output\main.o: ..\User\././TSM12/keyboard.h
+..\output\main.o: ..\User\././keyboard/keyboard.h
 ..\output\main.o: ..\User\sys.h
 ..\output\main.o: ..\User\././usart/debug_usart.h
 ..\output\main.o: ..\User\././UT588C/ut588c.h
 ..\output\main.o: ..\User\././vcc_adc/vcc_adc.h
 ..\output\main.o: ..\User\././qs808/qs808_drive.h
 ..\output\main.o: ..\User\./qs808/qs808_usart.h
+..\output\main.o: ..\User\./OLED/oled.h
+..\output\main.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\main.o: ..\User\././power/power_ctrl.h
 ..\output\main.o: ..\User\././finger/finger.h

@@ -33,13 +33,15 @@
 ..\output\delay.o: ..\User\my_board.h
 ..\output\delay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 ..\output\delay.o: ..\User\./TSM12/TSM12.h
-..\output\delay.o: ..\User\./TSM12/keyboard.h
+..\output\delay.o: ..\User\./keyboard/keyboard.h
 ..\output\delay.o: ..\User\sys.h
 ..\output\delay.o: ..\User\./usart/debug_usart.h
 ..\output\delay.o: ..\User\./UT588C/ut588c.h
 ..\output\delay.o: ..\User\./vcc_adc/vcc_adc.h
 ..\output\delay.o: ..\User\./qs808/qs808_drive.h
 ..\output\delay.o: ..\User\./qs808/qs808_usart.h
+..\output\delay.o: ..\User\./OLED/oled.h
+..\output\delay.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\delay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
 ..\output\delay.o: ..\User\./power/power_ctrl.h
 ..\output\delay.o: ..\User\./finger/finger.h

@@ -2,7 +2,7 @@
 #define __QS808_DRIVE
 #include "stm32f10x.h"
 #include "./qs808/qs808_usart.h"
-//#include "./OLED/oled.h"
+#include "./OLED/oled.h"
 #include "./usart/debug_usart.h"
 #include "./Delay/delay.h"
 #include "stm32f10x_gpio.h"
