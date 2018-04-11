@@ -130,9 +130,6 @@ typedef struct{
 
 
 
-
-
-
 // 修改这些 记得在初始化函数加上数量初始化
 #define alluser_amount_addr		0x800fc00	// 保存所有用户个数
 #define admin_amount_addr 		0x800fc02	// 保存管理员个数

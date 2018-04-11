@@ -27,7 +27,7 @@ int main(void) {
 	VCC_Adc_Init();			// 【ADC】通道初始化
 	UT588C_init();			// 【语音芯片】初始化
 	// QS808_CMD_DEL_ALL();	// 删除全部指纹
-	
+
 	u8 work_flag;
 	u16 temp_cmdid,temp_userid,temp_return,sleep_count;
 	u32 temp_RFCARD_ID;
@@ -37,7 +37,7 @@ int main(void) {
 	while(1) {
 		// 睡眠计数++
 		sleep_count++;
-		
+
 		// 显示主界面
 		if (work_flag==1) {
 			work_flag = 0;
@@ -256,33 +256,108 @@ int main(void) {
 	}
 }
 
-// // 两数相加
-// int* twoSum(int* nums, int numsSize, int target) {
-//     int min = 2147483647;
-//     int i = 0;
-//     for (i = 0; i < numsSize; i++) {
-//         if (nums[i] < min)
-//             min = nums[i];
-//     }
-//     int max = target - min;
-//     int len = max - min + 1;   // 确定hash长度
-//     int *table = (int*)malloc(len*sizeof(int));
-//     int *indice = (int*)malloc(2*sizeof(int));
 
+// 返回 无重复字符的最长字串
+int lengthOfLongestSubstring(char* s) {
+    int maxlen = 0, s_len = 0, s_start = 0, index = 0;
+    if (NULL == s) return;
 
-//     for (i = 0; i < len; i++) {
-//         table[i] = -1;         // hash初值，取一个不可能出现的数值，也就是小于0就行
-//     }
-//     for (i = 0; i < numsSize; i++) {
-//         if (nums[i]-min < len) {
-//             if (table[target-nums[i]-min] != -1) {        //满足相加为target
-//                 indice[0] = table[target-nums[i] - min];
-//                 indice[1] = i;
-//                 return indice;
-//             }
-//             table[nums[i]-min] = i;
-//         }
-//     }
-//     free(table);
-//     return indice;
-// }
+    while (s[index] != '\0') {
+        // search for char in window
+        int i;
+        for (i = s_start; i < index; i++) {
+            if (s[i] == s[index]) {
+                if (s_len > maxlen)
+                    maxlen = s_len;
+                    s_start = i+1;
+                    s_len = index - s_start;
+                break;
+            }
+        }
+        s_len++;
+        index++;
+    }
+    if (s_len > maxlen) maxlen = s_len;
+    return maxlen;
+}
+
+// 两个排序数组的中位数
+double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
+	float temp[nums1Size+nums2Size];
+    // 奇数取中间
+	if ((nums1Size+nums2Size)%2 == 1) {
+		int a=0,b=0;
+		for (int i=0; i<(nums1Size+nums2Size); i++) {
+			if ( (a<nums1Size)&&(nums1[a]<=nums2[b] || b==nums2Size) ) {
+				temp[i] = nums1[a];
+				a++;
+			}
+			else {
+				temp[i] = nums2[b];
+				b++;
+			}
+		}
+		return temp[(nums1Size+nums2Size)/2];
+	}
+	// 偶数求平均
+	else {
+		int a=0,b=0;
+		for (int i=0; i<(nums1Size+nums2Size); i++) {
+			if ( (a<nums1Size)&&(nums1[a]<=nums2[b] || b==nums2Size) ) {
+				temp[i] = nums1[a];
+				a++;
+			}
+			else {
+				temp[i] = nums2[b];
+				b++;
+			}
+		}
+		return (temp[(nums1Size+nums2Size)/2]+temp[(nums1Size+nums2Size)/2-1])/2;
+	}
+}
+
+// 最长回文子串（回文是指正反读都一样）。s的长度最大为1000
+char* longestPalindrome(char* s) {
+    int length=0, i=0, j=0, max_length=0, temp_length=0, start=0;
+
+	// 获取字符串长度
+	while(1) {
+		if (s[i++]!='\0') length++;
+		else break;
+	}
+
+	char result[length];
+	// 制作反字符串
+	char temps[length*3];
+	for (i=0; i<length; i++) {
+		temps[i+length] = s[length-i-1];
+	}
+	for (i=0; i<length; i++) {
+		temps[i] = '\0';
+	}
+	for (i=length*2; i<length*3; i++) {
+		temps[i] = '\0';
+	}
+
+	// 查找反字符串和原始字符串的最大相同子串
+	for (i=length*2; i>=0; i--) {
+		// 制作窗数组
+		char *window = &temps[i];
+
+		temp_length = 0;
+		for (j=0; j<length; j++) {
+			if (s[j]==window[j]) {
+				if (temp_length==0)	start = j;
+				temp_length++;
+			}
+		}
+		if (temp_length>max_length)	{
+			max_length = temp_length;
+			for (j=0; j<temp_length; j++) {
+				result[j] = s[start+j];
+			}
+			result[temp_length] = '\0';
+		}
+	}
+	return result;
+}

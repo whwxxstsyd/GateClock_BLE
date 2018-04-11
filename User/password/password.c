@@ -118,7 +118,7 @@ u16 Confirm_Password_6Bit(u32 password) {
 		addr_now = PASSWORD_ADDR_START +i*MY_PASSWORD_LENGTH;
 		STMFLASH_Read(addr_now, (u16*)&temp_password, 10);
 
-		// 如果这个密码已经录入过了，直接 return ERROR_CODE_SUCCESS
+		// 如果这个密码已经录入过了，直接 return ERROR_CODE_SUCCESS。之后需要在这里加入时间段的限制
 		if (temp_password.m_Password_ID!=0xFFFF &temp_password.m_Password==password) {
 			return ERROR_CODE_SUCCESS;
 		}
