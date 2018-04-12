@@ -6,9 +6,14 @@ extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
 extern u8 WAKEUP_SOURCE;
 extern QS808_Rec_Buf_type QS808_Rec_Buf;
+extern _calendar_obj calendar;
 
 float Battery_quantity;
 u8 SLEEP_MAX = 30;
+
+
+void Interface(void);
+
 
 int main(void) {
 	delay_init();			// 【系统时钟】初始化
@@ -29,11 +34,11 @@ int main(void) {
 	// QS808_CMD_DEL_ALL();	// 删除全部指纹
 
 	u8 work_flag;
-	u16 temp_cmdid,temp_userid,temp_return,sleep_count;
+	u16 temp_cmdid,temp_userid,temp_return,sleep_count=0;
 	u32 temp_RFCARD_ID;
 
-	sleep_count = 0;
-	show_clock_close_big();
+	Interface();
+
 	while(1) {
 		// 睡眠计数++
 		sleep_count++;
@@ -41,7 +46,7 @@ int main(void) {
 		// 显示主界面
 		if (work_flag==1) {
 			work_flag = 0;
-			show_clock_close_big();
+			Interface();
 		}
 
 		// 判断是否该进入睡眠模式
@@ -53,7 +58,7 @@ int main(void) {
 			PWR_Standby_Mode();
 
 			// 唤醒之后从这里开始执行程序，先执行一次指纹扫描，加速开锁进程
-			show_clock_close_big();
+			Interface();
 			// 如果是指纹头唤醒
 			if(WAKEUP_SOURCE==0) {
 				// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
@@ -256,6 +261,69 @@ int main(void) {
 	}
 }
 
+// 唤醒之后显示的人机交互界面
+void Interface(void) {
+	char disp1[11];
+
+	OLED_CLS();
+
+	// 第一行显示【电池电量】
+	Battery_quantity = Get_Battery();
+	if (Battery_quantity<3.7)		OLED_Show_Power(0);
+	else if (Battery_quantity<4.2)	OLED_Show_Power(1);
+	else if (Battery_quantity<4.7)	OLED_Show_Power(2);
+	else if (Battery_quantity<5.2)	OLED_Show_Power(3);
+	else 							OLED_Show_Power(4);
+
+	// 如果缺电那就直接显示【请更换电池】
+	if (Battery_quantity<=4.2) {		
+		Disp_sentence(23,2,"请更换电池",0);
+	}
+	// 如果不缺电，那就显示【欢迎使用】。并且显示时间信息
+	else {
+		Disp_sentence(32,2,"欢迎使用",0);
+
+		// 第三行显示年月，格式如：2018-02-28
+		disp1[0] = 48 + calendar.w_year/1000;
+		disp1[1] = 48 + (calendar.w_year/100)%10;
+		disp1[2] = 48 + (calendar.w_year/10)%10;
+		disp1[3] = 48 + (calendar.w_year)%10;
+		disp1[4] = '-';
+		disp1[5] = 48 + (calendar.w_month)/10;
+		disp1[6] = 48 + (calendar.w_month)%10;
+		disp1[7] = '-';
+		disp1[8] = 48 + (calendar.w_date)/10;
+		disp1[9] = 48 + (calendar.w_date)%10;
+		disp1[10] = 0;	// 插入结束符
+		Disp_sentence_singleline(23,4,disp1,0);
+
+		// 第四行显示小时和分钟，18:31
+		disp1[0] = 48 + (calendar.hour)/10;
+		disp1[1] = 48 + (calendar.hour)%10;
+		disp1[2] = ':';
+		disp1[3] = 48 + (calendar.min)/10;
+		disp1[4] = 48 + (calendar.min)%10;
+		disp1[5] = 0;	// 插入结束符
+		Disp_sentence_singleline(43,6,disp1,0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#if 0
+
 
 // 返回 无重复字符的最长字串
 int lengthOfLongestSubstring(char* s) {
@@ -326,9 +394,11 @@ char* longestPalindrome(char* s) {
 		else break;
 	}
 
-	char result[length];
+	char result[1001];
+	char jyz[4];
+
 	// 制作反字符串
-	char temps[length*3];
+	char temps[1000*3];
 	for (i=0; i<length; i++) {
 		temps[i+length] = s[length-i-1];
 	}
@@ -340,9 +410,9 @@ char* longestPalindrome(char* s) {
 	}
 
 	// 查找反字符串和原始字符串的最大相同子串
-	for (i=length*2; i>=0; i--) {
+	for (i=length*2+1; i>0; i--) {
 		// 制作窗数组
-		char *window = &temps[i];
+		char *window = &temps[i-1];
 
 		temp_length = 0;
 		for (j=0; j<length; j++) {
@@ -353,11 +423,49 @@ char* longestPalindrome(char* s) {
 		}
 		if (temp_length>max_length)	{
 			max_length = temp_length;
-			for (j=0; j<temp_length; j++) {
+			for (j=0; j<max_length; j++) {
 				result[j] = s[start+j];
 			}
-			result[temp_length] = '\0';
+			for (j=temp_length; j<1001; j++) {
+                result[temp_length] = '\0';
+            }
 		}
 	}
-	return result;
+
+	// 网站有问题，我这样直接输出都说我 NULL  惊呆了也是。
+	for (i=0; i<4; i++) {
+		jyz[i] = 'a';
+	}
+	return jyz;
 }
+
+// 最长回文子串（回文是指正反读都一样）。s的长度最大为1000
+// Manacher算法专治回文问题的各种不服
+char* longestPalindrome(char* s) {
+
+}
+// 马拉车算法
+int Manacher() {
+    int len = Init();  //取得新字符串长度并完成向s_new的转换
+    int maxLen = -1;   //最长回文长度
+    int id;
+    int mx = 0;
+
+    for (int i = 1; i < len; i++) {
+        if (i<mx)	p[i] = min(p[2*id-i], mx-i);//需搞清楚上面那张图含义, mx和2*id-i的含义
+        else		p[i] = 1;
+
+        while (s_new[i-p[i]] == s_new[i+p[i]])	//不需边界判断，因为左有'$',右有'\0'
+            p[i]++;
+
+		// 我们每走一步i，都要和mx比较，我们希望mx尽可能的远，这样才能更有机会执行if (i < mx)这句代码，从而提高效率
+        if (mx < i + p[i]) {
+            id = i;
+            mx = i + p[i];
+        }
+        maxLen = max(maxLen, p[i] - 1);
+    }
+    return maxLen;
+}
+
+#endif

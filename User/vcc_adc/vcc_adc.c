@@ -76,3 +76,9 @@ float Get_Battery(void) {
 
 	return charge;
 }
+
+// µÍµçÁ¿±¨¾¯
+u16 Battery_Alarm() {
+	
+
+}

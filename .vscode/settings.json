@@ -25,6 +25,7 @@
         "keyboard.h": "c",
         "oled.h": "c",
         "power_ctrl.h": "c",
-        "ble.h": "c"
+        "ble.h": "c",
+        "font_tab.h": "c"
     }
 }
