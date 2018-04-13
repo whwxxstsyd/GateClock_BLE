@@ -20,7 +20,6 @@
 ..\output\rc522_config.o: ..\User\./BLE/BLE.h
 ..\output\rc522_config.o: ..\User\./data/data_def.h
 ..\output\rc522_config.o: ..\User\./Delay/delay.h
-..\output\rc522_config.o: ..\User\./led/led.h
 ..\output\rc522_config.o: ..\User\./RC522/rc522_function.h
 ..\output\rc522_config.o: ..\User\./RFCard/rfcard.h
 ..\output\rc522_config.o: ..\User\./rtc/rtc.h
@@ -47,3 +46,5 @@
 ..\output\rc522_config.o: ..\User\./finger/finger.h
 ..\output\rc522_config.o: ..\User\./password/password.h
 ..\output\rc522_config.o: ..\User\./gatelock/gatelock.h
+..\output\rc522_config.o: ..\User\./NewLed/newled.h
+..\output\rc522_config.o: ..\User\./SHA_1/sha1.h

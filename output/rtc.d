@@ -22,7 +22,6 @@
 ..\output\rtc.o: ..\User\./BLE/BLE.h
 ..\output\rtc.o: ..\User\./data/data_def.h
 ..\output\rtc.o: ..\User\./Delay/delay.h
-..\output\rtc.o: ..\User\./led/led.h
 ..\output\rtc.o: ..\User\./RC522/rc522_function.h
 ..\output\rtc.o: ..\User\./RC522/rc522_config.h
 ..\output\rtc.o: ..\User\./RFCard/rfcard.h
@@ -47,4 +46,6 @@
 ..\output\rtc.o: ..\User\./finger/finger.h
 ..\output\rtc.o: ..\User\./password/password.h
 ..\output\rtc.o: ..\User\./gatelock/gatelock.h
+..\output\rtc.o: ..\User\./NewLed/newled.h
+..\output\rtc.o: ..\User\./SHA_1/sha1.h
 ..\output\rtc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h

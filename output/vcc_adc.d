@@ -19,7 +19,6 @@
 ..\output\vcc_adc.o: ..\User\./data/data_def.h
 ..\output\vcc_adc.o: ..\User\./Delay/delay.h
 ..\output\vcc_adc.o: ..\User\my_board.h
-..\output\vcc_adc.o: ..\User\./led/led.h
 ..\output\vcc_adc.o: ..\User\./RC522/rc522_function.h
 ..\output\vcc_adc.o: ..\User\./RC522/rc522_config.h
 ..\output\vcc_adc.o: ..\User\./RFCard/rfcard.h
@@ -46,3 +45,5 @@
 ..\output\vcc_adc.o: ..\User\./finger/finger.h
 ..\output\vcc_adc.o: ..\User\./password/password.h
 ..\output\vcc_adc.o: ..\User\./gatelock/gatelock.h
+..\output\vcc_adc.o: ..\User\./NewLed/newled.h
+..\output\vcc_adc.o: ..\User\./SHA_1/sha1.h

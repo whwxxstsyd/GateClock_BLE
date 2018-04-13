@@ -10,7 +10,7 @@
 #include "./BLE/BLE.h"
 #include "./data/data_def.h"
 #include "./Delay/delay.h"
-#include "./led/led.h"
+// #include "./led/led.h"
 #include "./RC522/rc522_function.h"
 #include "./RC522/rc522_config.h"
 #include "./RFCard/rfcard.h"
@@ -28,6 +28,9 @@
 #include "./password/password.h"
 #include "./gatelock/gatelock.h"
 #include "./OLED/oled.h"
+#include "./NewLed/newled.h"
+
+#include "./SHA_1/sha1.h"
 
 
 // #include "./mydebug/mydebug.h"

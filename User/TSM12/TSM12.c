@@ -26,15 +26,37 @@ static void TSM12_PIN_Init(void)
 
 	GPIO_InitStructure.GPIO_Pin = TSM12_SDA_PIN;
 	GPIO_Init(TSM12_SDA_GPIO_PORT, &GPIO_InitStructure);
-	GPIO_SetBits(TSM12_SDA_GPIO_PORT,TSM12_SDA_PIN);//sda拉高
+	GPIO_SetBits(TSM12_SDA_GPIO_PORT,TSM12_SDA_PIN);	//sda拉高
 
 	GPIO_InitStructure.GPIO_Pin = TSM12_SCL_PIN;
 	GPIO_Init(TSM12_SCL_GPIO_PORT, &GPIO_InitStructure);
-	GPIO_SetBits(TSM12_SCL_GPIO_PORT,TSM12_SCL_PIN);//scl拉高
+	GPIO_SetBits(TSM12_SCL_GPIO_PORT,TSM12_SCL_PIN);	//scl拉高
+
+
+
+
+
+
+
+
+
+
 
 	GPIO_InitStructure.GPIO_Pin = TSM12_RST_PIN;
 	GPIO_Init(TSM12_RST_GPIO_PORT, &GPIO_InitStructure);
 	GPIO_ResetBits(TSM12_RST_GPIO_PORT,TSM12_RST_PIN);//复位拉低，不复位
+
+
+
+
+
+
+
+
+
+
+
+
 
 	GPIO_InitStructure.GPIO_Pin = TSM12_I2CEN_PIN;
 	GPIO_Init(TSM12_I2CEN_GPIO_PORT, &GPIO_InitStructure);
@@ -255,12 +277,17 @@ void TSM12_Init(void)
 	//reg config
 	TSM12_reg_write(CTR2,0x0b);//软复位,但不休眠，这样反应速度快
 	TSM12_reg_write(CTR2,0x07);
-	TSM12_reg_write(Sens1,0x88);//每4bit一个通道 高位表示感应范围 低三位表示灵敏度 数字越小越灵敏
+
+
+	TSM12_reg_write(Sens1,0x88);//每4bit一个通道 高位表示感应范围 低三位表示灵敏度 数字越小越灵敏[0x88]
 	TSM12_reg_write(Sens2,0x88);
 	TSM12_reg_write(Sens3,0x88);
 	TSM12_reg_write(Sens4,0x88);
 	TSM12_reg_write(Sens5,0x88);
 	TSM12_reg_write(Sens6,0x88);
+
+
+
 	TSM12_reg_write(CTR1,0x80);//这个要配置成80，不然反应慢
 	TSM12_reg_write(Ref_rst1,0x00);//重置参考值，这个好像可以重置一下，但之后要配置成0 不然出问题
 	TSM12_reg_write(Ref_rst2,0x00);
@@ -275,18 +302,18 @@ uint8_t TMS12_ReadOnKey(void) {
 	uint32_t KEY;
 	uint32_t mask=0x00000003;	// 掩码，取出KEY中按下的键值
 	uint8_t i=0;
-	
+
 	k1=TSM12_reg_read(Output1);
 	k2=TSM12_reg_read(Output2);
 	k3=TSM12_reg_read(Output3);
 	KEY=(k1<<16)|(k2<<8)|(k3);
-	
+
 	// 扫描有无按键被按下
 	for (i=0;i<12;i++) {
 		if(KEY == mask)	return i;
 		mask=mask<<2;
 	}
-	
+
 	// 能跑到这里说明没有按键被按下，就直接 return KEY_NULL
 	return KEY_NULL;
 }

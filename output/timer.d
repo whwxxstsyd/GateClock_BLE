@@ -20,7 +20,6 @@
 ..\output\timer.o: ..\User\./data/data_def.h
 ..\output\timer.o: ..\User\./Delay/delay.h
 ..\output\timer.o: ..\User\my_board.h
-..\output\timer.o: ..\User\./led/led.h
 ..\output\timer.o: ..\User\./RC522/rc522_function.h
 ..\output\timer.o: ..\User\./RC522/rc522_config.h
 ..\output\timer.o: ..\User\./RFCard/rfcard.h
@@ -46,4 +45,6 @@
 ..\output\timer.o: ..\User\./finger/finger.h
 ..\output\timer.o: ..\User\./password/password.h
 ..\output\timer.o: ..\User\./gatelock/gatelock.h
+..\output\timer.o: ..\User\./NewLed/newled.h
+..\output\timer.o: ..\User\./SHA_1/sha1.h
 ..\output\timer.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h

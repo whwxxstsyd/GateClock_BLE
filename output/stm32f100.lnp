@@ -50,6 +50,8 @@
 "..\output\gatelock.o"
 "..\output\keyboard.o"
 "..\output\oled.o"
+"..\output\sha1.o"
+"..\output\newled.o"
 --library_type=microlib --strict --scatter "..\output\stm32f100.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

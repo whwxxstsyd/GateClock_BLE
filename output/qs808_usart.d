@@ -20,7 +20,6 @@
 ..\output\qs808_usart.o: ..\User\./data/data_def.h
 ..\output\qs808_usart.o: ..\User\./Delay/delay.h
 ..\output\qs808_usart.o: ..\User\my_board.h
-..\output\qs808_usart.o: ..\User\./led/led.h
 ..\output\qs808_usart.o: ..\User\./RC522/rc522_function.h
 ..\output\qs808_usart.o: ..\User\./RC522/rc522_config.h
 ..\output\qs808_usart.o: ..\User\./RFCard/rfcard.h
@@ -47,3 +46,5 @@
 ..\output\qs808_usart.o: ..\User\./finger/finger.h
 ..\output\qs808_usart.o: ..\User\./password/password.h
 ..\output\qs808_usart.o: ..\User\./gatelock/gatelock.h
+..\output\qs808_usart.o: ..\User\./NewLed/newled.h
+..\output\qs808_usart.o: ..\User\./SHA_1/sha1.h

@@ -20,7 +20,6 @@
 ..\output\oled.o: ..\User\./BLE/BLE.h
 ..\output\oled.o: ..\User\./data/data_def.h
 ..\output\oled.o: ..\User\./Delay/delay.h
-..\output\oled.o: ..\User\./led/led.h
 ..\output\oled.o: ..\User\./RC522/rc522_function.h
 ..\output\oled.o: ..\User\./RC522/rc522_config.h
 ..\output\oled.o: ..\User\./RFCard/rfcard.h
@@ -47,5 +46,7 @@
 ..\output\oled.o: ..\User\./finger/finger.h
 ..\output\oled.o: ..\User\./password/password.h
 ..\output\oled.o: ..\User\./gatelock/gatelock.h
+..\output\oled.o: ..\User\./NewLed/newled.h
+..\output\oled.o: ..\User\./SHA_1/sha1.h
 ..\output\oled.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\oled.o: ..\User\./OLED/FONT_TAB.h

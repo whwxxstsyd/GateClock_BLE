@@ -22,7 +22,6 @@
 ..\output\keyboard.o: ..\User\./BLE/BLE.h
 ..\output\keyboard.o: ..\User\./data/data_def.h
 ..\output\keyboard.o: ..\User\./Delay/delay.h
-..\output\keyboard.o: ..\User\./led/led.h
 ..\output\keyboard.o: ..\User\./RC522/rc522_function.h
 ..\output\keyboard.o: ..\User\./RC522/rc522_config.h
 ..\output\keyboard.o: ..\User\./RFCard/rfcard.h
@@ -48,3 +47,5 @@
 ..\output\keyboard.o: ..\User\./finger/finger.h
 ..\output\keyboard.o: ..\User\./password/password.h
 ..\output\keyboard.o: ..\User\./gatelock/gatelock.h
+..\output\keyboard.o: ..\User\./NewLed/newled.h
+..\output\keyboard.o: ..\User\./SHA_1/sha1.h

@@ -22,7 +22,6 @@
 ..\output\stm32f10x_it.o: ..\User\./data/data_def.h
 ..\output\stm32f10x_it.o: ..\User\./Delay/delay.h
 ..\output\stm32f10x_it.o: ..\User\my_board.h
-..\output\stm32f10x_it.o: ..\User\./led/led.h
 ..\output\stm32f10x_it.o: ..\User\./RC522/rc522_function.h
 ..\output\stm32f10x_it.o: ..\User\./RC522/rc522_config.h
 ..\output\stm32f10x_it.o: ..\User\./RFCard/rfcard.h
@@ -48,3 +47,5 @@
 ..\output\stm32f10x_it.o: ..\User\./finger/finger.h
 ..\output\stm32f10x_it.o: ..\User\./password/password.h
 ..\output\stm32f10x_it.o: ..\User\./gatelock/gatelock.h
+..\output\stm32f10x_it.o: ..\User\./NewLed/newled.h
+..\output\stm32f10x_it.o: ..\User\./SHA_1/sha1.h

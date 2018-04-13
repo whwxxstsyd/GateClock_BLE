@@ -26,6 +26,11 @@
         "oled.h": "c",
         "power_ctrl.h": "c",
         "ble.h": "c",
-        "font_tab.h": "c"
-    }
+        "font_tab.h": "c",
+        "g10lib.h": "c",
+        "sha1.h": "c",
+        "rc522_config.h": "c",
+        "newled.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": true
 }

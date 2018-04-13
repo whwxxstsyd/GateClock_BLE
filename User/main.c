@@ -1,6 +1,19 @@
 #include "./my_board.h"
 
 
+
+// int main(void) {
+// 	u8 a[6] = {0x31,0x32,0x33,0x34,0x35,0x36};
+// 	u8 *b;
+// 	b = Generate_512bit_Input(a);
+// 	b = b;
+// }
+
+
+
+
+
+
 extern u8 USART_Recv_Flag;
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
@@ -31,17 +44,19 @@ int main(void) {
 	delay_ms(100);
 	VCC_Adc_Init();			// 【ADC】通道初始化
 	UT588C_init();			// 【语音芯片】初始化
+	NewLed_Init();			// 【按键灯】初始化
 	// QS808_CMD_DEL_ALL();	// 删除全部指纹
 
 	u8 work_flag;
-	u16 temp_cmdid,temp_userid,temp_return,sleep_count=0;
+	u16 temp_cmdid, temp_userid, temp_return, sleep_count=0;
 	u32 temp_RFCARD_ID;
 
 	Interface();
+	led_on_all();
 
 	while(1) {
-		// 睡眠计数++
-		sleep_count++;
+		// // 睡眠计数++
+		// sleep_count++;
 
 		// 显示主界面
 		if (work_flag==1) {
@@ -49,35 +64,35 @@ int main(void) {
 			Interface();
 		}
 
-		// 判断是否该进入睡眠模式
-		if (sleep_count>=SLEEP_MAX && QS808_Rec_Buf.Trans_state==reset) {
-			sleep_count = 0;
-			QS808_Rec_Buf_refresh();
-			Disp_sentence(48,2,"休眠",1);
-			delay_ms(500);
-			PWR_Standby_Mode();
+		// // 判断是否该进入睡眠模式
+		// if (sleep_count>=SLEEP_MAX && QS808_Rec_Buf.Trans_state==reset) {
+		// 	sleep_count = 0;
+		// 	QS808_Rec_Buf_refresh();
+		// 	Disp_sentence(48,2,"休眠",1);
+		// 	delay_ms(500);
+		// 	PWR_Standby_Mode();
 
-			// 唤醒之后从这里开始执行程序，先执行一次指纹扫描，加速开锁进程
-			Interface();
-			// 如果是指纹头唤醒
-			if(WAKEUP_SOURCE==0) {
-				// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
-				if (QS808_CMD_FINGER_DETECT()==ERR_FINGER_DETECT) {
-					sleep_count = SLEEP_MAX;
-					temp_return = Confirm_Finger();
-					if (temp_return==ERROR_CODE_SUCCESS) {
-						show_clock_open_big();
-						SPEAK_OPEN_THE_DOOR();
-						Gate_Unlock();
-					}
-					else {
-						Disp_sentence(28,2,"验证失败",1);
-						SPEAK_OPEN_THE_DOOR_FAIL();
-						delay_ms(1000);	// 验证失败的显示时间
-					}
-				}
-			}
-		}
+		// 	// 唤醒之后从这里开始执行程序，先执行一次指纹扫描，加速开锁进程
+		// 	Interface();
+		// 	// 如果是指纹头唤醒
+		// 	if(WAKEUP_SOURCE==0) {
+		// 		// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
+		// 		if (QS808_CMD_FINGER_DETECT()==ERR_FINGER_DETECT) {
+		// 			sleep_count = SLEEP_MAX;
+		// 			temp_return = Confirm_Finger();
+		// 			if (temp_return==ERROR_CODE_SUCCESS) {
+		// 				show_clock_open_big();
+		// 				SPEAK_OPEN_THE_DOOR();
+		// 				Gate_Unlock();
+		// 			}
+		// 			else {
+		// 				Disp_sentence(28,2,"验证失败",1);
+		// 				SPEAK_OPEN_THE_DOOR_FAIL();
+		// 				delay_ms(1000);	// 验证失败的显示时间
+		// 			}
+		// 		}
+		// 	}
+		// }
 
 		// 如果接收到了数据传入，说明手机端发来了信息，可能要进行信息录入或者一键开锁
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER ) {
@@ -160,6 +175,8 @@ int main(void) {
 					break;
 			}
 		}
+
+
 		// 如果没有接收到手机端发来的信息，那就时刻准备开锁
 		else {
 			// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
@@ -171,6 +188,7 @@ int main(void) {
 					show_clock_open_big();
 					SPEAK_OPEN_THE_DOOR();
 					Gate_Unlock();
+					// 之后要在这里加入跑马灯程序，开门失败也应有相应的跑马灯程序
 				}
 				else {
 					Disp_sentence(28,2,"验证失败",1);
@@ -276,7 +294,7 @@ void Interface(void) {
 	else 							OLED_Show_Power(4);
 
 	// 如果缺电那就直接显示【请更换电池】
-	if (Battery_quantity<=4.2) {		
+	if (Battery_quantity<=4.2) {
 		Disp_sentence(23,2,"请更换电池",0);
 	}
 	// 如果不缺电，那就显示【欢迎使用】。并且显示时间信息
@@ -313,17 +331,7 @@ void Interface(void) {
 
 
 
-
-
-
-
-
-
-
-
-
 #if 0
-
 
 // 返回 无重复字符的最长字串
 int lengthOfLongestSubstring(char* s) {
@@ -436,6 +444,7 @@ char* longestPalindrome(char* s) {
 	for (i=0; i<4; i++) {
 		jyz[i] = 'a';
 	}
+
 	return jyz;
 }
 
@@ -469,3 +478,6 @@ int Manacher() {
 }
 
 #endif
+
+// 一共 64*4 = 256bit 的长度
+//8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92

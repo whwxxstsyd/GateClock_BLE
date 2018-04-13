@@ -678,6 +678,16 @@
               <FileType>1</FileType>
               <FilePath>..\User\oled\oled.c</FilePath>
             </File>
+            <File>
+              <FileName>sha1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\SHA_1\sha1.c</FilePath>
+            </File>
+            <File>
+              <FileName>newled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\NewLED\newled.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

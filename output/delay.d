@@ -19,7 +19,6 @@
 ..\output\delay.o: ..\User\./BLE/BLE.h
 ..\output\delay.o: ..\User\./data/data_def.h
 ..\output\delay.o: ..\User\./Delay/delay.h
-..\output\delay.o: ..\User\./led/led.h
 ..\output\delay.o: ..\User\./RC522/rc522_function.h
 ..\output\delay.o: ..\User\./RC522/rc522_config.h
 ..\output\delay.o: ..\User\./RFCard/rfcard.h
@@ -47,3 +46,5 @@
 ..\output\delay.o: ..\User\./finger/finger.h
 ..\output\delay.o: ..\User\./password/password.h
 ..\output\delay.o: ..\User\./gatelock/gatelock.h
+..\output\delay.o: ..\User\./NewLed/newled.h
+..\output\delay.o: ..\User\./SHA_1/sha1.h

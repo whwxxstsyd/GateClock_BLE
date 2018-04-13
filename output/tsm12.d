@@ -20,7 +20,6 @@
 ..\output\tsm12.o: ..\User\./BLE/BLE.h
 ..\output\tsm12.o: ..\User\./data/data_def.h
 ..\output\tsm12.o: ..\User\./Delay/delay.h
-..\output\tsm12.o: ..\User\./led/led.h
 ..\output\tsm12.o: ..\User\./RC522/rc522_function.h
 ..\output\tsm12.o: ..\User\./RC522/rc522_config.h
 ..\output\tsm12.o: ..\User\./RFCard/rfcard.h
@@ -48,3 +47,5 @@
 ..\output\tsm12.o: ..\User\./finger/finger.h
 ..\output\tsm12.o: ..\User\./password/password.h
 ..\output\tsm12.o: ..\User\./gatelock/gatelock.h
+..\output\tsm12.o: ..\User\./NewLed/newled.h
+..\output\tsm12.o: ..\User\./SHA_1/sha1.h

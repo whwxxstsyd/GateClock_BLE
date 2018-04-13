@@ -26,14 +26,14 @@ u16 Add_RFCard(u16* user_number) {
 			if (user.m_USER_Number!=0xFFFF &&user.m_USER_Type==MY_USER_RFCARD &&user.m_USER_Data==RFCARD_ID) {
 				// 表示这张卡已经录入过了，直接 return ERROR_CODE_DUPLICATION
 				return ERROR_CODE_DUPLICATION;
-			} 
+			}
 		}
 
 		// 能够跑到这里就说明这张卡没有被录入过，那就直接找个空的 flash 写入就行了
 		for (u16 i=0; i<1000; i++) {
 			addr_now = MY_USER_ADDR_START +i*MY_USER_LENGTH;
 			STMFLASH_Read(addr_now, &temp_user_number, 1);
-			
+
 			// 如果已经扫描到了空白区域，那就直接写入数据，并且 return ERROR_CODE_SUCCESS
 			if ( temp_user_number == 0xFFFF ) {
 				user.m_USER_Number = i;
@@ -44,7 +44,7 @@ u16 Add_RFCard(u16* user_number) {
 				return ERROR_CODE_SUCCESS;
 			}
 		    else {
-				// 如果扫描到说是以前已经存过这张卡了，就直接 return ERROR_CODE_TIMEOUT，相当于录入失败 
+				// 如果扫描到说是以前已经存过这张卡了，就直接 return ERROR_CODE_TIMEOUT，相当于录入失败
 				if ( user.m_USER_Type==MY_USER_RFCARD && user.m_USER_Data==RFCARD_ID) {
 					return ERROR_CODE_TIMEOUT;
 				}
@@ -63,7 +63,7 @@ u16 Add_RFCard(u16* user_number) {
 // return:  	添加成功或者失败
 u16 Delete_RFCard(u16 user_number) {
 	u16 no_user = 0xFFFF;
-	
+
 	// 判断用户编号合法性， 如果编号合法，删除用户，return ERROR_CODE_SUCCESS
 	if (user_number<=999) {
 		// 将原有的用户编号置为 0xFFFF，就相当于删除了这个编号下的所有数据
@@ -82,7 +82,7 @@ u16 Delete_RFCard(u16 user_number) {
 u16 Confirm_RFCard(u32 RFCARD_ID) {
 	u32 addr_now;
 	MY_USER user;
-	
+
 	// 开始从首地址开始查找这张卡有没有被录入过
 	for (u16 i=0; i<1000; i++) {
 		addr_now = MY_USER_ADDR_START +i*MY_USER_LENGTH;
@@ -90,7 +90,7 @@ u16 Confirm_RFCard(u32 RFCARD_ID) {
 		if (user.m_USER_Number!=0xFFFF &&user.m_USER_Type==MY_USER_RFCARD &&user.m_USER_Data==RFCARD_ID) {
 			// 表示这张卡已经录入过了，直接 return ERROR_CODE_SUCCESS
 			return ERROR_CODE_SUCCESS;
-		} 
+		}
 	}
 
 	// 能跑到这里，说明这张卡并没有被录过，就直接 return ERROR_CODE_ERROR
@@ -105,7 +105,7 @@ u8 RFCard_test(uint32_t* RFCARD_ID) {
 	*RFCARD_ID = 0x00000000;
 	int counter;
 	uint8_t flag = NO_RFCARD;
-	
+
 	counter = 0;
 	while(1){
 		ucStatusReturn = PcdRequest(PICC_REQALL, ucArray_ID);

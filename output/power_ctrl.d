@@ -21,7 +21,6 @@
 ..\output\power_ctrl.o: ..\User\./data/data_def.h
 ..\output\power_ctrl.o: ..\User\./Delay/delay.h
 ..\output\power_ctrl.o: ..\User\my_board.h
-..\output\power_ctrl.o: ..\User\./led/led.h
 ..\output\power_ctrl.o: ..\User\./RC522/rc522_function.h
 ..\output\power_ctrl.o: ..\User\./RC522/rc522_config.h
 ..\output\power_ctrl.o: ..\User\./RFCard/rfcard.h
@@ -48,3 +47,5 @@
 ..\output\power_ctrl.o: ..\User\./finger/finger.h
 ..\output\power_ctrl.o: ..\User\./password/password.h
 ..\output\power_ctrl.o: ..\User\./gatelock/gatelock.h
+..\output\power_ctrl.o: ..\User\./NewLed/newled.h
+..\output\power_ctrl.o: ..\User\./SHA_1/sha1.h

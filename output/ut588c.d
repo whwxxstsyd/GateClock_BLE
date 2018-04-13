@@ -19,7 +19,6 @@
 ..\output\ut588c.o: ..\User\././data/data_def.h
 ..\output\ut588c.o: ..\User\././Delay/delay.h
 ..\output\ut588c.o: ..\User\my_board.h
-..\output\ut588c.o: ..\User\././led/led.h
 ..\output\ut588c.o: ..\User\././RC522/rc522_function.h
 ..\output\ut588c.o: ..\User\././RC522/rc522_config.h
 ..\output\ut588c.o: ..\User\././RFCard/rfcard.h
@@ -46,3 +45,5 @@
 ..\output\ut588c.o: ..\User\././finger/finger.h
 ..\output\ut588c.o: ..\User\././password/password.h
 ..\output\ut588c.o: ..\User\././gatelock/gatelock.h
+..\output\ut588c.o: ..\User\././NewLed/newled.h
+..\output\ut588c.o: ..\User\././SHA_1/sha1.h

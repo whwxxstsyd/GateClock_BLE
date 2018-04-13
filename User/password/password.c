@@ -212,3 +212,13 @@ u8 Update_KeyBuf(u8* key_buf, u8* buf_length, u8* last_press) {
 		}
 	}
 }
+
+// 按键灯初始化
+
+
+
+// 开门成功按键灯效果
+
+
+
+// 开门失败按键灯效果

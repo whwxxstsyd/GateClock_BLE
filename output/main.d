@@ -19,7 +19,6 @@
 ..\output\main.o: ..\User\././data/data_def.h
 ..\output\main.o: ..\User\././Delay/delay.h
 ..\output\main.o: ..\User\my_board.h
-..\output\main.o: ..\User\././led/led.h
 ..\output\main.o: ..\User\././RC522/rc522_function.h
 ..\output\main.o: ..\User\././RC522/rc522_config.h
 ..\output\main.o: ..\User\././RFCard/rfcard.h
@@ -46,3 +45,5 @@
 ..\output\main.o: ..\User\././finger/finger.h
 ..\output\main.o: ..\User\././password/password.h
 ..\output\main.o: ..\User\././gatelock/gatelock.h
+..\output\main.o: ..\User\././NewLed/newled.h
+..\output\main.o: ..\User\././SHA_1/sha1.h

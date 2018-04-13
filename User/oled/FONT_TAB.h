@@ -1,6 +1,7 @@
 #ifndef __FONT_TAB_H
 #define	__FONT_TAB_H
 #include "stm32f10x.h"
+
 //电池电量图标
 const unsigned char Logo_Power[5][24] =
 {
