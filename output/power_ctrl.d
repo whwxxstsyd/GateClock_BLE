@@ -47,5 +47,5 @@
 ..\output\power_ctrl.o: ..\User\./finger/finger.h
 ..\output\power_ctrl.o: ..\User\./password/password.h
 ..\output\power_ctrl.o: ..\User\./gatelock/gatelock.h
-..\output\power_ctrl.o: ..\User\./NewLed/newled.h
+..\output\power_ctrl.o: ..\User\./NewLED/newled.h
 ..\output\power_ctrl.o: ..\User\./SHA_1/sha1.h

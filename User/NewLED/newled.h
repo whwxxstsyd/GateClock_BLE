@@ -86,6 +86,10 @@
 void NewLed_Init(void);
 void led_on_all(void);
 void led_off_all(void);
+void LED_OpenDoor(void);
+void LED_OpenError(void);
+void LED_OFF2ON(void);
+void LED_ON2OFF(void);
 
 
 

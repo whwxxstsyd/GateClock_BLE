@@ -46,5 +46,5 @@
 ..\output\rc522_config.o: ..\User\./finger/finger.h
 ..\output\rc522_config.o: ..\User\./password/password.h
 ..\output\rc522_config.o: ..\User\./gatelock/gatelock.h
-..\output\rc522_config.o: ..\User\./NewLed/newled.h
+..\output\rc522_config.o: ..\User\./NewLED/newled.h
 ..\output\rc522_config.o: ..\User\./SHA_1/sha1.h

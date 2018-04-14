@@ -47,5 +47,5 @@
 ..\output\keyboard.o: ..\User\./finger/finger.h
 ..\output\keyboard.o: ..\User\./password/password.h
 ..\output\keyboard.o: ..\User\./gatelock/gatelock.h
-..\output\keyboard.o: ..\User\./NewLed/newled.h
+..\output\keyboard.o: ..\User\./NewLED/newled.h
 ..\output\keyboard.o: ..\User\./SHA_1/sha1.h

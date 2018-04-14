@@ -45,6 +45,6 @@
 ..\output\qs808_drive.o: ..\User\./gatelock/gatelock.h
 ..\output\qs808_drive.o: ..\User\./OLED/oled.h
 ..\output\qs808_drive.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
-..\output\qs808_drive.o: ..\User\./NewLed/newled.h
+..\output\qs808_drive.o: ..\User\./NewLED/newled.h
 ..\output\qs808_drive.o: ..\User\./SHA_1/sha1.h
 ..\output\qs808_drive.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h

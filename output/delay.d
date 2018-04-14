@@ -46,5 +46,5 @@
 ..\output\delay.o: ..\User\./finger/finger.h
 ..\output\delay.o: ..\User\./password/password.h
 ..\output\delay.o: ..\User\./gatelock/gatelock.h
-..\output\delay.o: ..\User\./NewLed/newled.h
+..\output\delay.o: ..\User\./NewLED/newled.h
 ..\output\delay.o: ..\User\./SHA_1/sha1.h

@@ -1,19 +1,6 @@
 #include "./my_board.h"
 
 
-
-// int main(void) {
-// 	u8 a[6] = {0x31,0x32,0x33,0x34,0x35,0x36};
-// 	u8 *b;
-// 	b = Generate_512bit_Input(a);
-// 	b = b;
-// }
-
-
-
-
-
-
 extern u8 USART_Recv_Flag;
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
 extern u8 USART1_RecvBuf_Length;
@@ -47,16 +34,15 @@ int main(void) {
 	NewLed_Init();			// 【按键灯】初始化
 	// QS808_CMD_DEL_ALL();	// 删除全部指纹
 
+
 	u8 work_flag;
 	u16 temp_cmdid, temp_userid, temp_return, sleep_count=0;
 	u32 temp_RFCARD_ID;
-
 	Interface();
-	led_on_all();
-
+	LED_OFF2ON();
 	while(1) {
-		// // 睡眠计数++
-		// sleep_count++;
+		// 睡眠计数++
+		sleep_count++;
 
 		// 显示主界面
 		if (work_flag==1) {
@@ -64,35 +50,40 @@ int main(void) {
 			Interface();
 		}
 
-		// // 判断是否该进入睡眠模式
-		// if (sleep_count>=SLEEP_MAX && QS808_Rec_Buf.Trans_state==reset) {
-		// 	sleep_count = 0;
-		// 	QS808_Rec_Buf_refresh();
-		// 	Disp_sentence(48,2,"休眠",1);
-		// 	delay_ms(500);
-		// 	PWR_Standby_Mode();
+		// 判断是否该进入睡眠模式
+		if (sleep_count>=SLEEP_MAX && QS808_Rec_Buf.Trans_state==reset) {
+			sleep_count = 0;
+			QS808_Rec_Buf_refresh();
+			Disp_sentence(48,2,"休眠",1);
+			delay_ms(500);
+			PWR_Standby_Mode();
 
-		// 	// 唤醒之后从这里开始执行程序，先执行一次指纹扫描，加速开锁进程
-		// 	Interface();
-		// 	// 如果是指纹头唤醒
-		// 	if(WAKEUP_SOURCE==0) {
-		// 		// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
-		// 		if (QS808_CMD_FINGER_DETECT()==ERR_FINGER_DETECT) {
-		// 			sleep_count = SLEEP_MAX;
-		// 			temp_return = Confirm_Finger();
-		// 			if (temp_return==ERROR_CODE_SUCCESS) {
-		// 				show_clock_open_big();
-		// 				SPEAK_OPEN_THE_DOOR();
-		// 				Gate_Unlock();
-		// 			}
-		// 			else {
-		// 				Disp_sentence(28,2,"验证失败",1);
-		// 				SPEAK_OPEN_THE_DOOR_FAIL();
-		// 				delay_ms(1000);	// 验证失败的显示时间
-		// 			}
-		// 		}
-		// 	}
-		// }
+			// 唤醒之后从这里开始执行程序，先执行一次指纹扫描，加速开锁进程
+			LED_OFF2ON();
+
+			// 如果是指纹头唤醒
+			if(WAKEUP_SOURCE==0) {
+				// 如果检测到有手指按下，就开始检测指纹正确性，准备开门
+				if (QS808_CMD_FINGER_DETECT()==ERR_FINGER_DETECT) {
+					sleep_count = SLEEP_MAX;
+					temp_return = Confirm_Finger();
+					if (temp_return==ERROR_CODE_SUCCESS) {
+						show_clock_open_big();
+						SPEAK_OPEN_THE_DOOR();
+						Gate_Unlock();
+					}
+					else {
+						Disp_sentence(28,2,"验证失败",1);
+						SPEAK_OPEN_THE_DOOR_FAIL();
+						LED_OpenError();
+						delay_ms(800);	// 验证失败的显示时间
+					}
+				}
+			}
+			else {
+				Interface();
+			}
+		}
 
 		// 如果接收到了数据传入，说明手机端发来了信息，可能要进行信息录入或者一键开锁
 		if ( Usart_RecvOrder(USART1)==SYS_RECV_ORDER ) {
@@ -188,14 +179,14 @@ int main(void) {
 					show_clock_open_big();
 					SPEAK_OPEN_THE_DOOR();
 					Gate_Unlock();
-					// 之后要在这里加入跑马灯程序，开门失败也应有相应的跑马灯程序
 				}
 				else {
 					Disp_sentence(28,2,"验证失败",1);
+					LED_OpenError();
 					SPEAK_OPEN_THE_DOOR_FAIL();
 				}
 				// 防止短时间内再次进入指纹检测
-				delay_ms(1000);
+				delay_ms(800);
 			}
 
 			// 如果检测到有射频卡靠近，就开始检测射频卡的正确性，准备开门
@@ -211,9 +202,10 @@ int main(void) {
 				else {
 					Disp_sentence(28,2,"验证失败",1);
 					SPEAK_OPEN_THE_DOOR_FAIL();
+					LED_OpenError();
 				}
 				// 验证失败显示时间
-				delay_ms(1000);
+				delay_ms(800);
 			}
 
 			// 如果检测到有按键按下，就进入密码解锁界面，准备开门
@@ -259,9 +251,10 @@ int main(void) {
 						else {
 							Disp_sentence(28,2,"验证失败",1);
 							SPEAK_OPEN_THE_DOOR_FAIL();
+							LED_OpenError();
 						}
 						// 留给界面显示
-						delay_ms(1000);
+						delay_ms(800);
 						break;
 					}
 					// 密码长度不足6位
@@ -269,8 +262,9 @@ int main(void) {
 						SPEAK_DUDUDU();
 						Disp_sentence(28,2,"验证失败",1);
 						SPEAK_OPEN_THE_DOOR_FAIL();
+						LED_OpenError();
 						// 留给界面显示
-						delay_ms(1000);
+						delay_ms(800);
 						break;
 					}
 				}

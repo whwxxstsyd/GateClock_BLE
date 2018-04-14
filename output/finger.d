@@ -45,6 +45,6 @@
 ..\output\finger.o: ..\User\./gatelock/gatelock.h
 ..\output\finger.o: ..\User\./OLED/oled.h
 ..\output\finger.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
-..\output\finger.o: ..\User\./NewLed/newled.h
+..\output\finger.o: ..\User\./NewLED/newled.h
 ..\output\finger.o: ..\User\./SHA_1/sha1.h
 ..\output\finger.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h

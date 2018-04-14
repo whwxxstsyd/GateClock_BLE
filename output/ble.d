@@ -46,6 +46,6 @@
 ..\output\ble.o: ..\User\./finger/finger.h
 ..\output\ble.o: ..\User\./password/password.h
 ..\output\ble.o: ..\User\./gatelock/gatelock.h
-..\output\ble.o: ..\User\./NewLed/newled.h
+..\output\ble.o: ..\User\./NewLED/newled.h
 ..\output\ble.o: ..\User\./SHA_1/sha1.h
 ..\output\ble.o: E:\Keil\ARM\ARMCC\Bin\..\include\string.h

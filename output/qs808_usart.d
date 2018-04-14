@@ -46,5 +46,5 @@
 ..\output\qs808_usart.o: ..\User\./finger/finger.h
 ..\output\qs808_usart.o: ..\User\./password/password.h
 ..\output\qs808_usart.o: ..\User\./gatelock/gatelock.h
-..\output\qs808_usart.o: ..\User\./NewLed/newled.h
+..\output\qs808_usart.o: ..\User\./NewLED/newled.h
 ..\output\qs808_usart.o: ..\User\./SHA_1/sha1.h

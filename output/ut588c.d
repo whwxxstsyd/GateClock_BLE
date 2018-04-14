@@ -45,5 +45,5 @@
 ..\output\ut588c.o: ..\User\././finger/finger.h
 ..\output\ut588c.o: ..\User\././password/password.h
 ..\output\ut588c.o: ..\User\././gatelock/gatelock.h
-..\output\ut588c.o: ..\User\././NewLed/newled.h
+..\output\ut588c.o: ..\User\././NewLED/newled.h
 ..\output\ut588c.o: ..\User\././SHA_1/sha1.h

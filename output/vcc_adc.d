@@ -45,5 +45,5 @@
 ..\output\vcc_adc.o: ..\User\./finger/finger.h
 ..\output\vcc_adc.o: ..\User\./password/password.h
 ..\output\vcc_adc.o: ..\User\./gatelock/gatelock.h
-..\output\vcc_adc.o: ..\User\./NewLed/newled.h
+..\output\vcc_adc.o: ..\User\./NewLED/newled.h
 ..\output\vcc_adc.o: ..\User\./SHA_1/sha1.h

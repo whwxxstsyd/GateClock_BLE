@@ -46,6 +46,6 @@
 ..\output\rtc.o: ..\User\./finger/finger.h
 ..\output\rtc.o: ..\User\./password/password.h
 ..\output\rtc.o: ..\User\./gatelock/gatelock.h
-..\output\rtc.o: ..\User\./NewLed/newled.h
+..\output\rtc.o: ..\User\./NewLED/newled.h
 ..\output\rtc.o: ..\User\./SHA_1/sha1.h
 ..\output\rtc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h

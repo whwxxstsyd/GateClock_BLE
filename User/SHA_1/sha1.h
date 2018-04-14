@@ -4,7 +4,7 @@
 #include "stm32f10x.h"
 
 
-u8* Generate_512bit_Input(u8* input);
+void sha1(char * in, int in_length);
 
 
 #endif

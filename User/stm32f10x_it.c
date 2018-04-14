@@ -56,6 +56,8 @@ void QS808_INT_EXT_IRQHandler(void) {
 	// 休眠时唤醒，需要唤醒其他外设
 	if(WAKEUP_FLAG) {
 		SystemInit();
+		led_off_all();
+
 		WAKEUP_FLAG=0;
 		WAKEUP_SOURCE = 0;
 		VCC_Adc_Init();
@@ -73,6 +75,8 @@ void QS808_INT_EXT_IRQHandler(void) {
 void TSM12_INT_EXT_IRQHandler(void) {
 	if(WAKEUP_FLAG) {
 		SystemInit();
+		led_off_all();
+		
 		WAKEUP_FLAG=0;
 		WAKEUP_SOURCE = 1;
 		VCC_Adc_Init();

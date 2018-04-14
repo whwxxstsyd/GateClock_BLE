@@ -47,5 +47,5 @@
 ..\output\stm32f10x_it.o: ..\User\./finger/finger.h
 ..\output\stm32f10x_it.o: ..\User\./password/password.h
 ..\output\stm32f10x_it.o: ..\User\./gatelock/gatelock.h
-..\output\stm32f10x_it.o: ..\User\./NewLed/newled.h
+..\output\stm32f10x_it.o: ..\User\./NewLED/newled.h
 ..\output\stm32f10x_it.o: ..\User\./SHA_1/sha1.h

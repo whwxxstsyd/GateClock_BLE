@@ -46,7 +46,7 @@
 ..\output\oled.o: ..\User\./finger/finger.h
 ..\output\oled.o: ..\User\./password/password.h
 ..\output\oled.o: ..\User\./gatelock/gatelock.h
-..\output\oled.o: ..\User\./NewLed/newled.h
+..\output\oled.o: ..\User\./NewLED/newled.h
 ..\output\oled.o: ..\User\./SHA_1/sha1.h
 ..\output\oled.o: E:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\output\oled.o: ..\User\./OLED/FONT_TAB.h

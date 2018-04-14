@@ -47,5 +47,5 @@
 ..\output\rfcard.o: ..\User\./finger/finger.h
 ..\output\rfcard.o: ..\User\./password/password.h
 ..\output\rfcard.o: ..\User\./gatelock/gatelock.h
-..\output\rfcard.o: ..\User\./NewLed/newled.h
+..\output\rfcard.o: ..\User\./NewLED/newled.h
 ..\output\rfcard.o: ..\User\./SHA_1/sha1.h

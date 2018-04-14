@@ -47,5 +47,5 @@
 ..\output\tsm12.o: ..\User\./finger/finger.h
 ..\output\tsm12.o: ..\User\./password/password.h
 ..\output\tsm12.o: ..\User\./gatelock/gatelock.h
-..\output\tsm12.o: ..\User\./NewLed/newled.h
+..\output\tsm12.o: ..\User\./NewLED/newled.h
 ..\output\tsm12.o: ..\User\./SHA_1/sha1.h

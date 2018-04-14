@@ -28,7 +28,7 @@
 #include "./password/password.h"
 #include "./gatelock/gatelock.h"
 #include "./OLED/oled.h"
-#include "./NewLed/newled.h"
+#include "./NewLED/newled.h"
 
 #include "./SHA_1/sha1.h"
 

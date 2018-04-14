@@ -47,5 +47,5 @@
 ..\output\gatelock.o: ..\User\./finger/finger.h
 ..\output\gatelock.o: ..\User\./password/password.h
 ..\output\gatelock.o: ..\User\./gatelock/gatelock.h
-..\output\gatelock.o: ..\User\./NewLed/newled.h
+..\output\gatelock.o: ..\User\./NewLED/newled.h
 ..\output\gatelock.o: ..\User\./SHA_1/sha1.h

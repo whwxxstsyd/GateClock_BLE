@@ -1,4 +1,5 @@
 #include "./gatelock/gatelock.h"
+#include "./NewLED/newled.h"
 
 void Gate_Init(void) {
 	// IO 初始化
@@ -15,7 +16,14 @@ void Gate_Init(void) {
 void Gate_Unlock(void) {
 	// 门锁【打开】
 	motor_anti_clockwise();
-	delay_ms(500);
+
+	// 原来这里延时500ms
+	// delay_ms(500);
+	// 现在加入灯效，延时就可以不是500了
+	LED_OpenDoor();	//灯效112ms，所以就不用500ms延时了
+	delay_ms(388);
+
+
 	motor_hold_on();
 	// if(!SPEAK_flag) SPEAK_OPEN_THE_DOOR();
 	
