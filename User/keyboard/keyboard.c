@@ -26,7 +26,7 @@ u8 KeyScan(void) {
 		timeout_cnt = 0;
 		while (TMS12_ReadOnKey()!=KEY_NULL){
 			timeout_cnt++;
-			if (timeout_cnt==100) {
+			if (timeout_cnt==200) {
 				break;
 			}
 		}

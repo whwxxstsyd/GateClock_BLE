@@ -139,8 +139,6 @@ typedef struct{
 #define speak_flag_addr 		0x800fc08	// 音频flag
 #define UNLOCK_TIME_addr 		0x800fd00	// 这个结构体存在这个地址
 #define UNLOCK_TIME_length 		0x04		// 结构体长度
-// 写flash 以2B为单位
-
 
 
 

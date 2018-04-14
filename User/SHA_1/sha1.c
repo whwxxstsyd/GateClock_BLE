@@ -15,7 +15,7 @@ const unsigned int A = 0x67452301;
 const unsigned int B = 0xEFCDAB89;
 const unsigned int C = 0x98BADCFE;
 const unsigned int D = 0x10325476;
-const unsigned int E = 0xC3D2E1F0; 
+const unsigned int E = 0xC3D2E1F0;
 const unsigned int K1 = 0x5A827999;
 const unsigned int K2 = 0x6ED9EBA1;
 const unsigned int K3 = 0x8F1BBCDC;
@@ -50,7 +50,7 @@ unsigned int funt(unsigned int B, unsigned int C, unsigned int D, int t,unsigned
 // SHA-1 转换
 // in:			输入的密码
 // in_length:	输入的字符个数，而不是比特数
-void sha1(char * in, int in_length) {
+int sha1(char * in, int in_length) {
 	char ori[64];//512位明文
 	int length = in_length * 8;
 	int i;
@@ -111,7 +111,50 @@ void sha1(char * in, int in_length) {
 
 	// 最终输出
 	// printf("%x,%x,%x,%x,%x\r\n", Anow, Bnow, Cnow, Dnow, Enow);
+
+	//************* 接下来开始选择使用 160 bit中的那几位作为暂时的密码 *************//
+	// 1.先从第一步通过 SHA-1 算法加密得到的 20 字节长度的结果中选取最后一个字节的低字节位的 4 位（注意：动态密码算法中采用的大端(big-endian)存储）；
+	// 2.将这 4 位的二进制值转换为无标点数的整数值，得到 0 到 15（包含 0 和 15）之间的一个数，这个数字作为 20 个字节中从 0 开始的偏移量；
+	u8 move_val = (u8) (Enow & 0x0000000F);
+
+	// 接着从指定偏移位开始，连续截取 4 个字节（32 位），最后返回 32 位中的后面 31 位；
+	u8 string_20Bytes[20];
+	for (i=0; i<4; i++) {
+		string_20Bytes[i] = (u8)(Anow & 0x000000FF);
+		Anow >>= 8;
+	}
+	for (i=0; i<4; i++) {
+		string_20Bytes[i+4] = (u8)(Bnow & 0x000000FF);
+		Bnow >>= 8;
+	}
+	for (i=0; i<4; i++) {
+		string_20Bytes[i+8] = (u8)(Cnow & 0x000000FF);
+		Cnow >>= 8;
+	}
+	for (i=0; i<4; i++) {
+		string_20Bytes[i+12] = (u8)(Dnow & 0x000000FF);
+		Dnow >>= 8;
+	}
+	for (i=0; i<4; i++) {
+		string_20Bytes[i+16] = (u8)(Enow & 0x000000FF);
+		Enow >>= 8;
+	}
+	int num31;
+	num31 = string_20Bytes[move_val];
+	num31 <<= 8;
+	num31 = num31 | string_20Bytes[move_val+1];
+	num31 <<= 8;
+	num31 = num31 | string_20Bytes[move_val+2];
+	num31 <<= 8;
+	num31 = num31 | string_20Bytes[move_val+3];
+	num31 = num31 & 0x7fffffff;
+
+	// 回到算法本身，在获得 31 位的截断结果之后，我们将其又转换为无标点的大端表示的整数值，这个值的取值范围是 0 ~ 231，也即 0 ~ 2.147483648E9，最后我们将这个数对10的乘方（digit 指数范围 1-10）取模，得到一个余值，对其前面补0得到指定位数的字符串。
+	num31 = num31%1000000;
+
+	return num31;
 }
+
 
 
 // int main(){

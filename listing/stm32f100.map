@@ -1448,14 +1448,14 @@ Removing Unused input sections from the image.
     Removing oled.o(i.show_time_pot), (60 bytes).
     Removing sha1.o(i.ROTL), (18 bytes).
     Removing sha1.o(i.funt), (96 bytes).
-    Removing sha1.o(i.sha1), (432 bytes).
+    Removing sha1.o(i.sha1), (632 bytes).
     Removing sha1.o(.constdata), (36 bytes).
     Removing newled.o(i.LED_ON2OFF), (64 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dfixul.o(.text), (48 bytes).
     Removing cdrcmple.o(.text), (48 bytes).
 
-448 unused section(s) (total 19902 bytes) removed from the image.
+448 unused section(s) (total 20102 bytes) removed from the image.
 
 ==============================================================================
 

@@ -4,7 +4,7 @@
 #include "stm32f10x.h"
 
 
-void sha1(char * in, int in_length);
+int sha1(char * in, int in_length);
 
 
 #endif

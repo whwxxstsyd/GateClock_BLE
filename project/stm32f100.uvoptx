@@ -176,9 +176,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>67</LineNumber>
+          <LineNumber>114</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134239904</Address>
+          <Address>134240222</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -187,23 +187,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\SHA_1\sha1.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\stm32f100\../User/SHA_1/sha1.c\67</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>67</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134239982</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Code\GitHub\鎸囩汗閿乢钃濈墮鐗堟湰\GateClock_BLE\User\SHA_1\sha1.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\stm32f100\../User/SHA_1/sha1.c\67</Expression>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -344,7 +328,7 @@
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>0x20000440</ItemText>
+          <ItemText>0x08000000</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
