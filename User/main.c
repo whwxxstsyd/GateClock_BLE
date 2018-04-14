@@ -44,7 +44,7 @@ int main(void) {
 		// 睡眠计数++
 		sleep_count++;
 
-		// 显示主界面
+		// 显示一次主界面
 		if (work_flag==1) {
 			work_flag = 0;
 			Interface();
@@ -161,12 +161,24 @@ int main(void) {
 					else
 						Usart_SendPassword_DEL_Error(USART1);
 					break;
+				
+
+				/************************* 接收到【一键开锁】指令 *************************/
+				case CMDID_OPEN_DOOR:
+					sleep_count = 0;
+					show_clock_open_big();
+					Gate_Unlock();
+					SPEAK_OPEN_THE_DOOR();
+					// 一般开锁都是成功的，也没有办法检测开锁是否成功。。所以直接返回开锁成功就是了
+					Usart_SendOpenDoor_Success(USART1);
+					break;
+
+
 				/************************************************************************/
 				default:
 					break;
 			}
 		}
-
 
 		// 如果没有接收到手机端发来的信息，那就时刻准备开锁
 		else {

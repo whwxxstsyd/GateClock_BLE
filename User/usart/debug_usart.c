@@ -275,8 +275,23 @@ void Usart_SendPassword_DEL_Error(USART_TypeDef* pUSARTx) {
 	}
 }
 
+// 发送【一键开锁】成功数据包
+// pUSARTx:		串口号
+void Usart_SendOpenDoor_Success(USART_TypeDef* pUSARTx) {
+	// 定义包头数据
+	BleDataHead temp;
+	temp.m_magicCode = MAGICCODE;
+	temp.m_version = VERSION;
+	temp.m_totalLength = 12;
+	temp.m_cmdId = CMDID_OPEN_DOOR;
+	temp.m_seq = 0x0000;
+	temp.m_errorCode = ERROR_CODE_SUCCESS;
 
-
+	// 发送包头数据
+	for (u8 i=0; i<6; i++){
+		pUsart_SentMessage(pUSARTx, (u16*)&temp+i);
+	}
+}
 
 
 

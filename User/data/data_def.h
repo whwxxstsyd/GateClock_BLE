@@ -120,6 +120,7 @@ typedef struct{
 #define CMDID_DEL_RFCARD		0x0803		// É¾³ýÉäÆµ¿¨ÃüÁî
 #define CMDID_ADD_PASSWORD		0x0104		// Ìí¼ÓÃÜÂëÃüÁî
 #define CMDID_DEL_PASSWORD		0x0804		// É¾³ýÃÜÂëÃüÁî
+#define CMDID_OPEN_DOOR			0x0106		// Ò»¼ü¿ªËøÃüÁî
 
 
 /********************************************** ´æ´¢µØÖ· *************************************************/

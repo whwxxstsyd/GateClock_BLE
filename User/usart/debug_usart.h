@@ -45,6 +45,8 @@ void Usart_SendPassword_ADD_Error(USART_TypeDef* pUSARTx, u16 errorcode);
 void Usart_SendPassword_DEL_Success(USART_TypeDef* pUSARTx);
 void Usart_SendPassword_DEL_Error(USART_TypeDef* pUSARTx);
 
+void Usart_SendOpenDoor_Success(USART_TypeDef* pUSARTx);
+
 
 
 /********************************************** µ×²ãº¯Êý *************************************************/
