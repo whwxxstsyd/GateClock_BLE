@@ -1,5 +1,6 @@
 #include "./usart/debug_usart.h"
 #include "./data/data_def.h"		// 为了使用 Userid2Ascii 转换用户ID，以及一些宏定义
+#include "./Delay/delay.h"
 #include <stdio.h>					// 为了使用 fgetc 函数重定向 printf
 
 
@@ -7,6 +8,7 @@ static volatile uint32_t  UARTTimeout = UART_WAIT_TIME;	// 串口接收等待时长
 u8 USART_RecvBuf[USART_RECVBUF_LENGTH];	// 串口接收数据缓存池
 u8 USART1_RecvBuf_Length=0;				// 串口接收数据的总长度
 u8 USART_Recv_Flag=0;					// 串口接收到数据标志位
+u8 BLE_MAC[17];
 
 
 /********************************************** 用户函数 *************************************************/
@@ -62,7 +64,7 @@ void Usart_SendFinger_ADD_Success(USART_TypeDef* pUSARTx, u16 seq, u16 user_id) 
 	}
 
 	// 发送用户ID
-	if (seq==3) 
+	if (seq==3)
 		Usart_SendUserId(pUSARTx, user_id);
 }
 
@@ -293,7 +295,40 @@ void Usart_SendOpenDoor_Success(USART_TypeDef* pUSARTx) {
 	}
 }
 
+// 解析蓝牙芯片发回的数据，设定 mac 地址
+void Init_BLE_MAC(void) {
 
+	// 发送获取 mac 地址命令
+	printf("AT+MAC\r\n");
+
+	// 给蓝牙一点处理数据的时间
+	delay_ms(10);
+
+	// 如果串口接收到数据
+	if(USART_Recv_Flag==1) {
+		// 清空标志位
+		USART_Recv_Flag = 0;
+
+		// 清空RecBuf内容长度
+		USART1_RecvBuf_Length = 0;
+	}
+
+	// 抽取 mac 地址
+	// +MAC=112233445566**  **表示末尾跟上的回车0D和换行0A
+	// 收到的数据的格式为 2B 4D 41 43 3D 33 43 41 35 30 39 30 41 31 46 41 46 0D 0A
+	//					 +	M  A  C  =  3  C  A  5  0  9  0  A  1  F  A  F
+	u8 j=5;
+	for (u8 i=0; i<17; i++) {
+		if ( i==2 || i==5 || i==8 || i==11 || i==14) {
+			BLE_MAC[i] = 0x3A;	// 0x3A 是 ：冒号
+		}
+		else {
+			BLE_MAC[i] = USART_RecvBuf[j];
+			j++;
+		}
+	}
+
+}
 
 
 

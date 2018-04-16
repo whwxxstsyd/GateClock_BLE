@@ -55,6 +55,6 @@ void pUsart_SentMessage( USART_TypeDef* pUSARTx, u16* message);
 uint16_t Usart_SendByte( USART_TypeDef* pUSARTx, u8 ch );
 uint16_t Usart_RecvByte( USART_TypeDef* pUSARTx);
 void debug_usart_init(void);
-
+void Init_BLE_MAC(void);
 
 #endif

@@ -1,6 +1,7 @@
 #include "./data/data_def.h"
 
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];
+extern char BLE_MAC[11];
 
 // 三位数用户编号 转 ascii
 // userid:      需要进行转换的用户id号
@@ -63,7 +64,7 @@ u16 RecvBuf2Userid(void) {
 void RecvBuf2TimeUnlock_SECTION(u16* result) {
 	u8 qian,bai,shi,ge,num;
 	u16 temp;
-	
+
 	// 获取准入时间信息
 	for (u8 i=18; i<USART_RECVBUF_LENGTH; i+=4) {
 		qian = USART_RecvBuf[i];

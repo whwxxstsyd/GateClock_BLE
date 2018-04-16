@@ -61,14 +61,13 @@ void BLE_init(void){
 
 	// 关闭 AT 命令
 	AT_MODE_OFF();
-
 }
 
 void BLE_USART_SendStr(char* str){
 	printf("%s",str);
 }
 
-void BLE_USART_CMD(char* cmd){
+void BLE_USART_CMD(char* cmd) { 
 	// 预分配20长度，这样strcat之后不会溢出
 	char BLE_CMD[50]="AT+";
 	char enter[] = "\r\n";

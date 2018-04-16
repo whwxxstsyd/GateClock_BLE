@@ -2,58 +2,6 @@
 #define __DATA_DEF_H
 #include "stm32f10x.h"
 
-
-// // 用户编号，从1开始，方便用户使用
-// // 重要！！
-// // flash有限，目前只能存储128个用户，所以在设计用户编号时，只给两位，也就是编号从01~99
-// typedef struct//用户准入时间
-// {
-// 	uint16_t year;
-// 	uint8_t month;
-// 	uint8_t date;
-// 	uint8_t hour;
-// 	uint8_t minute;
-// 	uint8_t second;
-// }USER_TIME;//这个暂时没用 这个是为了以后做每个人开门时间不一样设计的 目前所有保姆用统一的开门时间 下面那个结构体是现在用的
-
-// // 用户准入时间
-// typedef struct
-// {
-// 	// 上限
-// 	uint8_t hour;
-// 	uint8_t minute;
-// 	// 下限
-// 	uint8_t hour2;
-// 	uint8_t minute2;
-// }UNLOCK_TIME;
-
-// // 单个用户历史记录结构体
-// typedef struct{
-// 	u16 flag;
-// 	u16 year;
-// 	u16 month_date;
-// 	u16 hour_minute;
-// 	u16 user_number;
-// }UNLOCK_NOTES;
-
-// // 所有用户历史记录结构体
-// typedef struct{
-// 	UNLOCK_NOTES note1;
-// 	UNLOCK_NOTES note2;
-// 	UNLOCK_NOTES note3;
-// 	UNLOCK_NOTES note4;
-// 	UNLOCK_NOTES note5;
-// 	UNLOCK_NOTES note6;
-// 	UNLOCK_NOTES note7;
-// 	UNLOCK_NOTES note8;
-// 	UNLOCK_NOTES note9;
-// 	UNLOCK_NOTES note10;
-// 	UNLOCK_NOTES note11;
-// 	UNLOCK_NOTES note12;
-// }UNLOCK_NOTES_AREA;
-
-
-
 // 用户的数据结构(包括指纹和射频卡)
 typedef struct{
 	u16 m_USER_Number;	// 编号，【000~999】
@@ -149,11 +97,6 @@ u16 RecvBuf2Cmdid(void);
 u16 RecvBuf2Userid(void);
 void RecvBuf2TimeUnlock_SECTION(u16* result);
 
+
+
 #endif
-
-
-// /********************************************* 历史记录参数 **********************************************/
-// #define UNLOCK_NOTES_ADDR		0x800fd04	// 用户开锁记录存储首地址
-// #define UNLOCK_NOTES_USED_FLAG  0x6666		// 【已经占用】flag，如果开头的16位数据为 UNLOCK_NOTES_USED_FLAG，那么就表明接下来的数据已经被占用了
-// #define UNLOCK_NOTES_MSG_LENGTH 5			// 一条信息的总2字节数量，一条信息一共需要写入 USED_FLAG year month_date hour_minute user_number  一共 5*16=80bit 10字节数据，因为每次写都是16bit一写，所以就是5个16bit，5个2字节
-// #define UNLOCK_NOTES_SIZE		12			// 能够存储的历史信息的总数量

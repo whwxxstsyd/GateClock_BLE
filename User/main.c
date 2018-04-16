@@ -7,6 +7,7 @@ extern u8 USART1_RecvBuf_Length;
 extern u8 WAKEUP_SOURCE;
 extern QS808_Rec_Buf_type QS808_Rec_Buf;
 extern _calendar_obj calendar;
+extern u8 BLE_MAC[17];
 
 float Battery_quantity;
 u8 SLEEP_MAX = 30;
@@ -32,6 +33,7 @@ int main(void) {
 	VCC_Adc_Init();			// 【ADC】通道初始化
 	UT588C_init();			// 【语音芯片】初始化
 	NewLed_Init();			// 【按键灯】初始化
+	Init_BLE_MAC();			// 【蓝牙MAC】地址初始化
 	// QS808_CMD_DEL_ALL();	// 删除全部指纹
 
 
@@ -40,6 +42,7 @@ int main(void) {
 	u32 temp_RFCARD_ID;
 	Interface();
 	LED_OFF2ON();
+
 	while(1) {
 		// 睡眠计数++
 		sleep_count++;
@@ -90,6 +93,9 @@ int main(void) {
 			// 根据 temp_cmdid 来进行分支判断
 			temp_cmdid = RecvBuf2Cmdid();
 			switch( temp_cmdid ) {
+				/************************* 接收到【更新时间】指令 *************************/
+
+
 				/************************* 接收到【添加指纹】指令 *************************/
 				case CMDID_ADD_FINGER:
 					sleep_count = 0;
@@ -238,7 +244,7 @@ int main(void) {
 				Disp_sentence(24,2,"请输入密码",0);
 
 				Create_NewPasswordBuf(password_buf);
-				while(1) {
+				while(1) {	
 					// 更新按键缓冲区X
 					temp = Update_KeyBuf(password_buf, &buf_length, &last_press);
 					// 如果现在正在输入密码，就响一下

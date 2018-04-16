@@ -122,13 +122,13 @@ void OLED_Init(void)
 	WriteCmd(0x20);	//Set Memory Addressing Mode
 	WriteCmd(0x10);	//00,Horizontal Addressing Mode;01,Vertical Addressing Mode;10,Page Addressing Mode (RESET);11,Invalid
 	WriteCmd(0xb0);	//Set Page Start Address for Page Addressing Mode,0-7
-	WriteCmd(0xc0);	//Set COM Output Scan Direction				¡¾0xc0  0xc8¡¿
+	WriteCmd(0xc8);	//Set COM Output Scan Direction				¡¾0xc0  0xc8¡¿
 	WriteCmd(0x00); //---set low column address
 	WriteCmd(0x10); //---set high column address
 	WriteCmd(0x40); //--set start line address
 	WriteCmd(0x81); //--set contrast control register
 	WriteCmd(0xff); //ÁÁ¶Èµ÷½Ú 0x00~0xff
-	WriteCmd(0xa0); //--set segment re-map 0 to 127				¡¾0xa0 	0xa1¡¿
+	WriteCmd(0xa1); //--set segment re-map 0 to 127				¡¾0xa0 	0xa1¡¿
 	WriteCmd(0xa6); //--set normal display
 	WriteCmd(0xa8); //--set multiplex ratio(1 to 64)
 	WriteCmd(0x3F); //
