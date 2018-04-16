@@ -513,7 +513,7 @@ int Init()
 
     s_new[j] = '\0';  //别忘了哦  
 
-    return j;  //返回s_new的长度  
+    return j;  //返回s_new的长度  s
 }
 
 int Manacher()
@@ -535,7 +535,7 @@ int Manacher()
             p[i]++;
 
 
-        if (mx < i + p[i])  //我们每走一步i，都要和mx比较，我们希望mx尽可能的远，这样才能更有机会执行if (i < mx)这句代码，从而提高效率  
+        if (mx < i + p[i])  //我们每走一步i，都要和mx比较，我们希望mx尽可能的远，这样才能	更有机会执行if (i < mx)这句代码，从而提高效率  
         {
             id = i;
             mx = i + p[i];

@@ -115,31 +115,31 @@ int sha1(char * in, int in_length) {
 	//************* 接下来开始选择使用 160 bit中的那几位作为暂时的密码 *************//
 	// 1.先从第一步通过 SHA-1 算法加密得到的 20 字节长度的结果中选取最后一个字节的低字节位的 4 位（注意：动态密码算法中采用的大端(big-endian)存储）；
 	// 2.将这 4 位的二进制值转换为无标点数的整数值，得到 0 到 15（包含 0 和 15）之间的一个数，这个数字作为 20 个字节中从 0 开始的偏移量；
-	u8 move_val = (u8) (Enow & 0x0000000F);
+	unsigned char move_val = (unsigned char) (Enow & 0x0000000F);
 
 	// 接着从指定偏移位开始，连续截取 4 个字节（32 位），最后返回 32 位中的后面 31 位；
-	u8 string_20Bytes[20];
-	for (i=0; i<4; i++) {
-		string_20Bytes[i] = (u8)(Anow & 0x000000FF);
+	unsigned char string_20Bytes[20];
+	for (i=3; i>=0; i--) {
+		string_20Bytes[i] = (unsigned char)(Anow & 0x000000FF);
 		Anow >>= 8;
 	}
-	for (i=0; i<4; i++) {
-		string_20Bytes[i+4] = (u8)(Bnow & 0x000000FF);
+	for (i=3; i>=0; i--) {
+		string_20Bytes[i+4] = (unsigned char)(Bnow & 0x000000FF);
 		Bnow >>= 8;
 	}
-	for (i=0; i<4; i++) {
-		string_20Bytes[i+8] = (u8)(Cnow & 0x000000FF);
+	for (i=3; i>=0; i--) {
+		string_20Bytes[i+8] = (unsigned char)(Cnow & 0x000000FF);
 		Cnow >>= 8;
 	}
-	for (i=0; i<4; i++) {
-		string_20Bytes[i+12] = (u8)(Dnow & 0x000000FF);
+	for (i=3; i>=0; i--) {
+		string_20Bytes[i+12] = (unsigned char)(Dnow & 0x000000FF);
 		Dnow >>= 8;
 	}
-	for (i=0; i<4; i++) {
-		string_20Bytes[i+16] = (u8)(Enow & 0x000000FF);
+	for (i=3; i>=0; i--) {
+		string_20Bytes[i+16] = (unsigned char)(Enow & 0x000000FF);
 		Enow >>= 8;
 	}
-	int num31;
+	unsigned int num31;
 	num31 = string_20Bytes[move_val];
 	num31 <<= 8;
 	num31 = num31 | string_20Bytes[move_val+1];
