@@ -3,6 +3,7 @@
 #include "./data/data_def.h"                    // 为了使用用户结构体
 #include "./STMFLASH/stmflash.h"               	// 为了向 flash 中写入射频卡编号
 #include "./UT588C/ut588c.h"					// 为了使用喇叭
+#include "./SHA_1/sha1.h"
 
 extern u8 USART_RecvBuf[USART_RECVBUF_LENGTH];	// 串口接收缓存池
 
@@ -136,7 +137,7 @@ u16 Confirm_Password_6Bit(u32 password) {
 u16 Confirm_Password(u8* buf, u8 length) {
 	u32 password = 0;
 	u16 temp_return;
-	
+
 	// 如果密码的长度是6位，那就仅需要转化为u32之后就可以直接进行验证了
 	if (length==6) {
 		password = buf[0]*100000 +buf[1]*10000 +buf[2]*1000 +buf[3]*100 +buf[4]*10 +buf[5];
@@ -154,6 +155,18 @@ u16 Confirm_Password(u8* buf, u8 length) {
 		// 如果能跑到这里，说明这个密码没有被事先录入过，就直接 return ERROR_CODE_ERROR
 		return ERROR_CODE_ERROR;
 	}
+}
+
+// 密码验证，判断输入的这个加密的密码对应的真实密码有没有被录入过
+// buf:			待检验的密码缓存池，u8 Buf[] 格式
+// length:		密码的长度
+// reuturn:		解锁失败或成功
+u16 Confirm_Password_SHA1(char* buf, u8 length) {
+	
+	// 生成加密后的密码
+	sha1(buf, length);
+	
+	return 0;
 }
 
 // 新建一个均为【0XFF】的密码缓冲区
@@ -191,7 +204,7 @@ u8 Update_KeyBuf(u8* key_buf, u8* buf_length, u8* last_press) {
 			return PASSWORD_CODE_INPUTTING;
 		}
 	}
-	
+
 	// 如果输入#，表示确认。就开始判断缓存区密码的长度，如果大于等于6位就 return PASSWORD_CODE_COMPLETE
 	else if (*last_press == 0x0b){
 		if (*buf_length >= 6)	return PASSWORD_CODE_COMPLETE;
@@ -212,13 +225,3 @@ u8 Update_KeyBuf(u8* key_buf, u8* buf_length, u8* last_press) {
 		}
 	}
 }
-
-// 按键灯初始化
-
-
-
-// 开门成功按键灯效果
-
-
-
-// 开门失败按键灯效果

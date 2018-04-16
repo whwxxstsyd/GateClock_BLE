@@ -19,3 +19,4 @@
 ..\output\password.o: ..\User\./STMFLASH/stmflash.h
 ..\output\password.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
 ..\output\password.o: ..\User\./UT588C/ut588c.h
+..\output\password.o: ..\User\./SHA_1/sha1.h

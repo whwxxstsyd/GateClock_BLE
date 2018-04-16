@@ -69,6 +69,7 @@ typedef struct{
 #define CMDID_ADD_PASSWORD		0x0104		// 添加密码命令
 #define CMDID_DEL_PASSWORD		0x0804		// 删除密码命令
 #define CMDID_OPEN_DOOR			0x0106		// 一键开锁命令
+#define CMDID_SET_TIME			0x0201		// 同步时间命令
 
 
 /********************************************** 存储地址 *************************************************/

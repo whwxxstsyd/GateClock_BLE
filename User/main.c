@@ -43,9 +43,10 @@ int main(void) {
 	Interface();
 	LED_OFF2ON();
 
+
 	while(1) {
 		// 睡眠计数++
-		sleep_count++;
+		// sleep_count++;
 
 		// 显示一次主界面
 		if (work_flag==1) {
@@ -94,7 +95,11 @@ int main(void) {
 			temp_cmdid = RecvBuf2Cmdid();
 			switch( temp_cmdid ) {
 				/************************* 接收到【更新时间】指令 *************************/
-
+				case CMDID_SET_TIME:
+					sleep_count = 0;
+					SPEAK_DUDUDU();
+					Cogradient_Time();
+					break;
 
 				/************************* 接收到【添加指纹】指令 *************************/
 				case CMDID_ADD_FINGER:

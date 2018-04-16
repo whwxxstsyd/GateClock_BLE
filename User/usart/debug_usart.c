@@ -330,6 +330,32 @@ void Init_BLE_MAC(void) {
 
 }
 
+// 接收手机端发来的时间同步信息，更新板子的系统时间
+void Cogradient_Time(void) {
+	u8 mon=0,day=0,hour=0,min=0,sec=0;
+	u16 year=0;
+
+	// 获得数据包中的时间信息
+	year = year + (u16)(USART_RecvBuf[12]-0x30)*1000;
+	year = year + (u16)(USART_RecvBuf[13]-0x30)*100;
+	year = year + (u16)(USART_RecvBuf[14]-0x30)*10;
+	year = year + (u16)(USART_RecvBuf[15]-0x30);
+	mon = mon + (USART_RecvBuf[16]-0x30)*10;
+	mon = mon + (USART_RecvBuf[17]-0x30);
+	day = day + (USART_RecvBuf[18]-0x30)*10;
+	day = day + (USART_RecvBuf[19]-0x30);
+	hour = hour + (USART_RecvBuf[20]-0x30)*10;
+	hour = hour + (USART_RecvBuf[21]-0x30);
+	min = min + (USART_RecvBuf[22]-0x30)*10;
+	min = min + (USART_RecvBuf[23]-0x30);
+	sec = sec + (USART_RecvBuf[24]-0x30)*10;
+	sec = sec + (USART_RecvBuf[25]-0x30);
+
+	// 设置系统时间
+	RTC_Set(year, mon, day, hour, min, sec);
+}
+
+
 
 
 
