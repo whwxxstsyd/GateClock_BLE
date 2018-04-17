@@ -4,14 +4,14 @@
 
 // 用户的数据结构(包括指纹和射频卡)
 typedef struct{
-	u16 m_USER_Number;	// 编号，【000~999】
+	u16 m_USER_Number;	// 编号，【000~499】
 	u16 m_USER_Type;	// 类型，【0x0001.指纹】【0x0002.射频卡】
 	u32 m_USER_Data;	// 数据，【将m_USER_Type的数据存储在这里】
 }MY_USER;
 
 // 密码的数据结构
 typedef struct{
-	u16 m_Password_ID;		// 编号，【000~999】
+	u16 m_Password_ID;		// 编号，【000~499】
 	u16 m_Type;				// 密码类型用，来判断准入时间，【0x0001 无时间限制】【0x0002 时间段】【0x0003 保姆】
 	u32 m_Password;			// 密码数值
 	u16 m_Year_Start;		// 准入开始时间(年)(2018)
@@ -73,14 +73,14 @@ typedef struct{
 
 
 /********************************************** 存储地址 *************************************************/
-#define PASSWORD_ADDR_START		0x080092BE	// 存储手机端发来的密码的编号的首地址
-#define MY_USER_ADDR_START		0x0800E0BE	// 用户结构体存储首地址
+#define PASSWORD_ADDR_START		0x0800C94C	// 存储手机端发来的密码的编号的首地址（密码一共可以存储500条）
+#define MY_USER_ADDR_START		0x0800F05E	// 用户结构体存储首地址（指纹+射频卡一共可以存储500条）
 #define MY_USER_ADDR_END		0x0800FFFF	// STM32 Flash 末地址
 
 
 
 
-// 修改这些 记得在初始化函数加上数量初始化
+// 修改这些 记得在初始化函数加上数量初始化（这里都没有被用到，未来要删除这部分代码）
 #define alluser_amount_addr		0x800fc00	// 保存所有用户个数
 #define admin_amount_addr 		0x800fc02	// 保存管理员个数
 #define family_amount_addr 		0x800fc04	// 家人用户
@@ -97,6 +97,10 @@ u16 Ascii2Userid(u8* userid_ascii);
 u16 RecvBuf2Cmdid(void);
 u16 RecvBuf2Userid(void);
 void RecvBuf2TimeUnlock_SECTION(u16* result);
+void Pack_PasswordAndTime(u32 password, u8* result1, u8* result2, u8* result3);
+void Pack_BLEMacAndTime(u8* result1, u8* result2, u8* result3);
+u16 Compare_2Buf(u8* a, u8* b, u8 len);
+void Int2Char8(int newPassword, u8* result);
 
 
 

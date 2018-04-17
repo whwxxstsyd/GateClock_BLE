@@ -30,7 +30,8 @@
         "g10lib.h": "c",
         "sha1.h": "c",
         "rc522_config.h": "c",
-        "newled.h": "c"
+        "newled.h": "c",
+        "rtc.h": "c"
     },
     "C_Cpp.dimInactiveRegions": true
 }

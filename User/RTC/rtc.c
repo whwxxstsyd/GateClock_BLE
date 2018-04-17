@@ -87,7 +87,7 @@ u8 Is_Leap_Year(u16 year) {
 	// 必须能被4整除
 	if(year%4==0) {
 		if(year%100==0) {
-			if(year%400==0)return 1;//如果以00结尾,还要能被400整除
+			if(year%400==0)return 1;	//如果以00结尾,还要能被400整除
 			else return 0;
 		}else return 1;
 	}else return 0;
@@ -118,9 +118,9 @@ u8 RTC_Set(u16 syear,u8 smon,u8 sday,u8 hour,u8 min,u8 sec) {
 		if(Is_Leap_Year(syear)&&t==1)seccount+=86400;//闰年2月份增加一天的秒钟数
 	}
 	seccount+=(u32)(sday-1)*86400;//把前面日期的秒钟数相加
-	seccount+=(u32)hour*3600;//小时秒钟数
-    seccount+=(u32)min*60;	 //分钟秒钟数
-	seccount+=sec;//最后的秒钟加上去
+	seccount+=(u32)hour*3600;	//小时秒钟数
+    seccount+=(u32)min*60;	 	//分钟秒钟数
+	seccount+=sec;				//最后的秒钟加上去
 
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_PWR | RCC_APB1Periph_BKP, ENABLE);	//使能PWR和BKP外设时钟
 	PWR_BackupAccessCmd(ENABLE);	//使能RTC和后备寄存器访问
@@ -175,7 +175,6 @@ u8 RTC_Get(void) {
     timecount = RTC_GetCounter();
  	temp = timecount/86400;   //得到天数(秒钟数对应的)
 
-
 	// 超过一天了
 	if (daycnt!=temp) {
 		daycnt=temp;
@@ -214,10 +213,10 @@ u8 RTC_Get(void) {
 		calendar.w_month=temp1+1;	// 得到月份
 		calendar.w_date=temp+1;  	// 得到日期
 	}
-	temp=timecount%86400;     		// 得到秒钟数
-	calendar.hour=temp/3600;     	// 小时
-	calendar.min=(temp%3600)/60; 	// 分钟
-	calendar.sec=(temp%3600)%60; 	// 秒钟
+	temp=timecount%86400;     		//得到秒钟数
+	calendar.hour=temp/3600;     	//小时
+	calendar.min=(temp%3600)/60; 	//分钟
+	calendar.sec=(temp%3600)%60; 	//秒钟
 	calendar.week=RTC_Get_Week(calendar.w_year,calendar.w_month,calendar.w_date);//获取星期
 	return 0;
 }

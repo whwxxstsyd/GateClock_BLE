@@ -17,6 +17,7 @@ void Interface(void);
 
 
 int main(void) {
+
 	delay_init();			// 【系统时钟】初始化
 	RTC_Init();				// 【RTC时钟】初始化
 	TSM12_Init();			// 【触摸按键芯片】初始化
@@ -43,6 +44,9 @@ int main(void) {
 	Interface();
 	LED_OFF2ON();
 
+
+	u8 a[2];
+	Confirm_Password_SHA1_BLEMacAndTime(a);
 
 	while(1) {
 		// 睡眠计数++
@@ -172,7 +176,7 @@ int main(void) {
 					else
 						Usart_SendPassword_DEL_Error(USART1);
 					break;
-				
+
 
 				/************************* 接收到【一键开锁】指令 *************************/
 				case CMDID_OPEN_DOOR:
@@ -249,7 +253,7 @@ int main(void) {
 				Disp_sentence(24,2,"请输入密码",0);
 
 				Create_NewPasswordBuf(password_buf);
-				while(1) {	
+				while(1) {
 					// 更新按键缓冲区X
 					temp = Update_KeyBuf(password_buf, &buf_length, &last_press);
 					// 如果现在正在输入密码，就响一下
@@ -495,14 +499,14 @@ int Manacher() {
 }
 
 /**
- * 
+ *
  * author 刘毅（Limer）
  * date   2017-02-25
- * mode   C++ 
+ * mode   C++
  */
-#include<iostream>  
+#include<iostream>
 #include<string.h>
-#include<algorithm>  
+#include<algorithm>
 using namespace std;
 
 char s[1000];
@@ -522,15 +526,15 @@ int Init()
         s_new[j++] = '#';
     }
 
-    s_new[j] = '\0';  //别忘了哦  
+    s_new[j] = '\0';  //别忘了哦
 
     return j;  //返回s_new的长度  s
 }
 
 int Manacher()
 {
-    int len = Init();  //取得新字符串长度并完成向s_new的转换  
-    int maxLen = -1;   //最长回文长度  
+    int len = Init();  //取得新字符串长度并完成向s_new的转换
+    int maxLen = -1;   //最长回文长度
 
     int id;
     int mx = 0;
@@ -542,11 +546,11 @@ int Manacher()
         else
             p[i] = 1;
 
-        while (s_new[i - p[i]] == s_new[i + p[i]])  //不需边界判断，因为左有'$',右有'\0'  
+        while (s_new[i - p[i]] == s_new[i + p[i]])  //不需边界判断，因为左有'$',右有'\0'
             p[i]++;
 
 
-        if (mx < i + p[i])  //我们每走一步i，都要和mx比较，我们希望mx尽可能的远，这样才能	更有机会执行if (i < mx)这句代码，从而提高效率  
+        if (mx < i + p[i])  //我们每走一步i，都要和mx比较，我们希望mx尽可能的远，这样才能	更有机会执行if (i < mx)这句代码，从而提高效率
         {
             id = i;
             mx = i + p[i];

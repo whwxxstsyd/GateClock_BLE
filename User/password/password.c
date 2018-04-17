@@ -39,7 +39,7 @@ u16 Add_Password(u16* password_id) {
 
 
 	// 如果扫描到空的区域，就直接写入，因为密码不需要考虑“重复”这个问题
-	for (u16 i=0; i<1000; i++) {
+	for (u16 i=0; i<500; i++) {
 		// 读取数据结构的第一个字节，也就是密码的编号信息，将编号存入临时变量 temp_password_id 中
 		addr_now = PASSWORD_ADDR_START +i*MY_PASSWORD_LENGTH;
 		STMFLASH_Read(addr_now, &temp_password_id, MY_PASSWORD_LENGTH/2);
@@ -91,11 +91,13 @@ u16 Add_Password(u16* password_id) {
 	return ERROR_CODE_ERROR;
 }
 
+// 删除密码
+// user_number:	需要删除的用户编号
 u16 Delete_Password(u16 user_number) {
 	u16 no_user = 0xFFFF;
 
 	// 判断用户编号合法性， 如果编号合法，删除用户，return ERROR_CODE_SUCCESS
-	if (user_number<=999) {
+	if (user_number<500) {
 		// 将原有的用户编号置为 0xFFFF，就相当于删除了这个编号下的所有数据
 		STMFLASH_Write(PASSWORD_ADDR_START +user_number*MY_PASSWORD_LENGTH, &no_user, 1);
 		return ERROR_CODE_SUCCESS;
@@ -115,7 +117,7 @@ u16 Confirm_Password_6Bit(u32 password) {
 	STRUCT_PASSWORD temp_password;
 
 	// 开始从首地址开始查找这个密码有没有被录入过
-	for (u16 i=0; i<1000; i++) {
+	for (u16 i=0; i<500; i++) {
 		addr_now = PASSWORD_ADDR_START +i*MY_PASSWORD_LENGTH;
 		STMFLASH_Read(addr_now, (u16*)&temp_password, 10);
 
@@ -157,16 +159,46 @@ u16 Confirm_Password(u8* buf, u8 length) {
 	}
 }
 
-// 密码验证，判断输入的这个加密的密码对应的真实密码有没有被录入过
-// buf:			待检验的密码缓存池，u8 Buf[] 格式
+// 密码验证，判断输入的这个加密的密码对应的真实密码有没有被录入过(密码+时间 作为sha1的输入)
+// buf:			待检验的密码缓存池，u8 Buf[8] 格式
 // length:		密码的长度
 // reuturn:		解锁失败或成功
-u16 Confirm_Password_SHA1(char* buf, u8 length) {
+u16 Confirm_Password_SHA1_PasswordAndTime(u8* buf) {
+	u8 sha1_password1[8], sha1_password2[8], sha1_password3[8];
+	u32 addr_now;
+	STRUCT_PASSWORD temp_password;
+	// 生成加密后的密码，每个有效密码生成前后10min共3个加密密码
+	for (u16 i=0; i<500; i++) {
+		addr_now = PASSWORD_ADDR_START +i*MY_PASSWORD_LENGTH;
+		STMFLASH_Read(addr_now, (u16*)&temp_password, 10);
+		// 如果这块 flash 区域存储了密码，那就生成3个加密密码，然后与形参进行比较
+		if (temp_password.m_Password_ID!=0xFFFF) {
+			Pack_PasswordAndTime(temp_password.m_Password, sha1_password1, sha1_password2, sha1_password3);
+			if (Compare_2Buf(sha1_password1, buf, 8)==ERROR_CODE_SUCCESS || Compare_2Buf(sha1_password2, buf, 8)==ERROR_CODE_SUCCESS || Compare_2Buf(sha1_password3, buf, 8)==ERROR_CODE_SUCCESS) {
+				return ERROR_CODE_SUCCESS;
+			}
+		}
+	}
+	// 能跑到这里说明密码验证失败
+	return ERROR_CODE_ERROR;
+}
+
+// 密码验证，判断输入的这个加密的密码对应的真实密码有没有被录入过(蓝牙mac地址+时间 作为sha1的输入)
+// buf:			待检验的密码缓存池，u8 Buf[8] 格式
+// length:		密码的长度
+// reuturn:		解锁失败或成功
+u16 Confirm_Password_SHA1_BLEMacAndTime(u8* buf) {
+	u8 sha1_password1[8], sha1_password2[8], sha1_password3[8];
+
+	// 获得当前时间的3个随机8位密码
+	Pack_BLEMacAndTime(sha1_password1, sha1_password2, sha1_password3);
 	
-	// 生成加密后的密码
-	sha1(buf, length);
-	
-	return 0;
+	// 和输入的8位随机密码进行比较
+	if (Compare_2Buf(sha1_password1, buf, 8)==ERROR_CODE_SUCCESS || Compare_2Buf(sha1_password2, buf, 8)==ERROR_CODE_SUCCESS || Compare_2Buf(sha1_password3, buf, 8)==ERROR_CODE_SUCCESS) {
+		return ERROR_CODE_SUCCESS;
+	}
+
+	else return ERROR_CODE_ERROR;
 }
 
 // 新建一个均为【0XFF】的密码缓冲区

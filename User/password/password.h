@@ -20,7 +20,8 @@ u16 Add_Password(u16* password_id);
 u16 Delete_Password(u16 user_number);
 u16 Confirm_Password_6Bit(u32 password);
 u16 Confirm_Password(u8* buf, u8 length);
-u16 Confirm_Password_SHA1(char* buf, u8 length);
+u16 Confirm_Password_SHA1_PasswordAndTime(u8* buf);
+u16 Confirm_Password_SHA1_BLEMacAndTime(u8* buf);
 void Create_NewPasswordBuf(u8* key_buf);
 u8 Update_KeyBuf(u8* key_buf, u8* buf_length, u8* last_press);
 
