@@ -154,7 +154,14 @@ u16 Confirm_Password(u8* buf, u8 length) {
 				return temp_return;
 			}
 		}
-		// 如果能跑到这里，说明这个密码没有被事先录入过，就直接 return ERROR_CODE_ERROR
+
+		// 跑到这里说明传统验证方法都已经验证失败，还有可能是用户输入了8位数的随机密码，在判断一次随机密码的准确性
+		if (length==8) {
+			if( Confirm_Password_SHA1_PasswordAndTime(buf)==ERROR_CODE_SUCCESS || Confirm_Password_SHA1_BLEMacAndTime(buf)==ERROR_CODE_SUCCESS)
+				return ERROR_CODE_SUCCESS;
+		}
+
+		// 如果能跑到这里，说明这个密码不被通过，就直接 return ERROR_CODE_ERROR
 		return ERROR_CODE_ERROR;
 	}
 }

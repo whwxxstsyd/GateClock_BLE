@@ -45,9 +45,6 @@ int main(void) {
 	LED_OFF2ON();
 
 
-	u8 a[2];
-	Confirm_Password_SHA1_BLEMacAndTime(a);
-
 	while(1) {
 		// Ë¯Ãß¼ÆÊý++
 		// sleep_count++;
